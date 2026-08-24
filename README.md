@@ -1,4 +1,4 @@
-# Korea AI Summer
+# AI Summer Korea
 
 Marketing site for a fully sponsored four-week summer program bringing U.S.
 undergraduates into Korea's AI and semiconductor industry.

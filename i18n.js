@@ -1,27 +1,42 @@
-/* Korea AI Summer — translations.
+/* AI Summer Korea — translations.
    English lives in index.html so that crawlers that do not run JavaScript
    still read a full page. This file carries every other language, plus the
    English copies of the list data that app.js re-renders on language change.
 
-   Adding a language: copy the `ko` block, translate, add the code to LANGS.
+   Languages after ko carry only the core sections (nav, hero, why, program,
+   apply, vol, faq, foot). Everything else falls back to English in app.js.
+
+   Adding a language: copy a core block, translate, add the code to LANGS.
    Keep the item COUNT of every array identical across languages — a mismatched
    array renders short in that language only, and nothing warns you. */
 
 var LANGS = [
-  { code:"en", label:"EN", dir:"ltr" },
-  { code:"ko", label:"한국어", dir:"ltr" }
+  { code:"en", label:"English", english:"English", tag:"en", dir:"ltr" },
+  { code:"ko", label:"한국어", english:"Korean", tag:"ko", dir:"ltr" },
+  { code:"zh-Hans", label:"简体中文", english:"Chinese (Simplified)", tag:"zh-Hans", dir:"ltr" },
+  { code:"zh-Hant", label:"繁體中文", english:"Chinese (Traditional)", tag:"zh-Hant", dir:"ltr" },
+  { code:"ja", label:"日本語", english:"Japanese", tag:"ja", dir:"ltr" },
+  { code:"es", label:"Español", english:"Spanish", tag:"es", dir:"ltr" },
+  { code:"fr", label:"Français", english:"French", tag:"fr", dir:"ltr" },
+  { code:"de", label:"Deutsch", english:"German", tag:"de", dir:"ltr" }
 ];
 
 var STATUS_LABELS = {
   en:{ confirmed:"Confirmed", talks:"In discussion", planned:"Planned" },
-  ko:{ confirmed:"확정",      talks:"협의 중",       planned:"계획" }
+  ko:{ confirmed:"확정",      talks:"협의 중",       planned:"계획" },
+  "zh-Hans":{ confirmed:"已确认", talks:"洽谈中", planned:"计划中" },
+  "zh-Hant":{ confirmed:"已確認", talks:"洽談中", planned:"規劃中" },
+  "ja":{ confirmed:"確定", talks:"協議中", planned:"予定" },
+  "es":{ confirmed:"Confirmado", talks:"En conversaciones", planned:"Previsto" },
+  "fr":{ confirmed:"Confirmé", talks:"En discussion", planned:"Prévu" },
+  "de":{ confirmed:"Bestätigt", talks:"In Gesprächen", planned:"Geplant" }
 };
 
 var I18N = {
 
 /* ───────────────────────── ENGLISH ───────────────────────── */
 en:{
-  nav:{ brand:"Korea AI Summer", program:"Program", visits:"Where You Go", apply:"Apply", sponsors:"Sponsors", forum:"Forum", about:"About" },
+  nav:{ brand:"AI Summer Korea", program:"Program", visits:"Where You Go", apply:"Apply", sponsors:"Sponsors", forum:"Forum", about:"About" },
 
   hero:{
     eyebrow:"First cohort · Summer 2027 · 200 seats",
@@ -37,7 +52,7 @@ en:{
     kicker:"Why this exists",
     title:"You can read about the supply chain. Or you can stand in it.",
     p1:"Almost every frontier AI model in the world is trained on memory and logic that passed through Korean fabrication plants. Students who will spend their careers building on top of that hardware rarely get to see any of it.",
-    p2:"Korea AI Summer exists to close that gap — and to introduce a generation of engineers to the country, the industry, and the peers they will be working with for the next thirty years.",
+    p2:"AI Summer Korea exists to close that gap — and to introduce a generation of engineers to the country, the industry, and the peers they will be working with for the next thirty years.",
     c1t:"Industry, not tourism",
     c1b:"Semiconductor and manufacturing site visits, research labs, and working sessions with engineers — not a bus tour with a factory stop bolted on.",
     c2t:"Peers, not an audience",
@@ -151,7 +166,7 @@ en:{
 
   forum:{
     kicker:"The wider program", title:"One half of something annual",
-    p1:"Korea AI Summer is the student track of the 999 Seoul Forum — a planned annual convening held every September 9th in Seoul, on the premise that Korea should host a standing international forum of its own rather than sending delegations to everyone else's.",
+    p1:"AI Summer Korea is the student track of the 999 Seoul Forum — a planned annual convening held every September 9th in Seoul, on the premise that Korea should host a standing international forum of its own rather than sending delegations to everyone else's.",
     p2:"The two are built to feed each other. Work that teams produce in the summer is carried into the September forum and put in front of the people who can act on it. The organizations that fund one are the organizations that fund the other.",
     noteT:"Status:",
     noteB:"The forum is in development and has not yet held its first convening. We describe it here as a plan, because that is what it currently is.",
@@ -161,14 +176,14 @@ en:{
 
   about:{
     kicker:"Who runs this", title:"About the organizer",
-    p1:"Korea AI Summer is organised by the International Brain Sports Association, a Korean non-profit corporation licensed in March 2022 by the Seoul Metropolitan Government — licence no. 2022-53, granted under Article 32 of the Civil Act and the Ministry of Culture, Sports and Tourism's rules for non-profit corporations. It runs its own competitions in chess, janggi, speedcube and screen golf, and operates a registered-player system. Its origins trace back to ICOC, an international brain sports body started in the United Kingdom in 2019. The association is responsible for the venue, the site visits and everything that happens on the ground in Korea.",
+    p1:"AI Summer Korea is organised by the International Brain Sports Association, a Korean non-profit corporation licensed in March 2022 by the Seoul Metropolitan Government — licence no. 2022-53, granted under Article 32 of the Civil Act and the Ministry of Culture, Sports and Tourism's rules for non-profit corporations. It runs its own competitions in chess, janggi, speedcube and screen golf, and operates a registered-player system. Its origins trace back to ICOC, an international brain sports body started in the United Kingdom in 2019. The association is responsible for the venue, the site visits and everything that happens on the ground in Korea.",
     p2:"Our partner in the United States is Undenominated Church of Christianity, the California non-profit corporation that operates Plato School, incorporated in San Francisco on 1 September 2023. It handles the American side: recruitment in the United States and relationships with U.S. universities. Recruitment outside the United States is run from Seoul. A religious non-profit running a school is the oldest arrangement in education — Georgetown, Notre Dame and Boston College in the United States, Yonsei and Ewha in Korea, all founded on the same basis. The programme itself is secular.",
     advT:"Advisory board:",
     advB:"Being formed. Members will be listed here once they have confirmed. We do not list names before they have agreed to appear."
   },
 
   foot:{
-    brand:"Korea AI Summer",
+    brand:"AI Summer Korea",
     legal:"Organised by the International Brain Sports Association (Republic of Korea). U.S. partner: Undenominated Church of Christianity, operator of Plato School, a California non-profit corporation incorporated 1 September 2023.",
     note:"First cohort: summer 2027. Program details, dates, and partners are provisional until confirmed and will be updated on this page.",
     updated:"Last updated"
@@ -177,7 +192,7 @@ en:{
 
 /* ───────────────────────── 한국어 ───────────────────────── */
 ko:{
-  nav:{ brand:"코리아 AI 서머", program:"프로그램", visits:"방문지", apply:"지원", sponsors:"후원", forum:"포럼", about:"소개" },
+  nav:{ brand:"AI 서머 코리아", program:"프로그램", visits:"방문지", apply:"지원", sponsors:"후원", forum:"포럼", about:"소개" },
 
   hero:{
     eyebrow:"1기 · 2027년 여름 · 정원 200명",
@@ -193,7 +208,7 @@ ko:{
     kicker:"왜 만드나",
     title:"공급망은 읽을 수 있습니다. 그 안에 서 보는 것은 다릅니다.",
     p1:"세계의 거의 모든 최전선 AI 모델은 한국 공장을 거친 메모리와 로직 위에서 학습됩니다. 정작 그 하드웨어 위에 평생을 쌓아 올릴 학생들은 그 현장을 볼 기회가 거의 없습니다.",
-    p2:"코리아 AI 서머는 그 간극을 좁히기 위해 있습니다. 그리고 다음 세대 엔지니어에게 이 나라와 산업, 앞으로 30년을 함께 일하게 될 또래를 소개하기 위해 있습니다.",
+    p2:"AI 서머 코리아는 그 간극을 좁히기 위해 있습니다. 그리고 다음 세대 엔지니어에게 이 나라와 산업, 앞으로 30년을 함께 일하게 될 또래를 소개하기 위해 있습니다.",
     c1t:"관광이 아니라 산업",
     c1b:"반도체·제조 현장 견학, 연구실, 엔지니어와의 실무 세션입니다. 버스 관광에 공장 한 곳을 끼워 넣은 일정이 아닙니다.",
     c2t:"관객이 아니라 동료",
@@ -308,7 +323,7 @@ ko:{
 
   forum:{
     kicker:"더 큰 그림", title:"연례 행사의 한쪽 절반",
-    p1:"코리아 AI 서머는 999 서울 포럼의 학생 트랙입니다. 999 서울 포럼은 매년 9월 9일 서울에서 여는 연례 회의로 기획되었습니다 — 남의 나라 포럼에 대표단을 보내는 대신, 한국이 상설 국제 포럼을 하나 열어야 한다는 생각에서 출발했습니다.",
+    p1:"AI 서머 코리아는 999 서울 포럼의 학생 트랙입니다. 999 서울 포럼은 매년 9월 9일 서울에서 여는 연례 회의로 기획되었습니다 — 남의 나라 포럼에 대표단을 보내는 대신, 한국이 상설 국제 포럼을 하나 열어야 한다는 생각에서 출발했습니다.",
     p2:"둘은 서로를 먹여 살리도록 설계했습니다. 여름에 팀이 만든 결과물은 9월 포럼으로 이어져 실제로 움직일 수 있는 사람들 앞에 놓입니다. 한쪽을 후원하는 곳이 다른 쪽을 후원하는 곳입니다.",
     noteT:"진행 상태:",
     noteB:"포럼은 준비 중이며 아직 첫 회를 열지 않았습니다. 지금은 계획이므로 계획이라고 적습니다.",
@@ -318,18 +333,858 @@ ko:{
 
   about:{
     kicker:"주최", title:"주최 기관 소개",
-    p1:"코리아 AI 서머는 사단법인 국제브레인스포츠협회가 주최합니다. 「민법」 제32조 및 문화체육관광부 소관 비영리법인의 설립·감독에 관한 규칙에 따라 2022년 3월 서울특별시장이 설립을 허가한 법인입니다 (허가 제2022-53호). 체스·장기·스피드큐브·스크린골프 대회를 직접 개최해 왔고 선수 등록 제도를 운영합니다. 협회의 연원은 2019년 영국에서 시작된 국제 브레인스포츠 조직 ICOC 로 이어집니다. 협회가 국내 운영을 맡아 장소와 현장 방문, 한국에서 벌어지는 모든 일을 책임집니다.",
+    p1:"AI 서머 코리아는 사단법인 국제브레인스포츠협회가 주최합니다. 「민법」 제32조 및 문화체육관광부 소관 비영리법인의 설립·감독에 관한 규칙에 따라 2022년 3월 서울특별시장이 설립을 허가한 법인입니다 (허가 제2022-53호). 체스·장기·스피드큐브·스크린골프 대회를 직접 개최해 왔고 선수 등록 제도를 운영합니다. 협회의 연원은 2019년 영국에서 시작된 국제 브레인스포츠 조직 ICOC 로 이어집니다. 협회가 국내 운영을 맡아 장소와 현장 방문, 한국에서 벌어지는 모든 일을 책임집니다.",
     p2:"미국 측 협력기관은 Plato School 을 운영하는 캘리포니아주 비영리법인 Undenominated Church of Christianity 입니다. 2023년 9월 1일 샌프란시스코에 설립되었고, 미국 내 모집과 미국 대학과의 관계를 맡습니다. 미국 외 지역 모집은 서울에서 담당합니다. 종교법인이 학교를 운영하는 것은 교육에서 가장 오래된 형태입니다 — 연세대와 이화여대는 선교사가 세웠고, 미국의 조지타운·노트르담·보스턴칼리지도 같은 뿌리입니다. 프로그램 내용 자체는 종교와 무관합니다.",
     advT:"자문위원:",
     advB:"구성 중입니다. 확정되는 대로 이 자리에 표기합니다. 본인의 동의를 받기 전에는 성함을 올리지 않습니다."
   },
 
   foot:{
-    brand:"코리아 AI 서머",
+    brand:"AI 서머 코리아",
     legal:"주최 사단법인 국제브레인스포츠협회 (대한민국). 미국 협력기관 Undenominated Church of Christianity — Plato School 운영, 2023년 9월 1일 캘리포니아주 설립 비영리법인.",
     note:"1기는 2027년 여름입니다. 프로그램 세부 내용·날짜·파트너는 확정 전까지 잠정이며 이 페이지에서 갱신됩니다.",
     updated:"마지막 갱신"
   }
-}
+},
+
+/* ─────────────────── CHINESE (SIMPLIFIED) ─────────────────── */
+"zh-Hans": {
+    "nav": {
+      "brand": "AI Summer Korea",
+      "program": "项目",
+      "visits": "走访地点",
+      "apply": "申请",
+      "sponsors": "赞助",
+      "forum": "论坛",
+      "about": "关于我们"
+    },
+    "hero": {
+      "eyebrow": "首期 · 2027年夏 · 200个名额",
+      "title": "在训练AI的芯片诞生之地，度过四周。",
+      "lede": "一项全额资助的暑期项目，邀请来自世界各地的大学生走进韩国的AI与半导体产业——工厂、实验室，以及建立这一切的人——并与同龄的韩国及亚洲学生并肩同行。",
+      "ctaApply": "申请2027年首期",
+      "ctaSponsor": "成为赞助方",
+      "s1k": "学费",
+      "s1v": "$0",
+      "s2k": "时长",
+      "s2v": "4周",
+      "s3k": "首期名额",
+      "s3v": "200",
+      "s4k": "招生范围",
+      "s4v": "面向全球",
+      "fine": "机票、住宿、餐饮及项目费用由赞助方承担。录取后需缴纳可全额退还的结业保证金。"
+    },
+    "why": {
+      "kicker": "为什么做这件事",
+      "title": "你可以读到供应链。也可以站进去。",
+      "p1": "世界上几乎每一个前沿AI模型，都是在经由韩国晶圆厂制造的存储与逻辑芯片上训练出来的。而将用一生在这些硬件之上构建事物的学生，却几乎没有机会亲眼看到它们。",
+      "p2": "AI Summer Korea 的存在就是为了填补这道鸿沟——并把这个国家、这个产业，以及未来三十年将与之共事的同龄人，介绍给新一代工程师。",
+      "c1t": "是产业，不是观光",
+      "c1b": "半导体与制造现场走访、研究实验室、与工程师的实务研讨——不是在巴士观光行程里塞进一站工厂。",
+      "c2t": "是同伴，不是观众",
+      "c2b": "韩国与亚洲的大学生以志愿者和队友身份全程四周参与。每个人都是参与者，没有人只是被带着参观。",
+      "c3t": "是成果，不是出勤",
+      "c3b": "每位参与者都要完成一个团队项目并上台发表。你做出来的东西就是这个项目的记录——也是赞助方真正会看的东西。"
+    },
+    "program": {
+      "kicker": "这四周",
+      "title": "项目安排",
+      "lede": "以京畿道杨平的住宿型校区为基地，前往韩国各地的现场。",
+      "w1tag": "第1周",
+      "w1t": "打好底子",
+      "w1b": "入境、迎新，以及对韩国技术经济的实务导览——它如何建成、由谁建成、走向何方。语言与文化基础。第一天就组队：海外、韩国与亚洲学生混编。",
+      "w2tag": "第2周",
+      "w2t": "走进产业",
+      "w2b": "以小组形式走访半导体、制造与技术设施。与工程师和高管的研讨。各队确定要着手的课题。",
+      "w3tag": "第3周",
+      "w3t": "动手做",
+      "w3b": "在导师支持与算力额度下集中开发。晚间有创业者与研究者的分享。一个周末前往首都圈以外的文化行程。",
+      "w4tag": "第4周",
+      "w4t": "发表",
+      "w4b": "完成作品，在赞助方高管与受邀教授面前举行成果发表日，然后结业。表现突出的团队与个人将被引荐至赞助方的实习与招聘通道。",
+      "noteT": "关于分组人数：",
+      "noteB": "半导体设施是无尘室环境，出入人数有严格限制。现场走访会分成小组、分数日轮流进行——这是项目设计的一部分，不是事后的补救。"
+    },
+    "apply": {
+      "kicker": "申请方式",
+      "title": "我们在找这样的人",
+      "elig": "申请资格",
+      "covered": "费用涵盖",
+      "eligItems": [
+        "在任一国家经认可的高校在读的本科生",
+        "主修计算机科学、工程、数学或相关领域——或能拿出同等水平的作品",
+        "能够全程参与2027年夏季的四周日程",
+        "持有在行程期间有效的护照",
+        "无需有访韩经历，也不要求韩语能力",
+        "我们在各国家与院校之间均衡录取——尤其欢迎来自申请人较少的国家与学校的报名"
+      ],
+      "coveredItems": [
+        "国际往返机票",
+        "四周全程住宿",
+        "项目期间的所有餐食",
+        "地面交通、现场走访与项目活动",
+        "项目期间的旅行与医疗保险",
+        "用于项目开发的算力与AI工具额度"
+      ],
+      "depT": "结业保证金：",
+      "depB": "录取者需缴纳可退还的保证金以确认席位，完成项目后全额退还。项目本身免费——保证金的作用是避免由赞助方买单的席位被空置。",
+      "btn": "尚未开放——加入通知名单",
+      "fine": "由委员会根据你的作品与申请动机进行选拔。2027年夏季首期的申请将于2026年秋季开放。"
+    },
+    "vol": {
+      "kicker": "韩国与亚洲学生",
+      "title": "以志愿队友的身份加入",
+      "lede": "这不是一个发生在韩国学生身上的项目，而是与他们一起完成的项目。在韩国及亚洲各地就读的大学生，每期都会以志愿者、队友和向导的身份加入。",
+      "c1t": "你要做什么",
+      "c1b": "全程四周参与一个项目团队，帮助来访学生适应这个国家，并与他们一同参加每一次现场走访和研讨。",
+      "c2t": "你会得到什么",
+      "c2b": "同样的现场、同样的导师、同样的成果发表日，以及与世界各地大学同龄人的实质关系。项目期间的住宿与餐食由我们承担。",
+      "btn": "登记成为志愿者"
+    },
+    "faq": {
+      "kicker": "常见问题",
+      "title": "常见提问",
+      "items": [
+        [
+          "真的免费吗？",
+          "是的。机票、住宿、餐饮、保险及项目费用均由赞助方承担。录取者需缴纳保证金，完成项目后全额退还。"
+        ],
+        [
+          "需要会韩语吗？",
+          "不需要。项目以英语进行。过程中你会学到一些韩语，你的韩国队友也会确保你不会迷路。"
+        ],
+        [
+          "能拿到学分吗？",
+          "目前不能。我们正与大学伙伴就未来期次的学分认定进行初步沟通。在正式协议达成之前，我们不会声称提供学分。"
+        ],
+        [
+          "具体日期是什么时候？",
+          "2027年夏季，为期四周。确切日期将在校区预订与现场走访敲定后确认，并在开放申请前公布于本页。"
+        ],
+        [
+          "签证费用由谁承担？",
+          "取决于你的护照。以这样的停留时长，许多国籍只需办理K-ETA电子旅行许可，另一些则需要短期访问签证。我们会告知适用于你的要求，提供所需证明文件，并承担必要的申请费用。"
+        ],
+        [
+          "项目期间对我有什么要求？",
+          "四周全程参与，并在成果发表日展示团队项目。这是一个需要投入的项目，不是假期。"
+        ],
+        [
+          "我是韩国或亚洲学生，可以参加吗？",
+          "可以——以志愿队友的身份。请参阅上方的志愿者部分。你将与来访学员一同参与全部日程。"
+        ],
+        [
+          "录取多少人？",
+          "首期为200人。我们刻意从低于长期目标的规模起步，以确保首期能被认真办好。"
+        ]
+      ]
+    },
+    "foot": {
+      "brand": "AI Summer Korea",
+      "legal": "主办：社团法人国际脑力运动协会（大韩民国）。美国合作机构：Undenominated Church of Christianity，Plato School 的运营方，2023年9月1日于加利福尼亚州设立的非营利法人。",
+      "note": "首期：2027年夏季。项目细节、日期与合作方在正式确认前均为暂定，并将在本页更新。",
+      "updated": "最后更新"
+    }
+  },
+
+/* ─────────────────── CHINESE (TRADITIONAL) ─────────────────── */
+"zh-Hant": {
+    "nav": {
+      "brand": "AI Summer Korea",
+      "program": "課程",
+      "visits": "參訪地點",
+      "apply": "申請",
+      "sponsors": "贊助",
+      "forum": "論壇",
+      "about": "關於我們"
+    },
+    "hero": {
+      "eyebrow": "首屆 · 2027年夏 · 200個名額",
+      "title": "在訓練AI的晶片誕生之地，度過四週。",
+      "lede": "一項全額贊助的暑期計畫，邀請來自世界各地的大學生走進韓國的AI與半導體產業——工廠、實驗室，以及打造這一切的人——並與同齡的韓國及亞洲學生並肩參與。",
+      "ctaApply": "申請2027年首屆",
+      "ctaSponsor": "成為贊助夥伴",
+      "s1k": "學費",
+      "s1v": "$0",
+      "s2k": "期間",
+      "s2v": "4週",
+      "s3k": "首屆名額",
+      "s3v": "200",
+      "s4k": "招生範圍",
+      "s4v": "面向全球",
+      "fine": "機票、住宿、餐食及計畫費用由贊助方負擔。錄取後須繳交可全額退還的結業保證金。"
+    },
+    "why": {
+      "kicker": "為什麼要做",
+      "title": "你可以讀到供應鏈。也可以站進去。",
+      "p1": "世界上幾乎每一個前沿AI模型，都是在經由韓國晶圓廠製造的記憶體與邏輯晶片上訓練出來的。而將用一生在這些硬體之上打造事物的學生，卻幾乎沒有機會親眼看到。",
+      "p2": "AI Summer Korea 的存在就是為了填補這道落差——並把這個國家、這個產業，以及未來三十年將與之共事的同齡人，介紹給新一代工程師。",
+      "c1t": "是產業，不是觀光",
+      "c1b": "半導體與製造現場參訪、研究實驗室、與工程師的實作研討——不是在巴士行程裡塞進一站工廠。",
+      "c2t": "是夥伴，不是觀眾",
+      "c2b": "韓國與亞洲的大學生以志工和隊友身分全程四週參與。每個人都是參與者，沒有人只是被帶著看。",
+      "c3t": "是成果，不是出席",
+      "c3b": "每位參與者都要完成一個團隊專案並上台發表。你做出來的東西就是這個計畫的紀錄——也是贊助方真正會看的東西。"
+    },
+    "program": {
+      "kicker": "這四週",
+      "title": "課程安排",
+      "lede": "以京畿道楊平的住宿型校區為據點，前往韓國各地的現場。",
+      "w1tag": "第1週",
+      "w1t": "打好基礎",
+      "w1b": "入境、新生說明，以及對韓國科技經濟的實務導覽——它如何建立、由誰建立、走向何方。語言與文化基礎。第一天就分組：海外、韓國與亞洲學生混編。",
+      "w2tag": "第2週",
+      "w2t": "走進產業",
+      "w2b": "以小組形式參訪半導體、製造與科技設施。與工程師和高階主管的研討。各組決定要處理的題目。",
+      "w3tag": "第3週",
+      "w3t": "動手做",
+      "w3b": "在導師支援與運算額度下集中開發。晚間有創業者與研究者的分享。一個週末前往首都圈以外的文化行程。",
+      "w4tag": "第4週",
+      "w4t": "發表",
+      "w4b": "完成作品，在贊助方高階主管與受邀教授面前舉行成果發表日，然後結業。表現突出的團隊與個人將被引薦至贊助方的實習與招募管道。",
+      "noteT": "關於分組人數：",
+      "noteB": "半導體設施是無塵室環境，出入人數有嚴格限制。現場參訪會分成小組、分數日輪流進行——這是計畫設計的一部分，不是事後補救。"
+    },
+    "apply": {
+      "kicker": "申請方式",
+      "title": "我們在找這樣的人",
+      "elig": "申請資格",
+      "covered": "費用涵蓋",
+      "eligItems": [
+        "在任一國家經認可的大專院校在學的大學部學生",
+        "主修資訊工程、工程、數學或相關領域——或能提出同等水準的作品",
+        "能夠全程參與2027年夏季的四週行程",
+        "持有在行程期間有效的護照",
+        "不需要有訪韓經驗，也不要求韓語能力",
+        "我們在各國家與學校之間均衡錄取——特別歡迎來自申請人較少的國家與學校的報名"
+      ],
+      "coveredItems": [
+        "國際來回機票",
+        "四週全程住宿",
+        "計畫期間的所有餐食",
+        "地面交通、現場參訪與計畫活動",
+        "計畫期間的旅遊與醫療保險",
+        "專案開發用的運算與AI工具額度"
+      ],
+      "depT": "結業保證金：",
+      "depB": "錄取者須繳交可退還的保證金以保留名額，完成計畫後全額退還。計畫本身免費——保證金的用意是避免由贊助方買單的名額被空著。",
+      "btn": "尚未開放——加入通知名單",
+      "fine": "由委員會依據你的作品與申請動機進行遴選。2027年夏季首屆的申請將於2026年秋季開放。"
+    },
+    "vol": {
+      "kicker": "韓國與亞洲學生",
+      "title": "以志工隊友的身分加入",
+      "lede": "這不是一個發生在韓國學生身上的計畫，而是與他們一起完成的計畫。在韓國及亞洲各地就讀的大學生，每屆都會以志工、隊友和嚮導的身分加入。",
+      "c1t": "你要做什麼",
+      "c1b": "全程四週參與一個專案團隊，協助來訪學生適應這個國家，並與他們一同參加每一次現場參訪和研討。",
+      "c2t": "你會得到什麼",
+      "c2b": "同樣的現場、同樣的導師、同樣的成果發表日，以及與世界各地大學同齡人的實質關係。計畫期間的住宿與餐食由我們負擔。",
+      "btn": "登記成為志工"
+    },
+    "faq": {
+      "kicker": "問答",
+      "title": "常見問題",
+      "items": [
+        [
+          "真的免費嗎？",
+          "是的。機票、住宿、餐食、保險及計畫費用均由贊助方負擔。錄取者須繳交保證金，完成計畫後全額退還。"
+        ],
+        [
+          "需要會韓語嗎？",
+          "不需要。計畫以英語進行。過程中你會學到一些韓語，你的韓國隊友也會確保你不會迷路。"
+        ],
+        [
+          "可以拿到學分嗎？",
+          "目前不行。我們正與大學夥伴就未來屆次的學分認列進行初步討論。在正式協議達成之前，我們不會宣稱提供學分。"
+        ],
+        [
+          "確切日期是什麼時候？",
+          "2027年夏季，為期四週。確切日期將在校區預訂與現場參訪確定後公布，並會在開放申請前刊登於本頁。"
+        ],
+        [
+          "簽證費用由誰負擔？",
+          "取決於你的護照。以這樣的停留長度，許多國籍只需辦理K-ETA電子旅行許可，另一些則需要短期停留簽證。我們會告知適用於你的規定，提供所需證明文件，並負擔必要的申請費用。"
+        ],
+        [
+          "計畫期間對我有什麼要求？",
+          "四週全程參與，並在成果發表日展示團隊專案。這是一個需要投入的計畫，不是假期。"
+        ],
+        [
+          "我是韓國或亞洲學生，可以參加嗎？",
+          "可以——以志工隊友的身分。請參閱上方的志工段落。你將與來訪學員一同參與全部行程。"
+        ],
+        [
+          "錄取多少人？",
+          "首屆為200人。我們刻意從低於長期目標的規模起步，以確保首屆能被好好辦成。"
+        ]
+      ]
+    },
+    "foot": {
+      "brand": "AI Summer Korea",
+      "legal": "主辦：社團法人國際腦力運動協會（大韓民國）。美國合作機構：Undenominated Church of Christianity，Plato School 的營運方，2023年9月1日於加州設立的非營利法人。",
+      "note": "首屆：2027年夏季。計畫細節、日期與合作夥伴在正式確認前均為暫定，並將在本頁更新。",
+      "updated": "最後更新"
+    }
+  },
+
+/* ─────────────────── JAPANESE ─────────────────── */
+"ja": {
+    "nav": {
+      "brand": "AI Summer Korea",
+      "program": "プログラム",
+      "visits": "訪問先",
+      "apply": "応募",
+      "sponsors": "協賛",
+      "forum": "フォーラム",
+      "about": "運営について"
+    },
+    "hero": {
+      "eyebrow": "第1期 · 2027年夏 · 定員200名",
+      "title": "AIを学習させる半導体が生まれる場所で、4週間。",
+      "lede": "世界各国の大学生を韓国のAI・半導体産業の現場に招く、全額協賛の夏季プログラムです。工場と研究室、そしてそれを築いた人々に、同世代の韓国・アジアの学生とともに出会います。",
+      "ctaApply": "2027年第1期に応募する",
+      "ctaSponsor": "協賛について",
+      "s1k": "参加費",
+      "s1v": "無料",
+      "s2k": "期間",
+      "s2v": "4週間",
+      "s3k": "第1期定員",
+      "s3v": "200名",
+      "s4k": "応募資格",
+      "s4v": "全世界",
+      "fine": "渡航費・宿泊・食事・プログラム費用は協賛企業が負担します。修了時に全額返還される保証金があります。"
+    },
+    "why": {
+      "kicker": "なぜやるのか",
+      "title": "サプライチェーンは読める。その中に立つのは別の話だ。",
+      "p1": "世界の最先端AIモデルのほとんどは、韓国の工場を通ったメモリとロジックの上で学習されています。そのハードウェアの上にキャリアを築く学生が、その現場を見る機会はほとんどありません。",
+      "p2": "AI Summer Korea はその隔たりを埋めるためにあります。そして次の世代のエンジニアに、この国と産業、これから30年をともに働く同世代を引き合わせるためにあります。",
+      "c1t": "観光ではなく産業",
+      "c1b": "半導体・製造の現場見学、研究室、エンジニアとの実務セッション。バスツアーに工場を一つ足したものではありません。",
+      "c2t": "観客ではなく仲間",
+      "c2b": "韓国とアジアの大学生が4週間を通してボランティア兼チームメイトとして参加します。全員が参加者で、案内されるだけの人はいません。",
+      "c3t": "出席ではなく成果",
+      "c3b": "参加者全員がチームプロジェクトを完成させ、発表します。つくったものがこのプログラムの記録であり、協賛企業が実際に見るものです。"
+    },
+    "program": {
+      "kicker": "4週間",
+      "title": "プログラム",
+      "lede": "京畿道楊平の宿泊型キャンパスを拠点に、韓国各地の現場を訪ねます。",
+      "w1tag": "第1週",
+      "w1t": "足場をつくる",
+      "w1b": "入国とオリエンテーション、そして韓国の技術経済への実務的な導入。どう築かれ、誰が築き、どこへ向かうのか。言語と文化の基礎。初日からチームを編成します。海外・韓国・アジアの学生が混ざります。",
+      "w2tag": "第2週",
+      "w2t": "産業の内側へ",
+      "w2b": "半導体・製造・技術施設を少人数グループで訪問。エンジニアや経営陣とのセッション。各チームが取り組む課題を決めます。",
+      "w3tag": "第3週",
+      "w3t": "つくる",
+      "w3b": "メンターの支援と計算資源クレジットのもとで開発に集中します。夜は創業者や研究者とのセッション。週末に首都圏外への文化訪問が一度あります。",
+      "w4tag": "第4週",
+      "w4t": "発表する",
+      "w4b": "最終仕上げ、協賛企業の経営陣と招聘教員の前でのデモデイ、そして修了。際立ったチームと個人は協賛企業のインターンシップ・採用ルートに紹介されます。",
+      "noteT": "グループの規模について：",
+      "noteB": "半導体施設はクリーンルーム環境で、立ち入り人数が厳しく制限されます。現場訪問は少人数グループに分け、数日にわたって交代で行います。これは後付けの調整ではなく、設計そのものです。"
+    },
+    "apply": {
+      "kicker": "応募について",
+      "title": "こういう方を探しています",
+      "elig": "応募資格",
+      "covered": "支援される内容",
+      "eligItems": [
+        "国を問わず、認可された大学に在学中の学部生",
+        "コンピュータサイエンス・工学・数学または関連分野の専攻、もしくは同等の成果物を示せる方",
+        "2027年夏の4週間、全日程に参加できる方",
+        "渡航期間中に有効なパスポートをお持ちの方",
+        "訪韓経験は不要で、韓国語能力も求めません",
+        "国と大学が偏らないよう選考します。応募者の少ない国や大学からの応募をとくに歓迎します"
+      ],
+      "coveredItems": [
+        "国際往復航空券",
+        "4週間全期間の宿泊",
+        "プログラム期間中のすべての食事",
+        "国内移動、現場訪問、プログラム活動",
+        "プログラム期間の旅行・医療保険",
+        "プロジェクト用の計算資源とAIツールのクレジット"
+      ],
+      "depT": "修了保証金：",
+      "depB": "合格者は席を確保するため返還可能な保証金を預けます。プログラムを修了すると全額返還されます。プログラム自体は無料で、保証金は協賛で用意された席が空かないようにするためのものです。",
+      "btn": "応募開始のお知らせを受け取る",
+      "fine": "選考は委員会が、提出された成果物と応募理由をもとに行います。2027年夏の第1期の応募受付は2026年秋に開始します。"
+    },
+    "vol": {
+      "kicker": "韓国・アジアの学生へ",
+      "title": "ボランティアのチームメイトとして参加する",
+      "lede": "韓国の学生に対して行われるプログラムではなく、韓国の学生とともに行うプログラムです。韓国およびアジア各地の大学生が、毎期ボランティア、チームメイト、案内役として加わります。",
+      "c1t": "やること",
+      "c1b": "4週間を通してプロジェクトチームに入り、訪れた学生が国内で困らないよう支え、すべての現場訪問とセッションに一緒に参加します。",
+      "c2t": "得られるもの",
+      "c2b": "同じ現場、同じメンター、同じデモデイ、そして世界各国の大学の同世代との実質的な関係。プログラム期間中の宿泊と食事は負担します。",
+      "btn": "ボランティアとして関心を登録する"
+    },
+    "faq": {
+      "kicker": "質問",
+      "title": "よくある質問",
+      "items": [
+        [
+          "本当に無料ですか？",
+          "はい。航空券・宿泊・食事・保険・プログラム費用は協賛企業が負担します。合格者は返還可能な保証金を預け、修了時に全額返還されます。"
+        ],
+        [
+          "韓国語は必要ですか？",
+          "不要です。プログラムは英語で行います。過ごすうちに韓国語も多少身につきますし、韓国人のチームメイトが道に迷わせません。"
+        ],
+        [
+          "単位は取得できますか？",
+          "現時点ではできません。今後の期に向けて単位認定の可能性を大学と初期段階で協議しています。協定が成立するまで単位取得をうたうことはしません。"
+        ],
+        [
+          "正確な日程はいつですか？",
+          "2027年夏の4週間です。正確な日程はキャンパスの予約と現場訪問が確定した時点で決まり、応募開始前にこのページで公表します。"
+        ],
+        [
+          "ビザの費用は誰が負担しますか？",
+          "パスポートの国籍によって異なります。この長さの滞在なら多くの国籍はK-ETA（電子渡航認証）だけで足り、一部は短期滞在ビザが必要です。どちらに当たるかをお知らせし、必要書類を用意し、申請手数料を負担します。"
+        ],
+        [
+          "プログラム期間中に求められることは？",
+          "4週間の全日程参加と、デモデイでのチームプロジェクト発表です。休暇ではなく、取り組むためのプログラムです。"
+        ],
+        [
+          "韓国またはアジアの学生ですが、参加できますか？",
+          "はい。ボランティアのチームメイトとして参加できます。上のボランティアの項をご覧ください。訪れた参加者と同じ日程をともにします。"
+        ],
+        [
+          "何名が合格しますか？",
+          "第1期は200名です。第1期をきちんと運営するため、長期目標より意図的に小さく始めます。"
+        ]
+      ]
+    },
+    "foot": {
+      "brand": "AI Summer Korea",
+      "legal": "主催：社団法人 国際ブレインスポーツ協会（大韓民国）。米国側パートナー：Plato School を運営する Undenominated Church of Christianity（2023年9月1日カリフォルニア州設立の非営利法人）。",
+      "note": "第1期：2027年夏。プログラムの詳細・日程・パートナーは確定するまで暫定であり、このページで更新します。",
+      "updated": "最終更新"
+    }
+  },
+
+/* ─────────────────── SPANISH ─────────────────── */
+"es": {
+    "nav": {
+      "brand": "AI Summer Korea",
+      "program": "Programa",
+      "visits": "Dónde vas",
+      "apply": "Solicitar",
+      "sponsors": "Patrocinio",
+      "forum": "Foro",
+      "about": "Quiénes somos"
+    },
+    "hero": {
+      "eyebrow": "Primera edición · Verano de 2027 · 200 plazas",
+      "title": "Cuatro semanas en Corea, donde se fabrican los chips que entrenan la IA.",
+      "lede": "Un programa de verano con todos los gastos cubiertos que lleva a estudiantes de grado de todo el mundo a la industria coreana de la IA y los semiconductores — las fábricas, los laboratorios, la gente que los construyó — junto a estudiantes coreanos y asiáticos de su edad.",
+      "ctaApply": "Solicitar plaza para 2027",
+      "ctaSponsor": "Patrocinar una edición",
+      "s1k": "Matrícula",
+      "s1v": "0 $",
+      "s2k": "Duración",
+      "s2v": "4 semanas",
+      "s3k": "Plazas, primera edición",
+      "s3v": "200",
+      "s4k": "Abierto a",
+      "s4v": "Todo el mundo",
+      "fine": "Los patrocinadores cubren el viaje, el alojamiento, las comidas y los costes del programa. Se aplica un depósito reembolsable al completar el programa."
+    },
+    "why": {
+      "kicker": "Por qué existe",
+      "title": "Puedes leer sobre la cadena de suministro. O puedes estar dentro de ella.",
+      "p1": "Casi todos los modelos de IA de frontera del mundo se entrenan sobre memoria y lógica que pasaron por plantas de fabricación coreanas. Los estudiantes que dedicarán su carrera a construir sobre ese hardware casi nunca llegan a verlo.",
+      "p2": "AI Summer Korea existe para cerrar esa distancia, y para presentar a una generación de ingenieros el país, la industria y los colegas con los que trabajarán durante los próximos treinta años.",
+      "c1t": "Industria, no turismo",
+      "c1b": "Visitas a plantas de semiconductores y manufactura, laboratorios de investigación y sesiones de trabajo con ingenieros. No es un tour en autobús con una parada en una fábrica.",
+      "c2t": "Colegas, no público",
+      "c2b": "Estudiantes coreanos y asiáticos participan como voluntarios y compañeros de equipo durante las cuatro semanas completas. Todo el mundo participa. A nadie se le pasea.",
+      "c3t": "Trabajo, no asistencia",
+      "c3b": "Cada participante entrega un proyecto de equipo y lo presenta. Lo que construyes es el registro del programa, y es lo que los patrocinadores miran de verdad."
+    },
+    "program": {
+      "kicker": "Las cuatro semanas",
+      "title": "Programa",
+      "lede": "Con base en un campus residencial en Yangpyeong, provincia de Gyeonggi, y desplazamientos a instalaciones por todo el país.",
+      "w1tag": "Semana 1",
+      "w1t": "Punto de partida",
+      "w1b": "Llegada, orientación e introducción práctica a la economía tecnológica de Corea: cómo se construyó, quién la construyó y hacia dónde va. Nociones de idioma y cultura. Se forman los equipos: estudiantes visitantes, coreanos y asiáticos mezclados desde el primer día.",
+      "w2tag": "Semana 2",
+      "w2t": "Dentro de la industria",
+      "w2b": "Visitas en grupos pequeños a instalaciones de semiconductores, manufactura y tecnología. Sesiones con ingenieros y directivos. Cada equipo elige el problema en el que va a trabajar.",
+      "w3tag": "Semana 3",
+      "w3t": "Construir",
+      "w3b": "Trabajo intensivo de proyecto con apoyo de mentores y créditos de cómputo. Sesiones nocturnas con fundadores e investigadores. Un fin de semana de viaje cultural fuera de la capital.",
+      "w4tag": "Semana 4",
+      "w4t": "Presentar",
+      "w4b": "Versiones finales, demo day ante directivos de los patrocinadores y profesorado invitado, y clausura. Los equipos y las personas que destaquen se presentan a los programas de prácticas y selección de los patrocinadores.",
+      "noteT": "Sobre el tamaño de los grupos:",
+      "noteB": "Las instalaciones de semiconductores son entornos de sala limpia con límites estrictos de acceso. Las visitas se hacen en grupos pequeños, por turnos a lo largo de varios días. Es parte del diseño del programa, no un parche posterior."
+    },
+    "apply": {
+      "kicker": "Cómo solicitar",
+      "title": "A quién buscamos",
+      "elig": "Requisitos",
+      "covered": "Qué está cubierto",
+      "eligItems": [
+        "Estudiante de grado matriculado en una universidad acreditada, en cualquier país",
+        "Cursando informática, ingeniería, matemáticas o un campo afín, o capaz de acreditar trabajo equivalente",
+        "Disponible las cuatro semanas completas del verano de 2027",
+        "Con pasaporte válido durante todo el viaje",
+        "No se requiere haber estado antes en Corea ni saber coreano",
+        "Seleccionamos entre países e instituciones distintos; animamos especialmente a solicitantes de países y universidades poco representados"
+      ],
+      "coveredItems": [
+        "Vuelo internacional de ida y vuelta",
+        "Alojamiento durante las cuatro semanas",
+        "Todas las comidas en días de programa",
+        "Transporte terrestre, visitas y actividades del programa",
+        "Seguro de viaje y médico durante el programa",
+        "Créditos de cómputo y de herramientas de IA para el proyecto"
+      ],
+      "depT": "Depósito de finalización:",
+      "depB": "Quienes son admitidos dejan un depósito reembolsable para reservar su plaza. Se devuelve íntegro al completar el programa. El programa en sí es gratuito: el depósito existe para que una plaza patrocinada no quede vacía.",
+      "btn": "Aún no abierto — apúntate a la lista de avisos",
+      "fine": "La selección la hace un comité según la calidad de tu trabajo y tus motivos para venir. Las solicitudes para la edición del verano de 2027 se abren en otoño de 2026."
+    },
+    "vol": {
+      "kicker": "Estudiantes de Corea y Asia",
+      "title": "Únete como voluntario del equipo",
+      "lede": "Este no es un programa que les ocurre a los estudiantes coreanos: se hace con ellos. Estudiantes de grado de Corea y de toda Asia se suman a cada edición como voluntarios, compañeros de equipo y guías.",
+      "c1t": "Qué haces",
+      "c1b": "Trabajar en un equipo de proyecto durante las cuatro semanas, ayudar a los estudiantes visitantes a moverse por el país y participar en cada visita y sesión junto a ellos.",
+      "c2t": "Qué obtienes",
+      "c2b": "El mismo acceso, los mismos mentores, el mismo demo day y una relación de trabajo con colegas de universidades de todo el mundo. El alojamiento y las comidas están cubiertos en días de programa.",
+      "btn": "Registrar interés como voluntario"
+    },
+    "faq": {
+      "kicker": "Preguntas",
+      "title": "Preguntas frecuentes",
+      "items": [
+        [
+          "¿De verdad es gratis?",
+          "Sí. Los patrocinadores cubren vuelo, alojamiento, comidas, seguro y costes del programa. Quienes son admitidos dejan un depósito reembolsable que se devuelve íntegro al completar el programa."
+        ],
+        [
+          "¿Necesito hablar coreano?",
+          "No. El programa se desarrolla en inglés. Aprenderás algo de coreano por el camino, y tus compañeros coreanos se asegurarán de que no te pierdas."
+        ],
+        [
+          "¿Obtengo créditos académicos?",
+          "Por ahora no. Estamos en conversaciones iniciales con universidades para ofrecer créditos en futuras ediciones. No afirmaremos que los damos hasta que exista un acuerdo."
+        ],
+        [
+          "¿Cuáles son las fechas exactas?",
+          "Verano de 2027, cuatro semanas. Las fechas exactas se confirman cuando estén cerradas la reserva del campus y las visitas, y se publicarán aquí antes de abrir las solicitudes."
+        ],
+        [
+          "¿Quién paga mi visado?",
+          "Depende de tu pasaporte. Para una estancia de esta duración, muchas nacionalidades solo necesitan la autorización de viaje K-ETA, mientras que otras requieren un visado de corta estancia. Te decimos cuál es tu caso, aportamos la documentación de apoyo y cubrimos las tasas de solicitud."
+        ],
+        [
+          "¿Qué se espera de mí durante el programa?",
+          "Participación completa durante cuatro semanas y un proyecto de equipo presentado en el demo day. Es un programa de trabajo, no unas vacaciones."
+        ],
+        [
+          "Soy estudiante coreano o asiático. ¿Puedo participar?",
+          "Sí, como voluntario del equipo. Consulta la sección de voluntariado más arriba. Participas en todo el programa junto a la cohorte visitante."
+        ],
+        [
+          "¿Cuántas personas son admitidas?",
+          "La primera edición es de 200. Empezamos deliberadamente por debajo de nuestro objetivo a largo plazo para que la primera edición se haga bien."
+        ]
+      ]
+    },
+    "foot": {
+      "brand": "AI Summer Korea",
+      "legal": "Organizado por la International Brain Sports Association (República de Corea). Socio en Estados Unidos: Undenominated Church of Christianity, entidad que gestiona Plato School, una corporación sin ánimo de lucro de California constituida el 1 de septiembre de 2023.",
+      "note": "Primera edición: verano de 2027. Los detalles del programa, las fechas y los socios son provisionales hasta su confirmación y se actualizarán en esta página.",
+      "updated": "Última actualización"
+    }
+  },
+
+/* ─────────────────── FRENCH ─────────────────── */
+"fr": {
+    "nav": {
+      "brand": "AI Summer Korea",
+      "program": "Programme",
+      "visits": "Où vous allez",
+      "apply": "Candidater",
+      "sponsors": "Mécénat",
+      "forum": "Forum",
+      "about": "Qui organise"
+    },
+    "hero": {
+      "eyebrow": "Première promotion · Été 2027 · 200 places",
+      "title": "Quatre semaines en Corée, là où se fabriquent les puces qui entraînent l'IA.",
+      "lede": "Un programme d'été entièrement financé qui amène des étudiants de licence du monde entier au cœur de l'industrie coréenne de l'IA et des semi-conducteurs — les usines, les laboratoires, celles et ceux qui les ont bâtis — aux côtés d'étudiants coréens et asiatiques de leur âge.",
+      "ctaApply": "Candidater pour la promotion 2027",
+      "ctaSponsor": "Devenir mécène",
+      "s1k": "Frais de participation",
+      "s1v": "0 $",
+      "s2k": "Durée",
+      "s2v": "4 semaines",
+      "s3k": "Places, 1re promotion",
+      "s3v": "200",
+      "s4k": "Ouvert à",
+      "s4v": "Monde entier",
+      "fine": "Le voyage, l'hébergement, les repas et les frais du programme sont pris en charge par nos mécènes. Une caution remboursable à l'issue du programme est demandée."
+    },
+    "why": {
+      "kicker": "Pourquoi ce programme",
+      "title": "On peut lire sur la chaîne d'approvisionnement. On peut aussi s'y tenir.",
+      "p1": "Presque tous les modèles d'IA de pointe sont entraînés sur de la mémoire et de la logique passées par des usines coréennes. Les étudiants qui bâtiront toute leur carrière sur ce matériel n'ont presque jamais l'occasion de le voir.",
+      "p2": "AI Summer Korea existe pour combler cet écart, et pour faire découvrir à une génération d'ingénieurs le pays, l'industrie et les pairs avec lesquels ils travailleront pendant les trente prochaines années.",
+      "c1t": "L'industrie, pas le tourisme",
+      "c1b": "Visites de sites de semi-conducteurs et de production, laboratoires de recherche et sessions de travail avec des ingénieurs. Pas un circuit en bus avec une usine ajoutée au programme.",
+      "c2t": "Des pairs, pas un public",
+      "c2b": "Des étudiants coréens et asiatiques participent comme bénévoles et coéquipiers pendant les quatre semaines. Tout le monde participe. Personne n'est simplement promené.",
+      "c3t": "Un résultat, pas une présence",
+      "c3b": "Chaque participant livre un projet d'équipe et le présente. Ce que vous construisez est la trace du programme, et c'est ce que les mécènes regardent vraiment."
+    },
+    "program": {
+      "kicker": "Les quatre semaines",
+      "title": "Programme",
+      "lede": "Basé sur un campus résidentiel à Yangpyeong, province de Gyeonggi, avec des déplacements sur des sites dans tout le pays.",
+      "w1tag": "Semaine 1",
+      "w1t": "Poser les bases",
+      "w1b": "Arrivée, accueil et introduction concrète à l'économie technologique coréenne : comment elle s'est construite, par qui, et où elle va. Bases de langue et de culture. Les équipes se forment dès le premier jour : étudiants étrangers, coréens et asiatiques mélangés.",
+      "w2tag": "Semaine 2",
+      "w2t": "Dans l'industrie",
+      "w2b": "Visites en petits groupes de sites de semi-conducteurs, de production et de technologie. Sessions avec des ingénieurs et des dirigeants. Chaque équipe choisit le problème sur lequel elle travaillera.",
+      "w3tag": "Semaine 3",
+      "w3t": "Construire",
+      "w3b": "Travail de projet intensif avec accompagnement de mentors et crédits de calcul. Sessions en soirée avec des fondateurs et des chercheurs. Un week-end de découverte culturelle hors de la capitale.",
+      "w4tag": "Semaine 4",
+      "w4t": "Présenter",
+      "w4b": "Finalisation, demo day devant les dirigeants des mécènes et des enseignants invités, puis clôture. Les équipes et les profils qui se distinguent sont présentés aux filières de stage et de recrutement des mécènes.",
+      "noteT": "Sur la taille des groupes :",
+      "noteB": "Les sites de semi-conducteurs sont des salles blanches à accès strictement limité. Les visites se font en petits groupes, par rotation sur plusieurs jours. C'est une donnée de conception du programme, pas un ajustement de dernière minute."
+    },
+    "apply": {
+      "kicker": "Candidater",
+      "title": "À qui s'adresse le programme",
+      "elig": "Conditions",
+      "covered": "Ce qui est pris en charge",
+      "eligItems": [
+        "Étudiant de licence inscrit dans un établissement accrédité, quel que soit le pays",
+        "En informatique, ingénierie, mathématiques ou discipline proche, ou capable de montrer un travail équivalent",
+        "Disponible les quatre semaines complètes durant l'été 2027",
+        "Titulaire d'un passeport valable pendant toute la durée du voyage",
+        "Aucun séjour préalable en Corée requis, aucune connaissance du coréen exigée",
+        "Nous sélectionnons entre pays et établissements ; les candidatures venant de pays et d'universités peu représentés sont particulièrement encouragées"
+      ],
+      "coveredItems": [
+        "Billet d'avion international aller-retour",
+        "Hébergement pendant les quatre semaines",
+        "Tous les repas les jours de programme",
+        "Transports sur place, visites de sites et activités du programme",
+        "Assurance voyage et santé pour la durée du programme",
+        "Crédits de calcul et d'outils d'IA pour le projet"
+      ],
+      "depT": "Caution de fin de programme :",
+      "depB": "Les candidats admis versent une caution remboursable pour réserver leur place. Elle est restituée intégralement à l'issue du programme. Le programme lui-même est gratuit : la caution existe pour qu'une place financée par un mécène ne reste pas vide.",
+      "btn": "Candidatures pas encore ouvertes — être prévenu",
+      "fine": "La sélection est faite par un comité, sur la qualité de votre travail et vos motivations. Les candidatures pour la promotion de l'été 2027 ouvrent à l'automne 2026."
+    },
+    "vol": {
+      "kicker": "Étudiants de Corée et d'Asie",
+      "title": "Rejoindre comme coéquipier bénévole",
+      "lede": "Ce n'est pas un programme qui arrive aux étudiants coréens : il se fait avec eux. Des étudiants de Corée et de toute l'Asie rejoignent chaque promotion comme bénévoles, coéquipiers et guides.",
+      "c1t": "Ce que vous faites",
+      "c1b": "Travailler dans une équipe projet pendant les quatre semaines, aider les étudiants venus de l'étranger à se repérer dans le pays, et participer à chaque visite et chaque session avec eux.",
+      "c2t": "Ce que vous en retirez",
+      "c2b": "Le même accès, les mêmes mentors, le même demo day, et une relation de travail avec des pairs d'universités du monde entier. L'hébergement et les repas sont pris en charge les jours de programme.",
+      "btn": "Manifester son intérêt comme bénévole"
+    },
+    "faq": {
+      "kicker": "Questions",
+      "title": "Questions fréquentes",
+      "items": [
+        [
+          "Est-ce vraiment gratuit ?",
+          "Oui. Le vol, l'hébergement, les repas, l'assurance et les frais du programme sont pris en charge par les mécènes. Les admis versent une caution remboursable, restituée intégralement à l'issue du programme."
+        ],
+        [
+          "Faut-il parler coréen ?",
+          "Non. Le programme se déroule en anglais. Vous apprendrez quelques mots de coréen en chemin, et vos coéquipiers coréens veilleront à ce que vous ne soyez pas perdu."
+        ],
+        [
+          "Y a-t-il des crédits universitaires ?",
+          "Pas pour l'instant. Nous en sommes aux premières discussions avec des universités partenaires pour les promotions futures. Nous n'annoncerons pas de crédits tant qu'un accord n'existe pas."
+        ],
+        [
+          "Quelles sont les dates exactes ?",
+          "Été 2027, quatre semaines. Les dates exactes seront fixées une fois la réservation du campus et les visites confirmées, et publiées ici avant l'ouverture des candidatures."
+        ],
+        [
+          "Qui paie mon visa ?",
+          "Cela dépend de votre passeport. Pour un séjour de cette durée, de nombreuses nationalités n'ont besoin que de l'autorisation de voyage K-ETA ; d'autres doivent obtenir un visa de court séjour. Nous vous indiquons ce qui s'applique à vous, fournissons les justificatifs et prenons en charge les frais de dossier."
+        ],
+        [
+          "Qu'attend-on de moi pendant le programme ?",
+          "Une participation complète sur quatre semaines et un projet d'équipe présenté au demo day. C'est un programme de travail, pas des vacances."
+        ],
+        [
+          "Je suis étudiant coréen ou asiatique. Puis-je participer ?",
+          "Oui, comme coéquipier bénévole. Voir la section bénévolat ci-dessus. Vous suivez l'intégralité du programme avec la promotion accueillie."
+        ],
+        [
+          "Combien de personnes sont admises ?",
+          "La première promotion compte 200 places. Nous démarrons volontairement en deçà de notre objectif à long terme pour que cette première édition soit menée correctement."
+        ]
+      ]
+    },
+    "foot": {
+      "brand": "AI Summer Korea",
+      "legal": "Organisé par l'International Brain Sports Association (République de Corée). Partenaire aux États-Unis : Undenominated Church of Christianity, qui gère Plato School, organisation à but non lucratif de Californie constituée le 1er septembre 2023.",
+      "note": "Première promotion : été 2027. Les détails du programme, les dates et les partenaires sont provisoires jusqu'à confirmation et seront mis à jour sur cette page.",
+      "updated": "Dernière mise à jour"
+    }
+  },
+
+/* ─────────────────── GERMAN ─────────────────── */
+"de": {
+    "nav": {
+      "brand": "AI Summer Korea",
+      "program": "Programm",
+      "visits": "Wohin es geht",
+      "apply": "Bewerben",
+      "sponsors": "Förderung",
+      "forum": "Forum",
+      "about": "Wer dahintersteht"
+    },
+    "hero": {
+      "eyebrow": "Erster Jahrgang · Sommer 2027 · 200 Plätze",
+      "title": "Vier Wochen in Korea, dort wo die Chips entstehen, die KI trainieren.",
+      "lede": "Ein vollständig gefördertes Sommerprogramm, das Studierende aus aller Welt in Koreas KI- und Halbleiterindustrie bringt — in die Fabriken, die Labore, zu den Menschen, die sie aufgebaut haben — gemeinsam mit koreanischen und asiatischen Studierenden ihres Alters.",
+      "ctaApply": "Für den Jahrgang 2027 bewerben",
+      "ctaSponsor": "Einen Jahrgang fördern",
+      "s1k": "Teilnahmegebühr",
+      "s1v": "0 $",
+      "s2k": "Dauer",
+      "s2v": "4 Wochen",
+      "s3k": "Plätze, erster Jahrgang",
+      "s3v": "200",
+      "s4k": "Offen für",
+      "s4v": "Weltweit",
+      "fine": "Reise, Unterkunft, Verpflegung und Programmkosten tragen unsere Förderer. Es wird eine bei Abschluss erstattete Kaution erhoben."
+    },
+    "why": {
+      "kicker": "Warum es das gibt",
+      "title": "Über Lieferketten kann man lesen. Man kann auch darin stehen.",
+      "p1": "Nahezu jedes führende KI-Modell der Welt wird auf Speicher- und Logikchips trainiert, die durch koreanische Fabriken gegangen sind. Studierende, die ihre Laufbahn auf dieser Hardware aufbauen werden, bekommen sie so gut wie nie zu sehen.",
+      "p2": "AI Summer Korea gibt es, um diese Lücke zu schließen — und um einer Generation von Ingenieurinnen und Ingenieuren das Land, die Industrie und die Kolleginnen und Kollegen vorzustellen, mit denen sie die nächsten dreißig Jahre arbeiten werden.",
+      "c1t": "Industrie, kein Tourismus",
+      "c1b": "Besuche in Halbleiter- und Produktionswerken, Forschungslabore und Arbeitssitzungen mit Ingenieuren. Keine Bustour mit angehängtem Fabrikstopp.",
+      "c2t": "Mitwirkende, kein Publikum",
+      "c2b": "Koreanische und asiatische Studierende sind die vollen vier Wochen als Freiwillige und Teammitglieder dabei. Alle nehmen teil. Niemand wird nur herumgeführt.",
+      "c3t": "Ergebnis, keine Anwesenheit",
+      "c3b": "Jede und jeder Teilnehmende liefert ein Teamprojekt ab und stellt es vor. Was Sie bauen, ist der Beleg des Programms — und das, worauf Förderer tatsächlich schauen."
+    },
+    "program": {
+      "kicker": "Die vier Wochen",
+      "title": "Programm",
+      "lede": "Basis ist ein Wohncampus in Yangpyeong, Provinz Gyeonggi, mit Fahrten zu Standorten im ganzen Land.",
+      "w1tag": "Woche 1",
+      "w1t": "Grundlage schaffen",
+      "w1b": "Ankunft, Orientierung und eine praxisnahe Einführung in Koreas Technologiewirtschaft: wie sie entstand, wer sie aufgebaut hat und wohin sie geht. Sprach- und Kulturgrundlagen. Die Teams werden gebildet — angereiste, koreanische und asiatische Studierende vom ersten Tag an gemischt.",
+      "w2tag": "Woche 2",
+      "w2t": "In der Industrie",
+      "w2b": "Besuche in Halbleiter-, Produktions- und Technologiestandorten in kleinen Gruppen. Sitzungen mit Ingenieuren und Führungskräften. Jedes Team wählt das Problem, an dem es arbeiten wird.",
+      "w3tag": "Woche 3",
+      "w3t": "Bauen",
+      "w3b": "Konzentrierte Projektarbeit mit Mentorenbetreuung und Rechenkontingenten. Abendsitzungen mit Gründerinnen und Forschern. Ein Wochenende mit kultureller Reise außerhalb der Hauptstadtregion.",
+      "w4tag": "Woche 4",
+      "w4t": "Vorstellen",
+      "w4b": "Fertigstellung, Demo Day vor Führungskräften der Förderer und eingeladenen Lehrenden, dann Abschluss. Herausragende Teams und Einzelpersonen werden den Praktikums- und Rekrutierungswegen der Förderer vorgestellt.",
+      "noteT": "Zur Gruppengröße:",
+      "noteB": "Halbleiterwerke sind Reinraumumgebungen mit streng begrenztem Zutritt. Standortbesuche laufen in kleinen Gruppen im Wechsel über mehrere Tage. Das ist Teil der Programmkonstruktion, kein nachträglicher Behelf."
+    },
+    "apply": {
+      "kicker": "Bewerbung",
+      "title": "Für wen das gedacht ist",
+      "elig": "Voraussetzungen",
+      "covered": "Was übernommen wird",
+      "eligItems": [
+        "Eingeschriebene Bachelor-Studierende an einer anerkannten Hochschule, in jedem Land",
+        "Studium der Informatik, Ingenieurwissenschaften, Mathematik oder eines verwandten Fachs — oder gleichwertige Arbeiten vorweisbar",
+        "Verfügbar für die vollen vier Wochen im Sommer 2027",
+        "Reisepass, der für die gesamte Reisedauer gültig ist",
+        "Kein vorheriger Korea-Aufenthalt und keine Koreanischkenntnisse erforderlich",
+        "Wir wählen über Länder und Hochschulen hinweg aus; Bewerbungen aus unterrepräsentierten Ländern und Universitäten sind ausdrücklich erwünscht"
+      ],
+      "coveredItems": [
+        "Internationaler Hin- und Rückflug",
+        "Unterkunft für die vollen vier Wochen",
+        "Alle Mahlzeiten an Programmtagen",
+        "Transport vor Ort, Standortbesuche und Programmaktivitäten",
+        "Reise- und Krankenversicherung für die Programmdauer",
+        "Rechen- und KI-Tool-Kontingente für die Projektarbeit"
+      ],
+      "depT": "Abschlusskaution:",
+      "depB": "Zugelassene Studierende hinterlegen eine erstattungsfähige Kaution, um ihren Platz zu sichern. Sie wird bei Abschluss des Programms vollständig zurückgezahlt. Das Programm selbst ist kostenlos — die Kaution sorgt dafür, dass ein geförderter Platz nicht leer bleibt.",
+      "btn": "Noch nicht geöffnet — auf die Benachrichtigungsliste",
+      "fine": "Die Auswahl trifft ein Komitee anhand Ihrer Arbeiten und Ihrer Gründe zu kommen. Die Bewerbung für den Jahrgang Sommer 2027 öffnet im Herbst 2026."
+    },
+    "vol": {
+      "kicker": "Studierende aus Korea und Asien",
+      "title": "Als freiwilliges Teammitglied mitmachen",
+      "lede": "Das ist kein Programm, das koreanischen Studierenden widerfährt — es entsteht mit ihnen. Studierende aus Korea und ganz Asien kommen zu jedem Jahrgang als Freiwillige, Teammitglieder und Wegweiser dazu.",
+      "c1t": "Was Sie tun",
+      "c1b": "Vier Wochen lang in einem Projektteam arbeiten, den angereisten Studierenden helfen, sich im Land zurechtzufinden, und an jedem Standortbesuch und jeder Sitzung mit ihnen teilnehmen.",
+      "c2t": "Was Sie davon haben",
+      "c2b": "Denselben Zugang, dieselben Mentoren, denselben Demo Day und eine Arbeitsbeziehung zu Gleichaltrigen an Universitäten weltweit. Unterkunft und Verpflegung werden an Programmtagen übernommen.",
+      "btn": "Interesse als Freiwillige oder Freiwilliger anmelden"
+    },
+    "faq": {
+      "kicker": "Fragen",
+      "title": "Häufige Fragen",
+      "items": [
+        [
+          "Ist es wirklich kostenlos?",
+          "Ja. Flug, Unterkunft, Verpflegung, Versicherung und Programmkosten tragen die Förderer. Zugelassene Studierende hinterlegen eine erstattungsfähige Kaution, die bei Abschluss vollständig zurückgezahlt wird."
+        ],
+        [
+          "Muss ich Koreanisch sprechen?",
+          "Nein. Das Programm läuft auf Englisch. Unterwegs lernen Sie etwas Koreanisch, und Ihre koreanischen Teammitglieder sorgen dafür, dass Sie sich nicht verlaufen."
+        ],
+        [
+          "Bekomme ich Leistungspunkte?",
+          "Derzeit nicht. Wir führen erste Gespräche mit Partnerhochschulen über anrechenbare Optionen für künftige Jahrgänge. Wir behaupten keine Anrechnung, solange keine Vereinbarung besteht."
+        ],
+        [
+          "Wie lauten die genauen Termine?",
+          "Sommer 2027, vier Wochen. Die genauen Termine stehen fest, sobald Campusbuchung und Standortbesuche fixiert sind, und werden hier vor Bewerbungsbeginn veröffentlicht."
+        ],
+        [
+          "Wer zahlt mein Visum?",
+          "Das hängt von Ihrem Reisepass ab. Für einen Aufenthalt dieser Länge genügt vielen Staatsangehörigkeiten die Reisegenehmigung K-ETA, andere benötigen ein Kurzzeitvisum. Wir sagen Ihnen, was für Sie gilt, stellen die Nachweise bereit und übernehmen die erforderlichen Antragsgebühren."
+        ],
+        [
+          "Was wird während des Programms von mir erwartet?",
+          "Vollständige Teilnahme über vier Wochen und ein Teamprojekt, das am Demo Day vorgestellt wird. Das ist ein Arbeitsprogramm, kein Urlaub."
+        ],
+        [
+          "Ich bin koreanischer oder asiatischer Studierender. Kann ich mitmachen?",
+          "Ja — als freiwilliges Teammitglied. Siehe den Abschnitt zum Freiwilligendienst oben. Sie durchlaufen das gesamte Programm gemeinsam mit dem angereisten Jahrgang."
+        ],
+        [
+          "Wie viele Personen werden aufgenommen?",
+          "Der erste Jahrgang umfasst 200 Plätze. Wir starten bewusst unter unserem langfristigen Ziel, damit der erste Jahrgang ordentlich durchgeführt wird."
+        ]
+      ]
+    },
+    "foot": {
+      "brand": "AI Summer Korea",
+      "legal": "Veranstaltet von der International Brain Sports Association (Republik Korea). Partner in den Vereinigten Staaten: Undenominated Church of Christianity, Trägerin der Plato School, eine am 1. September 2023 in Kalifornien gegründete gemeinnützige Körperschaft.",
+      "note": "Erster Jahrgang: Sommer 2027. Programmdetails, Termine und Partner sind bis zur Bestätigung vorläufig und werden auf dieser Seite aktualisiert.",
+      "updated": "Zuletzt aktualisiert"
+    }
+  }
 
 };
