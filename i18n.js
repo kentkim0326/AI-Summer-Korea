@@ -21,7 +21,7 @@ var I18N = {
 
 /* ───────────────────────── ENGLISH ───────────────────────── */
 en:{
-  nav:{ brand:"Korea AI Summer", program:"Program", visits:"Where You Go", apply:"Apply", sponsors:"Sponsors", about:"About" },
+  nav:{ brand:"Korea AI Summer", program:"Program", visits:"Where You Go", apply:"Apply", sponsors:"Sponsors", forum:"Forum", about:"About" },
 
   hero:{
     eyebrow:"First cohort · Summer 2027 · 200 seats",
@@ -66,8 +66,10 @@ en:{
     lede:"We publish partners only once an agreement is signed. Everything below is marked with its actual status — nothing here is a logo we hope to earn.",
     fine:"Site list is provisional and will be updated as agreements are confirmed. Participants are notified of the final itinerary before departure.",
     items:[
-      { name:"Semiconductor fabrication site visit", status:"talks", note:"Small-group cleanroom-adjacent tours. Partner to be named once an agreement is signed." },
-      { name:"Major manufacturing & technology campus", status:"talks", note:"Full-day visit with engineering sessions." },
+      { name:"Semiconductor fabrication site visit", status:"talks", note:"Small-group cleanroom-adjacent tours. Partner named once an agreement is signed." },
+      { name:"Automotive & robotics manufacturer", status:"talks", note:"Autonomous driving and robotics research, on a working production campus." },
+      { name:"Electronics group AI research laboratory", status:"talks", note:"Sessions with researchers building foundation models in Korea." },
+      { name:"Mind sports and the limits of machine judgment", status:"planned", note:"A session on Go, human intuition, and what a machine does not see — held in the city where AlphaGo played." },
       { name:"University AI research laboratories", status:"planned", note:"Working sessions with graduate researchers in Seoul and Daejeon." },
       { name:"AI startup & venture studio day", status:"planned", note:"Founder sessions and office visits in Seoul." },
       { name:"Cultural travel weekend", status:"planned", note:"One weekend outside the capital region." },
@@ -126,6 +128,8 @@ en:{
     c1b:"Two hundred screened undergraduates in AI and computing, from across the United States, spend four weeks inside your industry and present work you can evaluate. Demo day is a hiring room, not a photo opportunity.",
     c2t:"What we report back",
     c2b:"Applicant and selection numbers, participant outcomes, project results, and follow-on recruiting activity — delivered after each cohort. We would rather show you a number than a testimonial.",
+    budT:"The number, plainly:",
+    budB:"The first cohort of 200 is budgeted at approximately KRW 1.2 billion — around USD 830,000 all-in, or roughly USD 4,150 per participant covering airfare, four weeks of housing and meals, transport, insurance and programming. We publish the figure because a sponsor is going to work it out anyway.",
     btn:"Request the sponsor brief"
   },
 
@@ -141,6 +145,16 @@ en:{
       ["I am a Korean or Asian student. Can I take part?","Yes — as a volunteer teammate. See the volunteer section above. You take part in the full program alongside the visiting cohort."],
       ["How many people are admitted?","The first cohort is 200. We are deliberately starting smaller than our long-term target so that the first cohort is run properly."]
     ]
+  },
+
+  forum:{
+    kicker:"The wider program", title:"One half of something annual",
+    p1:"Korea AI Summer is the student track of the 999 Seoul Forum — a planned annual convening held every September 9th in Seoul, on the premise that Korea should host a standing international forum of its own rather than sending delegations to everyone else's.",
+    p2:"The two are built to feed each other. Work that teams produce in the summer is carried into the September forum and put in front of the people who can act on it. The organizations that fund one are the organizations that fund the other.",
+    noteT:"Status:",
+    noteB:"The forum is in development and has not yet held its first convening. We describe it here as a plan, because that is what it currently is.",
+    b1t:"Summer · four weeks", b1b:"Two hundred U.S. undergraduates inside Korea's AI and semiconductor industry, building in mixed teams with Korean and Asian peers.",
+    b2t:"September 9 · annual", b2b:"The forum itself. Summer projects are presented, and the cohort's strongest work meets the people who fund and hire."
   },
 
   about:{
@@ -161,7 +175,7 @@ en:{
 
 /* ───────────────────────── 한국어 ───────────────────────── */
 ko:{
-  nav:{ brand:"코리아 AI 서머", program:"프로그램", visits:"방문지", apply:"지원", sponsors:"후원", about:"소개" },
+  nav:{ brand:"코리아 AI 서머", program:"프로그램", visits:"방문지", apply:"지원", sponsors:"후원", forum:"포럼", about:"소개" },
 
   hero:{
     eyebrow:"1기 · 2027년 여름 · 정원 200명",
@@ -207,7 +221,9 @@ ko:{
     fine:"방문지 목록은 잠정이며 협약이 확정될 때마다 갱신됩니다. 최종 일정은 출발 전에 참가자에게 안내합니다.",
     items:[
       { name:"반도체 생산 현장 견학", status:"talks", note:"클린룸 인접 구역 소그룹 견학. 협약 체결 후 파트너명을 공개합니다." },
-      { name:"대형 제조·기술 캠퍼스", status:"talks", note:"엔지니어링 세션이 포함된 종일 방문." },
+      { name:"자동차·로보틱스 제조사", status:"talks", note:"자율주행과 로보틱스 연구를 실제 생산 캠퍼스에서." },
+      { name:"전자 그룹 AI 연구원", status:"talks", note:"한국에서 파운데이션 모델을 만드는 연구자들과의 세션." },
+      { name:"마인드 스포츠와 기계 판단의 한계", status:"planned", note:"바둑과 인간의 직관, 그리고 기계가 보지 못하는 것에 대한 세션 — 알파고가 대국했던 그 도시에서." },
       { name:"대학 AI 연구실", status:"planned", note:"서울·대전의 대학원 연구자들과 실무 세션." },
       { name:"AI 스타트업·벤처 스튜디오 데이", status:"planned", note:"서울에서 창업자 세션과 사무실 방문." },
       { name:"문화 여행 주말", status:"planned", note:"수도권 밖에서 보내는 주말 일정." },
@@ -267,6 +283,8 @@ ko:{
     c1b:"미국 전역에서 선발된 AI·컴퓨팅 전공 학부생 200명이 귀사의 산업 안에서 4주를 보내고, 평가할 수 있는 결과물을 발표합니다. 데모데이는 사진 찍는 자리가 아니라 채용의 자리입니다.",
     c2t:"무엇을 보고드리나",
     c2b:"지원자 수와 선발 경쟁률, 참가자 성과, 프로젝트 결과, 이후 채용 연계 실적을 기수마다 정리해 드립니다. 소감문보다 숫자를 보여드리는 편을 택합니다.",
+    budT:"숫자를 그대로 밝히면:",
+    budB:"1기 200명 예산은 약 12억 원입니다. 1인당 약 550만 원으로 항공, 4주 숙박·식사, 이동, 보험, 프로그램 운영을 포함합니다. 후원사는 어차피 계산해 보므로 먼저 밝힙니다.",
     btn:"후원 제안서 요청"
   },
 
@@ -282,6 +300,16 @@ ko:{
       ["한국·아시아 학생인데 참여할 수 있나요?","네 — 자원봉사 팀원으로 가능합니다. 위 자원봉사 섹션을 보세요. 방문 기수와 나란히 전 일정에 참여합니다."],
       ["몇 명을 뽑나요?","1기는 200명입니다. 첫 기수를 제대로 치르기 위해 장기 목표보다 의도적으로 작게 시작합니다."]
     ]
+  },
+
+  forum:{
+    kicker:"더 큰 그림", title:"연례 행사의 한쪽 절반",
+    p1:"코리아 AI 서머는 999 서울 포럼의 학생 트랙입니다. 999 서울 포럼은 매년 9월 9일 서울에서 여는 연례 회의로 기획되었습니다 — 남의 나라 포럼에 대표단을 보내는 대신, 한국이 상설 국제 포럼을 하나 열어야 한다는 생각에서 출발했습니다.",
+    p2:"둘은 서로를 먹여 살리도록 설계했습니다. 여름에 팀이 만든 결과물은 9월 포럼으로 이어져 실제로 움직일 수 있는 사람들 앞에 놓입니다. 한쪽을 후원하는 곳이 다른 쪽을 후원하는 곳입니다.",
+    noteT:"진행 상태:",
+    noteB:"포럼은 준비 중이며 아직 첫 회를 열지 않았습니다. 지금은 계획이므로 계획이라고 적습니다.",
+    b1t:"여름 · 4주", b1b:"미국 학부생 200명이 한국의 AI·반도체 산업 안에서, 한국·아시아 또래와 섞인 팀으로 무언가를 만듭니다.",
+    b2t:"9월 9일 · 연례", b2b:"포럼 본행사. 여름 프로젝트가 발표되고, 가장 좋은 결과물이 후원하고 채용하는 사람들과 만납니다."
   },
 
   about:{

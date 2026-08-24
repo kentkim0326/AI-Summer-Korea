@@ -22,11 +22,27 @@ Deploys to Vercel on push. No build configuration.
 ## Files
 
 ```
-index.html   The whole page. English copy lives here, in the HTML.
-styles.css   One dark surface, one accent colour.
-i18n.js      Every language other than English, plus the list data.
-app.js       Language switching and list rendering.
+index.html        The whole page. English copy lives here, in the HTML.
+styles.css        Silicon dark ground, cleanroom amber accent, IBM Plex.
+i18n.js           Every language other than English, plus the list data.
+app.js            Language switching and list rendering.
+build-static.js   Regenerates the static English lists in index.html.
 ```
+
+## After editing i18n.js, run the build
+
+The five data-driven lists (site visits, eligibility, what's covered, the
+sponsor table, the FAQ) exist twice: as static English markup in
+`index.html`, and as data in `i18n.js`. That is deliberate — see below — but
+it means they can drift.
+
+```bash
+node build-static.js           # rewrite the static English blocks
+node build-static.js --check   # exit 1 if out of sync, for CI
+```
+
+Run it whenever you touch the English list data. It only rewrites the marked
+containers, so it is safe to run as often as you like.
 
 ## Why the English text is in the HTML
 
@@ -71,10 +87,18 @@ One overstated line makes every other claim on the page suspect.
 
 Specifically, as of the last update:
 
-- No site visit partner is agreed. None are named.
+- No site visit partner is agreed. None are named — not the semiconductor
+  fab, not the automotive group, not the electronics group.
 - The Yangpyeong campus is not booked.
 - No advisory board member has confirmed. No names appear.
+- No individual speaker has confirmed. The mind sports session is described
+  by what it is about, not by who might lead it.
+- The 999 Seoul Forum has not held its first convening, and the page says so.
 - The program carries no academic credit, and the FAQ says so.
+
+Personal introductions are how these get confirmed. They are not themselves
+claims the site can make. A name goes on this page when that person has
+agreed to appear on it, and not one step earlier.
 
 When something becomes real, change its status in `i18n.js` **in every
 language** and update the `foot.note` and the footer date.
