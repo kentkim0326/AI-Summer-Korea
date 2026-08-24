@@ -26,10 +26,10 @@ en:{
   hero:{
     eyebrow:"First cohort · Summer 2027 · 200 seats",
     title:"Four weeks in Korea, where the chips that train AI are made.",
-    lede:"A fully sponsored summer program bringing U.S. undergraduates from all 50 states into Korea's AI and semiconductor industry — the factories, the labs, the people who built them — alongside Korean and Asian students their own age.",
+    lede:"A fully sponsored summer program bringing undergraduates from around the world into Korea's AI and semiconductor industry — the factories, the labs, the people who built them — alongside Korean and Asian students their own age.",
     ctaApply:"Apply for the 2027 cohort", ctaSponsor:"Sponsor a cohort",
     s1k:"Tuition", s1v:"$0", s2k:"Duration", s2v:"4 weeks",
-    s3k:"Seats, first cohort", s3v:"200", s4k:"U.S. states", s4v:"50",
+    s3k:"Seats, first cohort", s3v:"200", s4k:"Open to", s4v:"Worldwide",
     fine:"Travel, housing, meals, and program costs are covered by our sponsors. A refundable completion deposit applies."
   },
 
@@ -37,7 +37,7 @@ en:{
     kicker:"Why this exists",
     title:"You can read about the supply chain. Or you can stand in it.",
     p1:"Almost every frontier AI model in the world is trained on memory and logic that passed through Korean fabrication plants. Students who will spend their careers building on top of that hardware rarely get to see any of it.",
-    p2:"Korea AI Summer exists to close that gap — and to introduce a generation of American engineers to the country, the industry, and the peers they will be working with for the next thirty years.",
+    p2:"Korea AI Summer exists to close that gap — and to introduce a generation of engineers to the country, the industry, and the peers they will be working with for the next thirty years.",
     c1t:"Industry, not tourism",
     c1b:"Semiconductor and manufacturing site visits, research labs, and working sessions with engineers — not a bus tour with a factory stop bolted on.",
     c2t:"Peers, not an audience",
@@ -50,7 +50,7 @@ en:{
     kicker:"The four weeks", title:"Program",
     lede:"Based at a residential campus in Yangpyeong, Gyeonggi Province, with travel to sites across the country.",
     w1tag:"Week 1", w1t:"Ground truth",
-    w1b:"Arrival, orientation, and a working introduction to Korea's technology economy — how it was built, who built it, and where it is going. Language and culture basics. Teams are formed: U.S., Korean, and Asian students mixed from day one.",
+    w1b:"Arrival, orientation, and a working introduction to Korea's technology economy — how it was built, who built it, and where it is going. Language and culture basics. Teams are formed: visiting, Korean, and Asian students mixed from day one.",
     w2tag:"Week 2", w2t:"Inside the industry",
     w2b:"Site visits to semiconductor, manufacturing, and technology facilities, in small groups. Sessions with engineers and executives. Teams choose the problem they will work on.",
     w3tag:"Week 3", w3t:"Build",
@@ -71,7 +71,7 @@ en:{
       { name:"Electronics group AI research laboratory", status:"talks", note:"Sessions with researchers building foundation models in Korea." },
       { name:"Entertainment technology company", status:"planned", note:"How AI is used in music production, voice and translation by a company exporting culture worldwide." },
       { name:"National Assembly", status:"planned", note:"How a democracy actually writes AI law — a session with legislative staff, not a photo on the steps." },
-      { name:"Mind sports and the limits of machine judgment", status:"planned", note:"A session on Go, human intuition, and what a machine does not see — held in the city where AlphaGo played." },
+      { name:"Mind sports and the limits of machine judgment", status:"planned", note:"Go, chess, xiangqi and esports were all medal sports at the Hangzhou Asian Games in 2023 — competing against machines is already part of international sport. A session on Go, human intuition, and what a machine does not see, held in the city where AlphaGo played." },
       { name:"University AI research laboratories", status:"planned", note:"Working sessions with graduate researchers in Seoul and Daejeon." },
       { name:"AI startup & venture studio day", status:"planned", note:"Founder sessions and office visits in Seoul." },
       { name:"Cultural travel weekend", status:"planned", note:"One weekend outside the capital region." },
@@ -83,12 +83,12 @@ en:{
     kicker:"Applying", title:"Who this is for",
     elig:"Eligibility", covered:"What is covered",
     eligItems:[
-      "Enrolled undergraduate at a U.S. college or university",
+      "Enrolled undergraduate at an accredited college or university, in any country",
       "Studying computer science, engineering, mathematics, or a related field — or able to show equivalent work",
       "Available for the full four weeks in summer 2027",
       "Holds a passport valid for the duration of travel",
       "No prior travel to Korea required, and no Korean language required",
-      "We select across all 50 states — applicants from under-represented states and institutions are actively encouraged"
+      "We select across countries and institutions — applicants from under-represented countries and universities are actively encouraged"
     ],
     coveredItems:[
       "Round-trip international airfare",
@@ -110,7 +110,7 @@ en:{
     c1t:"What you do",
     c1b:"Work on a project team for the full four weeks, help visiting students navigate the country, and take part in every site visit and session alongside them.",
     c2t:"What you get",
-    c2b:"The same access, the same mentors, the same demo day, and a working relationship with peers at U.S. universities. Housing and meals are covered on program days.",
+    c2b:"The same access, the same mentors, the same demo day, and a working relationship with peers at universities worldwide. Housing and meals are covered on program days.",
     btn:"Register interest as a volunteer"
   },
 
@@ -127,11 +127,11 @@ en:{
       ["Country programming","National agencies","Cash or in-kind"]
     ],
     c1t:"Why companies fund this",
-    c1b:"Two hundred screened undergraduates in AI and computing, from across the United States, spend four weeks inside your industry and present work you can evaluate. Demo day is a hiring room, not a photo opportunity.",
+    c1b:"Two hundred screened undergraduates in AI and computing, from around the world, spend four weeks inside your industry and present work you can evaluate. Demo day is a hiring room, not a photo opportunity.",
     c2t:"What we report back",
     c2b:"Applicant and selection numbers, participant outcomes, project results, and follow-on recruiting activity — delivered after each cohort. We would rather show you a number than a testimonial.",
     budT:"The number, plainly:",
-    budB:"The first cohort of 200 is budgeted at approximately KRW 1.2 billion — around USD 830,000 all-in, or roughly USD 4,150 per participant covering airfare, four weeks of housing and meals, transport, insurance and programming. We publish the figure because a sponsor is going to work it out anyway.",
+    budB:"The first cohort of 200 is budgeted at approximately KRW 2.17 billion — around USD 1.57 million all-in, or roughly USD 7,900 per participant. That covers airfare, four weeks of housing and meals, transport, insurance and programming, plus the staff and operating costs of actually running it. We publish the figure because a sponsor is going to work it out anyway. The line-by-line budget and the funding plan come with the sponsor brief. Figures are provisional until quotations are confirmed.",
     btn:"Request the sponsor brief"
   },
 
@@ -142,7 +142,7 @@ en:{
       ["Do I need to speak Korean?","No. The program runs in English. You will pick up some Korean along the way, and your Korean teammates will make sure you do not get lost."],
       ["Do I get academic credit?","Not at present. We are in early conversations with university partners about credit-bearing options for future cohorts. We will not claim credit until an agreement exists."],
       ["What are the exact dates?","Summer 2027, four weeks. Exact dates are confirmed once the campus booking and site visits are locked, and will be published here before applications open."],
-      ["Who pays for my visa?","Most U.S. citizens do not require a visa for a stay of this length, but entry requirements change. We provide documentation supporting your application and cover required travel authorization fees."],
+      ["Who pays for my visa?","It depends on your passport. For a stay of this length many nationalities need only a K-ETA travel authorization, while others require a short-stay visa. We tell you which applies to you, provide the supporting documentation, and cover the required application fees."],
       ["What is expected of me during the program?","Full participation for four weeks, and a team project presented on demo day. This is a working program, not a holiday."],
       ["I am a Korean or Asian student. Can I take part?","Yes — as a volunteer teammate. See the volunteer section above. You take part in the full program alongside the visiting cohort."],
       ["How many people are admitted?","The first cohort is 200. We are deliberately starting smaller than our long-term target so that the first cohort is run properly."]
@@ -155,14 +155,14 @@ en:{
     p2:"The two are built to feed each other. Work that teams produce in the summer is carried into the September forum and put in front of the people who can act on it. The organizations that fund one are the organizations that fund the other.",
     noteT:"Status:",
     noteB:"The forum is in development and has not yet held its first convening. We describe it here as a plan, because that is what it currently is.",
-    b1t:"Summer · four weeks", b1b:"Two hundred U.S. undergraduates inside Korea's AI and semiconductor industry, building in mixed teams with Korean and Asian peers.",
+    b1t:"Summer · four weeks", b1b:"Two hundred undergraduates from around the world inside Korea's AI and semiconductor industry, building in mixed teams with Korean and Asian peers.",
     b2t:"September 9 · annual", b2b:"The forum itself. Summer projects are presented, and the cohort's strongest work meets the people who fund and hire."
   },
 
   about:{
     kicker:"Who runs this", title:"About the organizer",
-    p1:"Korea AI Summer is organised by the International Brain Sports Association, incorporated in Korea in March 2022 under the Ministry of Culture, Sports and Tourism's rules for non-profit corporations. It runs mind sports competitions — chess, janggi, speedcube — and is the Korean arm of ICOC, founded in the UK in 2019. It is responsible for the venue, the site visits and everything that happens on the ground in Korea.",
-    p2:"Our partner in the United States is Undenominated Church of Christianity, the California non-profit corporation that operates Plato School, incorporated in San Francisco on 1 September 2023. It handles the American side: recruitment across the fifty states and relationships with U.S. universities. A religious non-profit running a school is the oldest arrangement in education — Georgetown, Notre Dame and Boston College in the United States, Yonsei and Ewha in Korea, all founded on the same basis. The programme itself is secular.",
+    p1:"Korea AI Summer is organised by the International Brain Sports Association, a Korean non-profit corporation licensed in March 2022 by the Seoul Metropolitan Government — licence no. 2022-53, granted under Article 32 of the Civil Act and the Ministry of Culture, Sports and Tourism's rules for non-profit corporations. It runs its own competitions in chess, janggi, speedcube and screen golf, and operates a registered-player system. Its origins trace back to ICOC, an international brain sports body started in the United Kingdom in 2019. The association is responsible for the venue, the site visits and everything that happens on the ground in Korea.",
+    p2:"Our partner in the United States is Undenominated Church of Christianity, the California non-profit corporation that operates Plato School, incorporated in San Francisco on 1 September 2023. It handles the American side: recruitment in the United States and relationships with U.S. universities. Recruitment outside the United States is run from Seoul. A religious non-profit running a school is the oldest arrangement in education — Georgetown, Notre Dame and Boston College in the United States, Yonsei and Ewha in Korea, all founded on the same basis. The programme itself is secular.",
     advT:"Advisory board:",
     advB:"Being formed. Members will be listed here once they have confirmed. We do not list names before they have agreed to appear."
   },
@@ -182,10 +182,10 @@ ko:{
   hero:{
     eyebrow:"1기 · 2027년 여름 · 정원 200명",
     title:"AI를 학습시키는 반도체가 만들어지는 곳에서, 4주간.",
-    lede:"미국 50개 주의 대학생을 한국의 AI·반도체 산업 현장으로 초청하는 전액 후원 여름 프로그램입니다. 공장과 연구실, 그리고 그것을 만든 사람들을 — 같은 또래의 한국·아시아 학생들과 함께 만납니다.",
+    lede:"전세계 대학생을 한국의 AI·반도체 산업 현장으로 초청하는 전액 후원 여름 프로그램입니다. 공장과 연구실, 그리고 그것을 만든 사람들을 — 같은 또래의 한국·아시아 학생들과 함께 만납니다.",
     ctaApply:"2027년 1기 지원하기", ctaSponsor:"후원 문의",
     s1k:"참가비", s1v:"무료", s2k:"기간", s2v:"4주",
-    s3k:"1기 정원", s3v:"200명", s4k:"미국 주(州)", s4v:"50",
+    s3k:"1기 정원", s3v:"200명", s4k:"지원 자격", s4v:"전세계",
     fine:"항공·숙박·식사·프로그램 비용은 후원사가 부담합니다. 완주 시 전액 환급되는 보증금이 있습니다."
   },
 
@@ -193,7 +193,7 @@ ko:{
     kicker:"왜 만드나",
     title:"공급망은 읽을 수 있습니다. 그 안에 서 보는 것은 다릅니다.",
     p1:"세계의 거의 모든 최전선 AI 모델은 한국 공장을 거친 메모리와 로직 위에서 학습됩니다. 정작 그 하드웨어 위에 평생을 쌓아 올릴 학생들은 그 현장을 볼 기회가 거의 없습니다.",
-    p2:"코리아 AI 서머는 그 간극을 좁히기 위해 있습니다. 그리고 미국의 다음 세대 엔지니어에게 이 나라와 산업, 앞으로 30년을 함께 일하게 될 또래를 소개하기 위해 있습니다.",
+    p2:"코리아 AI 서머는 그 간극을 좁히기 위해 있습니다. 그리고 다음 세대 엔지니어에게 이 나라와 산업, 앞으로 30년을 함께 일하게 될 또래를 소개하기 위해 있습니다.",
     c1t:"관광이 아니라 산업",
     c1b:"반도체·제조 현장 견학, 연구실, 엔지니어와의 실무 세션입니다. 버스 관광에 공장 한 곳을 끼워 넣은 일정이 아닙니다.",
     c2t:"관객이 아니라 동료",
@@ -206,7 +206,7 @@ ko:{
     kicker:"4주 일정", title:"프로그램",
     lede:"경기도 양평의 기숙형 캠퍼스를 거점으로, 전국의 현장을 방문합니다.",
     w1tag:"1주차", w1t:"현장의 기초",
-    w1b:"입국과 오리엔테이션, 그리고 한국 기술 경제에 대한 실무적 입문 — 어떻게 만들어졌고, 누가 만들었고, 어디로 가는가. 언어와 문화 기초. 첫날부터 미국·한국·아시아 학생이 섞인 팀을 구성합니다.",
+    w1b:"입국과 오리엔테이션, 그리고 한국 기술 경제에 대한 실무적 입문 — 어떻게 만들어졌고, 누가 만들었고, 어디로 가는가. 언어와 문화 기초. 첫날부터 해외·한국·아시아 학생이 섞인 팀을 구성합니다.",
     w2tag:"2주차", w2t:"산업 안으로",
     w2b:"반도체·제조·기술 현장을 소그룹으로 방문합니다. 엔지니어·경영진과의 세션이 이어지고, 팀은 다룰 문제를 정합니다.",
     w3tag:"3주차", w3t:"만든다",
@@ -227,7 +227,7 @@ ko:{
       { name:"전자 그룹 AI 연구원", status:"talks", note:"한국에서 파운데이션 모델을 만드는 연구자들과의 세션." },
       { name:"엔터테인먼트 테크 기업", status:"planned", note:"문화를 수출하는 회사가 음악 제작·음성·번역에 AI를 어떻게 쓰는가." },
       { name:"국회", status:"planned", note:"민주주의 국가가 AI 법을 실제로 어떻게 쓰는가 — 계단 앞 기념사진이 아니라 입법 실무진과의 세션." },
-      { name:"마인드 스포츠와 기계 판단의 한계", status:"planned", note:"바둑과 인간의 직관, 그리고 기계가 보지 못하는 것에 대한 세션 — 알파고가 대국했던 그 도시에서." },
+      { name:"마인드 스포츠와 기계 판단의 한계", status:"planned", note:"바둑·체스·샹치·이스포츠는 2023년 항저우 아시안게임 정식종목이었습니다. 기계와 겨루는 종목이 이미 국제 스포츠의 일부입니다. 인간의 직관과 기계가 보지 못하는 것에 대한 세션을, 알파고가 대국했던 도시에서." },
       { name:"대학 AI 연구실", status:"planned", note:"서울·대전의 대학원 연구자들과 실무 세션." },
       { name:"AI 스타트업·벤처 스튜디오 데이", status:"planned", note:"서울에서 창업자 세션과 사무실 방문." },
       { name:"문화 여행 주말", status:"planned", note:"수도권 밖에서 보내는 주말 일정." },
@@ -239,12 +239,12 @@ ko:{
     kicker:"지원 안내", title:"이런 분을 찾습니다",
     elig:"지원 자격", covered:"지원되는 항목",
     eligItems:[
-      "미국 대학에 재학 중인 학부생",
+      "인가된 대학에 재학 중인 학부생 (국적·소재국 무관)",
       "컴퓨터공학·공학·수학 또는 관련 전공, 혹은 그에 준하는 결과물을 보여줄 수 있는 분",
       "2027년 여름 4주 전 일정에 참여 가능한 분",
       "여행 기간 내내 유효한 여권 소지자",
       "한국 방문 경험이나 한국어 능력은 필요하지 않습니다",
-      "50개 주 전체에서 선발합니다 — 지원자가 적은 주와 학교의 지원을 특히 환영합니다"
+      "국가와 학교를 고르게 선발합니다 — 지원자가 적은 나라와 학교의 지원을 특히 환영합니다"
     ],
     coveredItems:[
       "국제선 왕복 항공권",
@@ -267,7 +267,7 @@ ko:{
     c1t:"무엇을 하나",
     c1b:"4주 내내 프로젝트 팀에서 함께 일하고, 방문 학생들이 한국에서 길을 찾도록 돕고, 모든 현장 방문과 세션에 나란히 참여합니다.",
     c2t:"무엇을 얻나",
-    c2b:"같은 현장, 같은 멘토, 같은 데모데이, 그리고 미국 대학 또래와의 실질적인 관계. 프로그램 기간의 숙박과 식사를 지원합니다.",
+    c2b:"같은 현장, 같은 멘토, 같은 데모데이, 그리고 전세계 대학 또래와의 실질적인 관계. 프로그램 기간의 숙박과 식사를 지원합니다.",
     btn:"자원봉사 참여 신청"
   },
 
@@ -284,11 +284,11 @@ ko:{
       ["국가 단위 프로그램","정부·공공기관","현금 또는 현물"]
     ],
     c1t:"기업이 후원하는 이유",
-    c1b:"미국 전역에서 선발된 AI·컴퓨팅 전공 학부생 200명이 귀사의 산업 안에서 4주를 보내고, 평가할 수 있는 결과물을 발표합니다. 데모데이는 사진 찍는 자리가 아니라 채용의 자리입니다.",
+    c1b:"전세계에서 선발된 AI·컴퓨팅 전공 학부생 200명이 귀사의 산업 안에서 4주를 보내고, 평가할 수 있는 결과물을 발표합니다. 데모데이는 사진 찍는 자리가 아니라 채용의 자리입니다.",
     c2t:"무엇을 보고드리나",
     c2b:"지원자 수와 선발 경쟁률, 참가자 성과, 프로젝트 결과, 이후 채용 연계 실적을 기수마다 정리해 드립니다. 소감문보다 숫자를 보여드리는 편을 택합니다.",
     budT:"숫자를 그대로 밝히면:",
-    budB:"1기 200명 예산은 약 12억 원입니다. 1인당 약 550만 원으로 항공, 4주 숙박·식사, 이동, 보험, 프로그램 운영을 포함합니다. 후원사는 어차피 계산해 보므로 먼저 밝힙니다.",
+    budB:"1기 200명 예산은 약 21억 7천만 원 — 전액 포함 약 157만 달러, 1인당 약 7,900달러입니다. 항공, 4주 숙박·식사, 이동, 보험, 프로그램 운영에 더해 이를 실제로 운영하는 인력과 운영비까지 포함한 금액입니다. 후원사는 어차피 계산해 보므로 먼저 밝힙니다. 항목별 세부 예산과 자금 조달 계획은 후원 브리프로 제공합니다. 견적 확정 전까지는 잠정치입니다.",
     btn:"후원 제안서 요청"
   },
 
@@ -299,7 +299,7 @@ ko:{
       ["한국어를 해야 하나요?","아닙니다. 프로그램은 영어로 진행됩니다. 지내다 보면 한국어를 조금 배우게 되고, 한국인 팀원들이 길을 잃지 않도록 챙겨 줍니다."],
       ["학점을 인정받나요?","현재는 아닙니다. 향후 기수의 학점 인정 방안을 두고 대학 파트너들과 초기 논의 중입니다. 협약이 성립하기 전까지 학점을 내세우지 않습니다."],
       ["정확한 날짜는 언제인가요?","2027년 여름, 4주입니다. 캠퍼스 대관과 현장 방문 일정이 확정되면 정확한 날짜를 정하고, 지원 접수 시작 전에 이 페이지에 공개합니다."],
-      ["비자 비용은 누가 내나요?","이 정도 체류 기간이면 대부분의 미국 시민은 비자가 필요하지 않지만 입국 요건은 바뀝니다. 신청에 필요한 서류를 제공하고 필수 여행허가 수수료를 부담합니다."],
+      ["비자 비용은 누가 내나요?","여권 국적에 따라 다릅니다. 이 정도 체류 기간이면 상당수 국적은 K-ETA 여행허가만으로 가능하고, 일부 국적은 단기 방문 비자가 필요합니다. 본인에게 어떤 요건이 적용되는지 안내하고, 필요한 서류를 제공하며 신청 수수료를 부담합니다."],
       ["참가하면 무엇을 해야 하나요?","4주 전 일정 참여와, 데모데이에서 발표하는 팀 프로젝트입니다. 휴가가 아니라 일하는 프로그램입니다."],
       ["한국·아시아 학생인데 참여할 수 있나요?","네 — 자원봉사 팀원으로 가능합니다. 위 자원봉사 섹션을 보세요. 방문 기수와 나란히 전 일정에 참여합니다."],
       ["몇 명을 뽑나요?","1기는 200명입니다. 첫 기수를 제대로 치르기 위해 장기 목표보다 의도적으로 작게 시작합니다."]
@@ -312,14 +312,14 @@ ko:{
     p2:"둘은 서로를 먹여 살리도록 설계했습니다. 여름에 팀이 만든 결과물은 9월 포럼으로 이어져 실제로 움직일 수 있는 사람들 앞에 놓입니다. 한쪽을 후원하는 곳이 다른 쪽을 후원하는 곳입니다.",
     noteT:"진행 상태:",
     noteB:"포럼은 준비 중이며 아직 첫 회를 열지 않았습니다. 지금은 계획이므로 계획이라고 적습니다.",
-    b1t:"여름 · 4주", b1b:"미국 학부생 200명이 한국의 AI·반도체 산업 안에서, 한국·아시아 또래와 섞인 팀으로 무언가를 만듭니다.",
+    b1t:"여름 · 4주", b1b:"전세계 학부생 200명이 한국의 AI·반도체 산업 안에서, 한국·아시아 또래와 섞인 팀으로 무언가를 만듭니다.",
     b2t:"9월 9일 · 연례", b2b:"포럼 본행사. 여름 프로젝트가 발표되고, 가장 좋은 결과물이 후원하고 채용하는 사람들과 만납니다."
   },
 
   about:{
     kicker:"주최", title:"주최 기관 소개",
-    p1:"코리아 AI 서머는 사단법인 국제브레인스포츠협회가 주최합니다. 2022년 3월 문화체육관광부 소관 비영리법인 규칙에 따라 설립허가를 받은 법인으로, 체스·장기·스피드큐브 등 브레인스포츠 대회를 개최해 왔고, 2019년 영국에서 시작한 국제 조직 ICOC 의 한국 법인입니다. 협회가 국내 운영을 맡아 장소와 현장 방문, 한국에서 벌어지는 모든 일을 책임집니다.",
-    p2:"미국 측 협력기관은 Plato School 을 운영하는 캘리포니아주 비영리법인 Undenominated Church of Christianity 입니다. 2023년 9월 1일 샌프란시스코에 설립되었고, 미국 50개 주 모집과 미국 대학과의 관계를 맡습니다. 종교법인이 학교를 운영하는 것은 교육에서 가장 오래된 형태입니다 — 연세대와 이화여대는 선교사가 세웠고, 미국의 조지타운·노트르담·보스턴칼리지도 같은 뿌리입니다. 프로그램 내용 자체는 종교와 무관합니다.",
+    p1:"코리아 AI 서머는 사단법인 국제브레인스포츠협회가 주최합니다. 「민법」 제32조 및 문화체육관광부 소관 비영리법인의 설립·감독에 관한 규칙에 따라 2022년 3월 서울특별시장이 설립을 허가한 법인입니다 (허가 제2022-53호). 체스·장기·스피드큐브·스크린골프 대회를 직접 개최해 왔고 선수 등록 제도를 운영합니다. 협회의 연원은 2019년 영국에서 시작된 국제 브레인스포츠 조직 ICOC 로 이어집니다. 협회가 국내 운영을 맡아 장소와 현장 방문, 한국에서 벌어지는 모든 일을 책임집니다.",
+    p2:"미국 측 협력기관은 Plato School 을 운영하는 캘리포니아주 비영리법인 Undenominated Church of Christianity 입니다. 2023년 9월 1일 샌프란시스코에 설립되었고, 미국 내 모집과 미국 대학과의 관계를 맡습니다. 미국 외 지역 모집은 서울에서 담당합니다. 종교법인이 학교를 운영하는 것은 교육에서 가장 오래된 형태입니다 — 연세대와 이화여대는 선교사가 세웠고, 미국의 조지타운·노트르담·보스턴칼리지도 같은 뿌리입니다. 프로그램 내용 자체는 종교와 무관합니다.",
     advT:"자문위원:",
     advB:"구성 중입니다. 확정되는 대로 이 자리에 표기합니다. 본인의 동의를 받기 전에는 성함을 올리지 않습니다."
   },
