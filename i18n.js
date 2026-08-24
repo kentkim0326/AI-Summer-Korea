@@ -69,6 +69,8 @@ en:{
       { name:"Semiconductor fabrication site visit", status:"talks", note:"Small-group cleanroom-adjacent tours. Partner named once an agreement is signed." },
       { name:"Automotive & robotics manufacturer", status:"talks", note:"Autonomous driving and robotics research, on a working production campus." },
       { name:"Electronics group AI research laboratory", status:"talks", note:"Sessions with researchers building foundation models in Korea." },
+      { name:"Entertainment technology company", status:"planned", note:"How AI is used in music production, voice and translation by a company exporting culture worldwide." },
+      { name:"National Assembly", status:"planned", note:"How a democracy actually writes AI law — a session with legislative staff, not a photo on the steps." },
       { name:"Mind sports and the limits of machine judgment", status:"planned", note:"A session on Go, human intuition, and what a machine does not see — held in the city where AlphaGo played." },
       { name:"University AI research laboratories", status:"planned", note:"Working sessions with graduate researchers in Seoul and Daejeon." },
       { name:"AI startup & venture studio day", status:"planned", note:"Founder sessions and office visits in Seoul." },
@@ -159,8 +161,8 @@ en:{
 
   about:{
     kicker:"Who runs this", title:"About the organizer",
-    p1:"Korea AI Summer is a program of Plato School SF Foundation, a non-profit foundation established in San Francisco, California in 2023, with an office in Seoul.",
-    p2:"The foundation's work is in international education between the United States and Asia. This program is its summer initiative for U.S. undergraduates.",
+    p1:"Korea AI Summer is a program of Plato School SF Foundation, a non-profit foundation established in San Francisco, California in 2023, with an office in Seoul. Its work is in international education between the United States and Asia.",
+    p2:"In Korea the program is run with the International Brain Sports Association, an incorporated association under Korean law. The two-country structure is deliberate: it is what lets the program raise support on both sides — tax-deductible in the United States, and eligible for Korean public programs that require a domestic legal entity.",
     advT:"Advisory board:",
     advB:"Being formed. Members will be listed here once they have confirmed. We do not list names before they have agreed to appear."
   },
@@ -223,6 +225,8 @@ ko:{
       { name:"반도체 생산 현장 견학", status:"talks", note:"클린룸 인접 구역 소그룹 견학. 협약 체결 후 파트너명을 공개합니다." },
       { name:"자동차·로보틱스 제조사", status:"talks", note:"자율주행과 로보틱스 연구를 실제 생산 캠퍼스에서." },
       { name:"전자 그룹 AI 연구원", status:"talks", note:"한국에서 파운데이션 모델을 만드는 연구자들과의 세션." },
+      { name:"엔터테인먼트 테크 기업", status:"planned", note:"문화를 수출하는 회사가 음악 제작·음성·번역에 AI를 어떻게 쓰는가." },
+      { name:"국회", status:"planned", note:"민주주의 국가가 AI 법을 실제로 어떻게 쓰는가 — 계단 앞 기념사진이 아니라 입법 실무진과의 세션." },
       { name:"마인드 스포츠와 기계 판단의 한계", status:"planned", note:"바둑과 인간의 직관, 그리고 기계가 보지 못하는 것에 대한 세션 — 알파고가 대국했던 그 도시에서." },
       { name:"대학 AI 연구실", status:"planned", note:"서울·대전의 대학원 연구자들과 실무 세션." },
       { name:"AI 스타트업·벤처 스튜디오 데이", status:"planned", note:"서울에서 창업자 세션과 사무실 방문." },
@@ -314,8 +318,8 @@ ko:{
 
   about:{
     kicker:"주최", title:"주최 기관 소개",
-    p1:"코리아 AI 서머는 2023년 미국 캘리포니아주 샌프란시스코에 설립된 비영리 재단 Plato School SF Foundation 의 프로그램이며, 서울에 사무소를 두고 있습니다.",
-    p2:"재단은 미국과 아시아를 잇는 국제 교육을 해 왔습니다. 이 프로그램은 미국 학부생을 위한 재단의 여름 사업입니다.",
+    p1:"코리아 AI 서머는 2023년 미국 캘리포니아주 샌프란시스코에 설립된 비영리 재단 Plato School SF Foundation 의 프로그램이며, 서울에 사무소를 두고 있습니다. 재단은 미국과 아시아를 잇는 국제 교육을 해 왔습니다.",
+    p2:"한국에서는 사단법인 국제브레인스포츠협회와 함께 운영합니다. 두 나라 법인 구조는 의도한 것입니다 — 미국에서는 세금 공제가 되는 기부를 받고, 한국에서는 국내 법인 자격을 요구하는 공공 사업에 지원할 수 있게 하는 구조입니다.",
     advT:"자문위원:",
     advB:"구성 중입니다. 확정되는 대로 이 자리에 표기합니다. 본인의 동의를 받기 전에는 성함을 올리지 않습니다."
   },

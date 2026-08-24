@@ -88,7 +88,8 @@ One overstated line makes every other claim on the page suspect.
 Specifically, as of the last update:
 
 - No site visit partner is agreed. None are named — not the semiconductor
-  fab, not the automotive group, not the electronics group.
+  fab, not the automotive group, not the electronics group, not the
+  entertainment company, not the National Assembly.
 - The Yangpyeong campus is not booked.
 - No advisory board member has confirmed. No names appear.
 - No individual speaker has confirmed. The mind sports session is described
