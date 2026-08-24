@@ -138,7 +138,7 @@ en:{
       ["Housing & meals","Provincial government, listed companies","Cash or facility"],
       ["Industry site visits","The host company itself","Access, not cash"],
       ["Compute & AI tools","AI companies","Credits and engineer sessions"],
-      ["Named scholarships","Fortune 500, individual donors","Cash, tax-deductible in the U.S."],
+      ["Named scholarships","Corporations, individual donors","Cash"],
       ["Country programming","National agencies","Cash or in-kind"]
     ],
     c1t:"Why companies fund this",
@@ -176,7 +176,7 @@ en:{
 
   about:{
     kicker:"Who runs this", title:"About the organizer",
-    p1:"AI Summer Korea is organised by the International Brain Sports Association, a Korean non-profit corporation licensed in March 2022 by the Seoul Metropolitan Government — licence no. 2022-53, granted under Article 32 of the Civil Act and the Ministry of Culture, Sports and Tourism's rules for non-profit corporations. It runs its own competitions in chess, janggi, speedcube and screen golf, and operates a registered-player system. Its origins trace back to ICOC, an international brain sports body started in the United Kingdom in 2019. The association is responsible for the venue, the site visits and everything that happens on the ground in Korea.",
+    p1:"AI Summer Korea is organised by the International Brain Sports Association, a Korean non-profit corporation licensed in March 2022 by the Seoul Metropolitan Government — licence no. 2022-53, granted under Article 32 of the Civil Act and the Ministry of Culture, Sports and Tourism's rules for non-profit corporations. It runs its own competitions in chess, janggi, speedcube and screen golf, and operates a registered-player system. The association is responsible for the venue, the site visits and everything that happens on the ground in Korea.",
     p2:"Our partner in the United States is Undenominated Church of Christianity, the California non-profit corporation that operates Plato School, incorporated in San Francisco on 1 September 2023. It handles the American side: recruitment in the United States and relationships with U.S. universities. Recruitment outside the United States is run from Seoul. A religious non-profit running a school is the oldest arrangement in education — Georgetown, Notre Dame and Boston College in the United States, Yonsei and Ewha in Korea, all founded on the same basis. The programme itself is secular.",
     advT:"Advisory board:",
     advB:"Being formed. Members will be listed here once they have confirmed. We do not list names before they have agreed to appear."
@@ -295,7 +295,7 @@ ko:{
       ["숙박·식사","지자체, 상장 기업","현금 또는 시설"],
       ["산업 현장 견학","견학을 받는 기업 자신","현금이 아니라 출입 협조"],
       ["컴퓨팅·AI 도구","AI 기업","크레딧 및 엔지니어 세션"],
-      ["지정 장학금","Fortune 500, 개인 기부자","현금, 미국 세금 공제 대상"],
+      ["지정 장학금","기업, 개인 기부자","현금"],
       ["국가 단위 프로그램","정부·공공기관","현금 또는 현물"]
     ],
     c1t:"기업이 후원하는 이유",
@@ -333,7 +333,7 @@ ko:{
 
   about:{
     kicker:"주최", title:"주최 기관 소개",
-    p1:"AI 서머 코리아는 사단법인 국제브레인스포츠협회가 주최합니다. 「민법」 제32조 및 문화체육관광부 소관 비영리법인의 설립·감독에 관한 규칙에 따라 2022년 3월 서울특별시장이 설립을 허가한 법인입니다 (허가 제2022-53호). 체스·장기·스피드큐브·스크린골프 대회를 직접 개최해 왔고 선수 등록 제도를 운영합니다. 협회의 연원은 2019년 영국에서 시작된 국제 브레인스포츠 조직 ICOC 로 이어집니다. 협회가 국내 운영을 맡아 장소와 현장 방문, 한국에서 벌어지는 모든 일을 책임집니다.",
+    p1:"AI 서머 코리아는 사단법인 국제브레인스포츠협회가 주최합니다. 「민법」 제32조 및 문화체육관광부 소관 비영리법인의 설립·감독에 관한 규칙에 따라 2022년 3월 서울특별시장이 설립을 허가한 법인입니다 (허가 제2022-53호). 체스·장기·스피드큐브·스크린골프 대회를 직접 개최해 왔고 선수 등록 제도를 운영합니다. 협회가 국내 운영을 맡아 장소와 현장 방문, 한국에서 벌어지는 모든 일을 책임집니다.",
     p2:"미국 측 협력기관은 Plato School 을 운영하는 캘리포니아주 비영리법인 Undenominated Church of Christianity 입니다. 2023년 9월 1일 샌프란시스코에 설립되었고, 미국 내 모집과 미국 대학과의 관계를 맡습니다. 미국 외 지역 모집은 서울에서 담당합니다. 종교법인이 학교를 운영하는 것은 교육에서 가장 오래된 형태입니다 — 연세대와 이화여대는 선교사가 세웠고, 미국의 조지타운·노트르담·보스턴칼리지도 같은 뿌리입니다. 프로그램 내용 자체는 종교와 무관합니다.",
     advT:"자문위원:",
     advB:"구성 중입니다. 확정되는 대로 이 자리에 표기합니다. 본인의 동의를 받기 전에는 성함을 올리지 않습니다."
@@ -349,6 +349,63 @@ ko:{
 
 /* ─────────────────── CHINESE (SIMPLIFIED) ─────────────────── */
 "zh-Hans": {
+  visits:{
+    kicker:"参访地点", title:"参访地点与合作方",
+    lede:"我们只在协议签署之后公布合作方。以下每一项都标注了真实进展状态——这里没有任何一个是我们希望争取到的标志。",
+    fine:"参访清单为暂定,协议确认后随时更新。最终行程将在出发前通知参加者。",
+    items:[
+      { name:"半导体制造基地参访", status:"talks", note:"小组进入洁净室邻近区域参观。协议签署后公布合作方名称。" },
+      { name:"汽车与机器人制造企业", status:"talks", note:"在运转中的生产园区了解自动驾驶与机器人研究。" },
+      { name:"电子集团人工智能研究院", status:"talks", note:"与在韩国开发基础模型的研究人员交流。" },
+      { name:"娱乐科技公司", status:"planned", note:"一家向全球输出文化的公司,如何把人工智能用在音乐制作、语音与翻译上。" },
+      { name:"国会", status:"planned", note:"一个民主国家究竟如何制定人工智能法律——与立法工作人员的座谈,而不是在台阶前拍一张照片。" },
+      { name:"智力运动与机器判断的边界", status:"planned", note:"围棋、国际象棋、象棋和电子竞技都是2023年杭州亚运会的正式比赛项目——与机器对弈早已是国际体育的一部分。这场关于围棋、人类直觉以及机器看不见之处的座谈,就在阿尔法围棋对局的那座城市举行。" },
+      { name:"高校人工智能实验室", status:"planned", note:"与首尔和大田的研究生研究人员一起进行实务研讨。" },
+      { name:"人工智能创业与风险工作室日", status:"planned", note:"在首尔与创始人座谈并走访办公室。" },
+      { name:"文化体验周末", status:"planned", note:"有一个周末会离开首都圈。" },
+      { name:"京畿道杨平住宿型园区", status:"talks", note:"公立住宿型教育园区,可容纳约570人。预订尚未确认。" }
+    ]
+  },
+
+  spon:{
+    kicker:"致赞助方", title:"赞助其中一块,而不是按人头计价",
+    lede:"不同的赞助方以各自最容易付出的方式,支持这个项目的不同部分。有的提供机票座位,有的开放园区接待,有的提供算力。这些都算赞助。",
+    th1:"赞助对象", th2:"典型赞助方", th3:"形式",
+    rows:[
+      ["机票","航空公司、大企业社会责任部门","座位或现金"],
+      ["住宿与餐饮","地方政府、上市公司","现金或场地"],
+      ["产业现场参访","接待企业本身","开放接待,而非现金"],
+      ["算力与人工智能工具","人工智能企业","额度与工程师座谈"],
+      ["冠名奖学金","企业、个人捐赠者","现金"],
+      ["国别专项","政府与公共机构","现金或实物"]
+    ],
+    c1t:"企业为什么赞助",
+    c1b:"两百名经过筛选、来自世界各地的人工智能与计算专业本科生,在贵公司所在的产业里度过四周,并拿出可供评估的成果。展示日是招聘现场,不是拍照场合。",
+    c2t:"我们会如何汇报",
+    c2b:"申请人数与录取比例、参加者去向、项目成果,以及后续产生的招聘活动——每一期结束后整理呈报。比起感言,我们更愿意给您数字。",
+    budT:"把数字直接摊开:",
+    budB:"第一期200人的预算约为21.7亿韩元,合计约157万美元,人均约7,900美元。其中包含机票、四周的住宿与餐饮、交通、保险和项目运营,以及真正把它办起来所需的人员与运营成本。赞助方迟早会自己算出来,所以我们先公布。逐项预算与资金计划随赞助方资料一并提供。报价确认前均为暂定数字。",
+    btn:"索取赞助方资料"
+  },
+
+  forum:{
+    kicker:"更大的框架", title:"一件年度事情的一半",
+    p1:"AI 夏日韩国是999首尔论坛的学生单元。999首尔论坛计划于每年9月9日在首尔举办,其出发点是:韩国与其向别国的论坛派出代表团,不如自己办一个常设的国际论坛。",
+    p2:"两者被设计成互相供养。夏天各团队做出的成果会被带进九月的论坛,摆在真正能推动它的人面前。赞助其中一个的机构,就是赞助另一个的机构。",
+    b1t:"夏季 · 四周", b1b:"来自世界各地的两百名本科生进入韩国的人工智能与半导体产业,与韩国及亚洲同龄人组成混合团队一起动手。",
+    b2t:"9月9日 · 年度", b2b:"论坛本身。夏季项目在此发表,这一期最好的成果会遇见出资的人和招人的人。",
+    noteT:"进展状态:",
+    noteB:"论坛仍在筹备,尚未举办第一届。目前它是一项计划,所以我们就按计划来写。"
+  },
+
+  about:{
+    kicker:"主办方", title:"关于主办机构",
+    p1:"AI 夏日韩国由社团法人国际智力运动协会主办。该法人依据《民法》第32条及文化体育观光部主管的非营利法人设立与监督规则,于2022年3月由首尔特别市市长批准设立(许可第2022-53号)。协会自行举办国际象棋、朝鲜象棋、速拧和室内高尔夫赛事,并运营选手注册制度。协会负责韩国国内的运营,包括场地、参访以及在韩国发生的一切。",
+    p2:"我们在美国的合作方是运营 Plato School 的加利福尼亚州非营利法人 Undenominated Church of Christianity,2023年9月1日在旧金山设立,负责美国境内的招募以及与美国高校的关系。美国以外的招募由首尔负责。宗教法人办学是教育中最古老的形态——美国的乔治城、圣母、波士顿学院,韩国的延世与梨花,都由此而来。项目内容本身与宗教无关。",
+    advT:"顾问委员会:",
+    advB:"正在组建。成员确认后将在此列出。在本人同意具名之前,我们不会列出任何姓名。"
+  },
+
     "nav": {
       "brand": "AI Summer Korea",
       "program": "项目",
@@ -489,6 +546,63 @@ ko:{
 
 /* ─────────────────── CHINESE (TRADITIONAL) ─────────────────── */
 "zh-Hant": {
+  visits:{
+    kicker:"參訪地點", title:"參訪地點與合作方",
+    lede:"我們只在協議簽署之後公布合作方。以下每一項都標註了真實進展狀態——這裡沒有任何一個是我們希望爭取到的標誌。",
+    fine:"參訪清單為暫定,協議確認後隨時更新。最終行程將在出發前通知參加者。",
+    items:[
+      { name:"半導體製造基地參訪", status:"talks", note:"小組進入無塵室鄰近區域參觀。協議簽署後公布合作方名稱。" },
+      { name:"汽車與機器人製造企業", status:"talks", note:"在運轉中的生產園區了解自動駕駛與機器人研究。" },
+      { name:"電子集團人工智慧研究院", status:"talks", note:"與在韓國開發基礎模型的研究人員交流。" },
+      { name:"娛樂科技公司", status:"planned", note:"一家向全球輸出文化的公司,如何把人工智慧用在音樂製作、語音與翻譯上。" },
+      { name:"國會", status:"planned", note:"一個民主國家究竟如何制定人工智慧法律——與立法工作人員的座談,而不是在台階前拍一張照片。" },
+      { name:"心智運動與機器判斷的邊界", status:"planned", note:"圍棋、西洋棋、象棋和電子競技都是2023年杭州亞運的正式比賽項目——與機器對弈早已是國際體育的一部分。這場關於圍棋、人類直覺以及機器看不見之處的座談,就在AlphaGo對局的那座城市舉行。" },
+      { name:"大學人工智慧實驗室", status:"planned", note:"與首爾和大田的研究生研究人員一起進行實務研討。" },
+      { name:"人工智慧新創與創投工作室日", status:"planned", note:"在首爾與創辦人座談並走訪辦公室。" },
+      { name:"文化體驗週末", status:"planned", note:"有一個週末會離開首都圈。" },
+      { name:"京畿道楊平住宿型園區", status:"talks", note:"公立住宿型教育園區,可容納約570人。預訂尚未確認。" }
+    ]
+  },
+
+  spon:{
+    kicker:"致贊助方", title:"贊助其中一塊,而不是按人頭計價",
+    lede:"不同的贊助方以各自最容易付出的方式,支持這個計畫的不同部分。有的提供機票座位,有的開放園區接待,有的提供算力。這些都算贊助。",
+    th1:"贊助對象", th2:"典型贊助方", th3:"形式",
+    rows:[
+      ["機票","航空公司、大企業社會責任部門","座位或現金"],
+      ["住宿與餐飲","地方政府、上市公司","現金或場地"],
+      ["產業現場參訪","接待企業本身","開放接待,而非現金"],
+      ["算力與人工智慧工具","人工智慧企業","額度與工程師座談"],
+      ["冠名獎學金","企業、個人捐贈者","現金"],
+      ["國別專案","政府與公共機構","現金或實物"]
+    ],
+    c1t:"企業為什麼贊助",
+    c1b:"兩百名經過篩選、來自世界各地的人工智慧與計算專業大學生,在貴公司所在的產業裡度過四週,並拿出可供評估的成果。展示日是招募現場,不是拍照場合。",
+    c2t:"我們會如何回報",
+    c2b:"申請人數與錄取比例、參加者去向、專案成果,以及後續產生的招募活動——每一期結束後整理呈報。比起感言,我們更願意給您數字。",
+    budT:"把數字直接攤開:",
+    budB:"第一期200人的預算約為21.7億韓元,合計約157萬美元,平均每人約7,900美元。其中包含機票、四週的住宿與餐飲、交通、保險和計畫營運,以及真正把它辦起來所需的人員與營運成本。贊助方遲早會自己算出來,所以我們先公布。逐項預算與資金計畫隨贊助方資料一併提供。報價確認前均為暫定數字。",
+    btn:"索取贊助方資料"
+  },
+
+  forum:{
+    kicker:"更大的框架", title:"一件年度事情的一半",
+    p1:"AI 夏日韓國是999首爾論壇的學生單元。999首爾論壇計畫於每年9月9日在首爾舉辦,其出發點是:韓國與其向別國的論壇派出代表團,不如自己辦一個常設的國際論壇。",
+    p2:"兩者被設計成互相供養。夏天各團隊做出的成果會被帶進九月的論壇,擺在真正能推動它的人面前。贊助其中一個的機構,就是贊助另一個的機構。",
+    b1t:"夏季 · 四週", b1b:"來自世界各地的兩百名大學生進入韓國的人工智慧與半導體產業,與韓國及亞洲同齡人組成混合團隊一起動手。",
+    b2t:"9月9日 · 年度", b2b:"論壇本身。夏季專案在此發表,這一期最好的成果會遇見出資的人和招人的人。",
+    noteT:"進展狀態:",
+    noteB:"論壇仍在籌備,尚未舉辦第一屆。目前它是一項計畫,所以我們就按計畫來寫。"
+  },
+
+  about:{
+    kicker:"主辦方", title:"關於主辦機構",
+    p1:"AI 夏日韓國由社團法人國際心智運動協會主辦。該法人依據《民法》第32條及文化體育觀光部主管的非營利法人設立與監督規則,於2022年3月由首爾特別市市長核准設立(許可第2022-53號)。協會自行舉辦西洋棋、朝鮮象棋、速解魔術方塊和室內高爾夫賽事,並營運選手註冊制度。協會負責韓國國內的營運,包括場地、參訪以及在韓國發生的一切。",
+    p2:"我們在美國的合作方是營運 Plato School 的加利福尼亞州非營利法人 Undenominated Church of Christianity,2023年9月1日在舊金山設立,負責美國境內的招募以及與美國高校的關係。美國以外的招募由首爾負責。宗教法人辦學是教育中最古老的形態——美國的喬治城、聖母、波士頓學院,韓國的延世與梨花,都由此而來。計畫內容本身與宗教無關。",
+    advT:"顧問委員會:",
+    advB:"正在組建。成員確認後將在此列出。在本人同意具名之前,我們不會列出任何姓名。"
+  },
+
     "nav": {
       "brand": "AI Summer Korea",
       "program": "課程",
@@ -629,6 +743,63 @@ ko:{
 
 /* ─────────────────── JAPANESE ─────────────────── */
 "ja": {
+  visits:{
+    kicker:"訪問先", title:"訪問先とパートナー",
+    lede:"パートナーは協定の締結後にのみ公表します。以下はすべて実際の進捗状況を明記しています。獲得を期待しているだけのロゴは、ここにはひとつもありません。",
+    fine:"訪問先は暫定であり、協定が確定し次第更新します。最終日程は出発前に参加者へ通知します。",
+    items:[
+      { name:"半導体製造拠点の見学", status:"talks", note:"クリーンルーム隣接区域を少人数で見学します。パートナー名は協定締結後に公表します。" },
+      { name:"自動車・ロボティクスメーカー", status:"talks", note:"稼働中の生産拠点で、自動運転とロボティクスの研究に触れます。" },
+      { name:"電機グループのAI研究所", status:"talks", note:"韓国で基盤モデルを開発する研究者とのセッション。" },
+      { name:"エンターテインメント技術企業", status:"planned", note:"文化を世界へ輸出する企業が、音楽制作・音声・翻訳にAIをどう使っているか。" },
+      { name:"国会", status:"planned", note:"民主主義国家が実際にどうAI法をつくるのか。議事堂前での記念撮影ではなく、立法スタッフとのセッションです。" },
+      { name:"マインドスポーツと機械の判断の限界", status:"planned", note:"囲碁・チェス・シャンチー・eスポーツは2023年杭州アジア競技大会の正式種目でした。機械と競うことは、すでに国際スポーツの一部です。囲碁と人間の直観、そして機械に見えていないものについてのセッションを、アルファ碁が対局したその都市で行います。" },
+      { name:"大学のAI研究室", status:"planned", note:"ソウルと大田の大学院研究者との実務セッション。" },
+      { name:"AIスタートアップ・ベンチャースタジオ訪問日", status:"planned", note:"ソウルでの創業者セッションとオフィス訪問。" },
+      { name:"文化体験の週末", status:"planned", note:"首都圏を離れて過ごす週末が1回あります。" },
+      { name:"京畿道楊平の宿泊型キャンパス", status:"talks", note:"公共の宿泊型教育キャンパス。収容人数は約570名。予約は確定前です。" }
+    ]
+  },
+
+  spon:{
+    kicker:"スポンサーの皆さまへ", title:"人数ではなく、一部分を支援していただきます",
+    lede:"スポンサーごとに、最も出しやすいかたちで、このプログラムの異なる部分を支えていただきます。航空座席を出す企業もあれば、施設への受け入れで参加する企業も、計算資源を提供する企業もあります。そのすべてが支援です。",
+    th1:"支援の対象", th2:"主な支援者", th3:"かたち",
+    rows:[
+      ["航空券","航空会社、大企業のCSR","座席または現金"],
+      ["宿泊・食事","自治体、上場企業","現金または施設"],
+      ["産業現場の見学","受け入れ企業そのもの","現金ではなく受け入れ"],
+      ["計算資源・AIツール","AI企業","クレジットとエンジニアによるセッション"],
+      ["冠奨学金","企業、個人寄付者","現金"],
+      ["国単位のプログラム","政府・公的機関","現金または現物"]
+    ],
+    c1t:"企業が支援する理由",
+    c1b:"世界中から選抜されたAI・コンピューティング専攻の学部生200名が、御社の産業のなかで4週間を過ごし、評価できる成果を発表します。デモデーは写真撮影の場ではなく、採用の場です。",
+    c2t:"ご報告する内容",
+    c2b:"応募者数と選抜倍率、参加者の進路、プロジェクトの成果、その後の採用につながった活動を、期ごとにまとめてご報告します。感想文よりも数字をお見せします。",
+    budT:"数字をそのまま申し上げると:",
+    budB:"第1期200名の予算は約21億7,000万ウォン、総額でおよそ157万米ドル、参加者1人あたり約7,900米ドルです。航空券、4週間の宿泊と食事、移動、保険、プログラム運営に加えて、実際に運営するためのスタッフ費と運営経費を含みます。スポンサーはいずれ計算されるので、先に公開します。費目ごとの予算と資金計画はスポンサー向け資料に添付します。見積確定までは暫定値です。",
+    btn:"スポンサー資料を請求する"
+  },
+
+  forum:{
+    kicker:"より大きな枠組み", title:"年次の取り組みの、半分",
+    p1:"AIサマー・コリアは999ソウル・フォーラムの学生トラックです。999ソウル・フォーラムは毎年9月9日にソウルで開催を計画している年次会議で、他国のフォーラムに代表団を送るのではなく、韓国自身が常設の国際フォーラムを持つべきだという考えから出発しました。",
+    p2:"両者は互いを支えるように設計されています。夏にチームがつくった成果は9月のフォーラムへ引き継がれ、実際に動かせる人たちの前に置かれます。一方を支援する組織が、もう一方を支援する組織です。",
+    b1t:"夏 · 4週間", b1b:"世界中から集まった学部生200名が、韓国のAI・半導体産業のなかで、韓国とアジアの同世代と混成チームを組んでものをつくります。",
+    b2t:"9月9日 · 年次", b2b:"フォーラム本体。夏のプロジェクトが発表され、その期の最も優れた成果が、資金を出す人と採用する人に出会います。",
+    noteT:"進捗状況:",
+    noteB:"フォーラムは準備中で、第1回はまだ開催していません。現時点では計画なので、計画として記します。"
+  },
+
+  about:{
+    kicker:"主催", title:"主催団体について",
+    p1:"AIサマー・コリアは社団法人国際ブレインスポーツ協会が主催します。「民法」第32条および文化体育観光部所管の非営利法人の設立・監督に関する規則に基づき、2022年3月にソウル特別市長が設立を許可した法人です(許可第2022-53号)。チェス・チャンギ・スピードキューブ・スクリーンゴルフの大会を自ら開催し、選手登録制度を運営しています。協会が韓国国内の運営を担い、会場、訪問先、韓国で起きるすべてに責任を持ちます。",
+    p2:"米国側のパートナーは、Plato Schoolを運営するカリフォルニア州の非営利法人Undenominated Church of Christianityです。2023年9月1日にサンフランシスコで設立され、米国内の募集と米国の大学との関係を担当します。米国外の募集はソウルから行います。宗教法人が学校を運営することは、教育において最も古いかたちです。米国のジョージタウン、ノートルダム、ボストンカレッジ、韓国の延世大学と梨花女子大学も、すべて同じ成り立ちです。プログラムの内容そのものは宗教とは無関係です。",
+    advT:"顧問:",
+    advB:"構成中です。ご本人の同意が得られ次第、この場に掲載します。掲載の承諾をいただく前に、お名前を載せることはありません。"
+  },
+
     "nav": {
       "brand": "AI Summer Korea",
       "program": "プログラム",
@@ -769,6 +940,63 @@ ko:{
 
 /* ─────────────────── SPANISH ─────────────────── */
 "es": {
+  visits:{
+    kicker:"Adónde vas", title:"Sedes y socios",
+    lede:"Solo publicamos un socio cuando el acuerdo está firmado. Todo lo que aparece abajo lleva su estado real: aquí no hay ningún logotipo que solo esperemos conseguir.",
+    fine:"La lista es provisional y se actualizará a medida que se confirmen los acuerdos. El itinerario definitivo se comunica a los participantes antes de la salida.",
+    items:[
+      { name:"Visita a una planta de fabricación de semiconductores", status:"talks", note:"Recorridos en grupos reducidos por zonas contiguas a la sala limpia. El socio se nombrará cuando el acuerdo esté firmado." },
+      { name:"Fabricante de automoción y robótica", status:"talks", note:"Investigación en conducción autónoma y robótica, en un campus de producción en funcionamiento." },
+      { name:"Laboratorio de IA de un grupo electrónico", status:"talks", note:"Sesiones con investigadores que construyen modelos fundacionales en Corea." },
+      { name:"Empresa de tecnología del entretenimiento", status:"planned", note:"Cómo usa la IA en producción musical, voz y traducción una empresa que exporta cultura a todo el mundo." },
+      { name:"Asamblea Nacional", status:"planned", note:"Cómo escribe realmente sus leyes de IA una democracia: una sesión con personal legislativo, no una foto en la escalinata." },
+      { name:"Deportes mentales y los límites del juicio de una máquina", status:"planned", note:"El go, el ajedrez, el xiangqi y los esports fueron deportes con medalla en los Juegos Asiáticos de Hangzhou en 2023: competir contra máquinas ya forma parte del deporte internacional. Una sesión sobre el go, la intuición humana y lo que una máquina no ve, en la ciudad donde jugó AlphaGo." },
+      { name:"Laboratorios universitarios de IA", status:"planned", note:"Sesiones de trabajo con investigadores de posgrado en Seúl y Daejeon." },
+      { name:"Jornada de startups y estudios de capital riesgo de IA", status:"planned", note:"Sesiones con fundadores y visitas a oficinas en Seúl." },
+      { name:"Fin de semana de viaje cultural", status:"planned", note:"Un fin de semana fuera del área metropolitana." },
+      { name:"Campus residencial en Yangpyeong, Gyeonggi", status:"talks", note:"Campus educativo residencial público, con capacidad para unas 570 personas. Reserva pendiente de confirmar." }
+    ]
+  },
+
+  spon:{
+    kicker:"Para patrocinadores", title:"Patrocina una parte, no un número de personas",
+    lede:"Cada patrocinador financia una parte distinta del programa, en la moneda que le resulta más fácil de dar. Unos ponen asientos de avión. Otros abren las puertas de una instalación. Otros aportan cómputo. Todo cuenta.",
+    th1:"Qué se financia", th2:"Patrocinador habitual", th3:"Forma",
+    rows:[
+      ["Billetes de avión","Aerolíneas, RSC de grandes empresas","Asientos o efectivo"],
+      ["Alojamiento y comidas","Gobiernos provinciales, empresas cotizadas","Efectivo o instalaciones"],
+      ["Visitas a plantas","La propia empresa anfitriona","Acceso, no efectivo"],
+      ["Cómputo y herramientas de IA","Empresas de IA","Créditos y sesiones con ingenieros"],
+      ["Becas con nombre","Empresas, donantes particulares","Efectivo"],
+      ["Programa por país","Organismos públicos","Efectivo o en especie"]
+    ],
+    c1t:"Por qué lo financian las empresas",
+    c1b:"Doscientos estudiantes de grado en IA y computación, seleccionados en todo el mundo, pasan cuatro semanas dentro de tu sector y presentan un trabajo que puedes evaluar. El día de demostraciones es una sala de contratación, no una oportunidad para una foto.",
+    c2t:"Qué te devolvemos por escrito",
+    c2b:"Número de solicitudes y de admitidos, resultados de los participantes, resultados de los proyectos y la actividad de contratación posterior, entregado al terminar cada edición. Preferimos enseñarte una cifra antes que un testimonio.",
+    budT:"La cifra, sin rodeos:",
+    budB:"La primera edición, de 200 personas, tiene un presupuesto de unos 2.170 millones de wones: alrededor de 1,57 millones de dólares en total, unos 7.900 dólares por participante. Cubre vuelos, cuatro semanas de alojamiento y comidas, transporte, seguro y programación, más el personal y los costes de operación necesarios para llevarlo a cabo de verdad. Publicamos la cifra porque cualquier patrocinador va a calcularla igualmente. El presupuesto partida por partida y el plan de financiación acompañan al dosier para patrocinadores. Las cifras son provisionales hasta confirmar presupuestos.",
+    btn:"Solicitar el dosier para patrocinadores"
+  },
+
+  forum:{
+    kicker:"El marco más amplio", title:"La mitad de algo anual",
+    p1:"AI Summer Korea es la vía estudiantil del Foro 999 de Seúl, un encuentro anual previsto para cada 9 de septiembre en Seúl, partiendo de la idea de que Corea debería acoger su propio foro internacional permanente en lugar de enviar delegaciones a los de los demás.",
+    p2:"Los dos están hechos para alimentarse mutuamente. El trabajo que producen los equipos en verano se lleva al foro de septiembre y se pone delante de quienes pueden actuar sobre él. Las organizaciones que financian uno son las que financian el otro.",
+    b1t:"Verano · cuatro semanas", b1b:"Doscientos estudiantes de grado de todo el mundo dentro de la industria coreana de IA y semiconductores, construyendo en equipos mixtos con compañeros coreanos y asiáticos.",
+    b2t:"9 de septiembre · anual", b2b:"El foro en sí. Se presentan los proyectos del verano y el mejor trabajo de la promoción se encuentra con quienes financian y contratan.",
+    noteT:"Estado:",
+    noteB:"El foro está en preparación y aún no ha celebrado su primera edición. Lo describimos aquí como un plan, porque eso es lo que es ahora mismo."
+  },
+
+  about:{
+    kicker:"Quién lo organiza", title:"Sobre la entidad organizadora",
+    p1:"AI Summer Korea está organizado por la Asociación Internacional de Deportes Mentales, una entidad coreana sin ánimo de lucro autorizada en marzo de 2022 por el Gobierno Metropolitano de Seúl (licencia n.º 2022-53), al amparo del artículo 32 del Código Civil y del reglamento de entidades sin ánimo de lucro del Ministerio de Cultura, Deporte y Turismo. Organiza sus propias competiciones de ajedrez, janggi, speedcube y golf en simulador, y gestiona un sistema de jugadores federados. La asociación se hace cargo de la sede, de las visitas y de todo lo que ocurre sobre el terreno en Corea.",
+    p2:"Nuestro socio en Estados Unidos es Undenominated Church of Christianity, la entidad californiana sin ánimo de lucro que gestiona Plato School, constituida en San Francisco el 1 de septiembre de 2023. Se ocupa de la captación en Estados Unidos y de la relación con las universidades estadounidenses. La captación fuera de Estados Unidos se dirige desde Seúl. Que una entidad religiosa gestione un centro educativo es la fórmula más antigua que existe en educación: Georgetown, Notre Dame y Boston College en Estados Unidos, Yonsei y Ewha en Corea, todas nacieron así. El programa en sí es laico.",
+    advT:"Consejo asesor:",
+    advB:"En formación. Los miembros aparecerán aquí una vez confirmados. No publicamos ningún nombre antes de que la persona haya aceptado figurar."
+  },
+
     "nav": {
       "brand": "AI Summer Korea",
       "program": "Programa",
@@ -909,6 +1137,63 @@ ko:{
 
 /* ─────────────────── FRENCH ─────────────────── */
 "fr": {
+  visits:{
+    kicker:"Où vous allez", title:"Sites et partenaires",
+    lede:"Nous ne publions un partenaire qu'une fois l'accord signé. Chaque ligne ci-dessous porte son état réel : il n'y a ici aucun logo que nous espérions seulement obtenir.",
+    fine:"La liste est provisoire et sera mise à jour au fur et à mesure des accords confirmés. L'itinéraire définitif est communiqué aux participants avant le départ.",
+    items:[
+      { name:"Visite d'un site de fabrication de semi-conducteurs", status:"talks", note:"Parcours en petits groupes dans les zones attenantes à la salle blanche. Le partenaire sera nommé une fois l'accord signé." },
+      { name:"Constructeur automobile et robotique", status:"talks", note:"Recherche en conduite autonome et en robotique, sur un site de production en activité." },
+      { name:"Laboratoire d'IA d'un groupe électronique", status:"talks", note:"Séances avec des chercheurs qui construisent des modèles de fondation en Corée." },
+      { name:"Entreprise de technologie du divertissement", status:"planned", note:"Comment une entreprise qui exporte sa culture dans le monde entier utilise l'IA pour la production musicale, la voix et la traduction." },
+      { name:"Assemblée nationale", status:"planned", note:"Comment une démocratie écrit réellement sa loi sur l'IA : une séance avec des collaborateurs parlementaires, pas une photo sur le perron." },
+      { name:"Sports de l'esprit et limites du jugement des machines", status:"planned", note:"Le go, les échecs, le xiangqi et l'esport étaient des disciplines à médailles aux Jeux asiatiques de Hangzhou en 2023 : affronter des machines fait déjà partie du sport international. Une séance sur le go, l'intuition humaine et ce qu'une machine ne voit pas, dans la ville où AlphaGo a joué." },
+      { name:"Laboratoires universitaires d'IA", status:"planned", note:"Séances de travail avec des chercheurs doctorants à Séoul et à Daejeon." },
+      { name:"Journée startups et studios de capital-risque en IA", status:"planned", note:"Rencontres avec des fondateurs et visites de bureaux à Séoul." },
+      { name:"Week-end culturel", status:"planned", note:"Un week-end hors de la région de la capitale." },
+      { name:"Campus résidentiel de Yangpyeong, Gyeonggi", status:"talks", note:"Campus éducatif résidentiel public, capacité d'environ 570 personnes. Réservation à confirmer." }
+    ]
+  },
+
+  spon:{
+    kicker:"Pour les mécènes", title:"Financez une partie, pas un nombre de têtes",
+    lede:"Chaque mécène finance une partie différente du programme, dans la monnaie qui lui est la plus simple à donner. Certains offrent des sièges d'avion. D'autres ouvrent les portes d'un site. D'autres fournissent du calcul. Tout cela compte.",
+    th1:"Ce qui est financé", th2:"Mécène type", th3:"Forme",
+    rows:[
+      ["Billets d'avion","Compagnies aériennes, RSE de grands groupes","Sièges ou espèces"],
+      ["Hébergement et repas","Collectivités, sociétés cotées","Espèces ou locaux"],
+      ["Visites de sites industriels","L'entreprise d'accueil elle-même","Un accès, pas de l'argent"],
+      ["Calcul et outils d'IA","Entreprises d'IA","Crédits et séances avec des ingénieurs"],
+      ["Bourses nominatives","Entreprises, donateurs particuliers","Espèces"],
+      ["Programme par pays","Organismes publics","Espèces ou en nature"]
+    ],
+    c1t:"Pourquoi les entreprises financent",
+    c1b:"Deux cents étudiants en IA et en informatique, sélectionnés dans le monde entier, passent quatre semaines à l'intérieur de votre secteur et présentent un travail que vous pouvez évaluer. La journée de démonstration est une salle de recrutement, pas une occasion de photo.",
+    c2t:"Ce que nous vous rendons",
+    c2b:"Nombre de candidatures et d'admissions, devenir des participants, résultats des projets et recrutements qui en découlent, remis après chaque promotion. Nous préférons vous montrer un chiffre qu'un témoignage.",
+    budT:"Le chiffre, sans détour :",
+    budB:"La première promotion de 200 personnes est budgétée à environ 2,17 milliards de wons, soit près de 1,57 million de dollars au total et environ 7 900 dollars par participant. Cela couvre les vols, quatre semaines d'hébergement et de repas, les transports, l'assurance et la programmation, ainsi que le personnel et les frais de fonctionnement nécessaires pour le faire réellement tourner. Nous publions le chiffre parce qu'un mécène le calculera de toute façon. Le budget ligne par ligne et le plan de financement accompagnent le dossier mécénat. Chiffres provisoires jusqu'à confirmation des devis.",
+    btn:"Demander le dossier mécénat"
+  },
+
+  forum:{
+    kicker:"Le cadre plus large", title:"La moitié de quelque chose d'annuel",
+    p1:"AI Summer Korea est le volet étudiant du Forum 999 de Séoul, une rencontre annuelle prévue chaque 9 septembre à Séoul, partant du principe que la Corée devrait accueillir son propre forum international permanent plutôt que d'envoyer des délégations à ceux des autres.",
+    p2:"Les deux sont conçus pour se nourrir l'un l'autre. Le travail produit par les équipes en été est porté au forum de septembre et placé devant ceux qui peuvent en faire quelque chose. Les organisations qui financent l'un sont celles qui financent l'autre.",
+    b1t:"Été · quatre semaines", b1b:"Deux cents étudiants venus du monde entier au cœur de l'industrie coréenne de l'IA et des semi-conducteurs, construisant en équipes mixtes avec des camarades coréens et asiatiques.",
+    b2t:"9 septembre · annuel", b2b:"Le forum lui-même. Les projets de l'été y sont présentés, et les meilleurs travaux de la promotion rencontrent ceux qui financent et qui recrutent.",
+    noteT:"État :",
+    noteB:"Le forum est en préparation et n'a pas encore tenu sa première édition. Nous le décrivons ici comme un projet, parce que c'est ce qu'il est aujourd'hui."
+  },
+
+  about:{
+    kicker:"Qui organise", title:"À propos de l'organisateur",
+    p1:"AI Summer Korea est organisé par l'Association internationale des sports de l'esprit, une association coréenne à but non lucratif autorisée en mars 2022 par la Ville métropolitaine de Séoul (licence n° 2022-53), au titre de l'article 32 du Code civil et du règlement sur les personnes morales à but non lucratif relevant du ministère de la Culture, des Sports et du Tourisme. Elle organise ses propres compétitions d'échecs, de janggi, de speedcube et de golf en simulateur, et gère un système de joueurs licenciés. L'association est responsable du lieu, des visites et de tout ce qui se passe sur le terrain en Corée.",
+    p2:"Notre partenaire aux États-Unis est Undenominated Church of Christianity, l'organisation californienne à but non lucratif qui gère Plato School, constituée à San Francisco le 1er septembre 2023. Elle prend en charge le recrutement aux États-Unis et les relations avec les universités américaines. Le recrutement hors des États-Unis est piloté depuis Séoul. Qu'une organisation religieuse gère un établissement d'enseignement est la formule la plus ancienne qui soit en éducation : Georgetown, Notre-Dame et Boston College aux États-Unis, Yonsei et Ewha en Corée, toutes nées ainsi. Le programme lui-même est laïque.",
+    advT:"Conseil consultatif :",
+    advB:"En cours de constitution. Les membres seront indiqués ici une fois leur accord obtenu. Nous ne publions aucun nom avant que la personne ait accepté d'y figurer."
+  },
+
     "nav": {
       "brand": "AI Summer Korea",
       "program": "Programme",
@@ -1049,6 +1334,63 @@ ko:{
 
 /* ─────────────────── GERMAN ─────────────────── */
 "de": {
+  visits:{
+    kicker:"Wohin es geht", title:"Standorte und Partner",
+    lede:"Wir nennen einen Partner erst, wenn die Vereinbarung unterschrieben ist. Jede Zeile unten trägt ihren tatsächlichen Stand — hier steht kein Logo, das wir uns bloß erhoffen.",
+    fine:"Die Liste ist vorläufig und wird fortlaufend ergänzt, sobald Vereinbarungen bestätigt sind. Das endgültige Programm erhalten die Teilnehmenden vor der Abreise.",
+    items:[
+      { name:"Besuch einer Halbleiterfertigung", status:"talks", note:"Rundgänge in kleinen Gruppen in den an den Reinraum angrenzenden Bereichen. Der Partner wird genannt, sobald die Vereinbarung unterschrieben ist." },
+      { name:"Automobil- und Robotikhersteller", status:"talks", note:"Forschung zu autonomem Fahren und Robotik auf einem laufenden Produktionsgelände." },
+      { name:"KI-Forschungslabor eines Elektronikkonzerns", status:"talks", note:"Sitzungen mit Forschenden, die in Korea Basismodelle entwickeln." },
+      { name:"Unternehmen für Unterhaltungstechnologie", status:"planned", note:"Wie ein Unternehmen, das Kultur in die ganze Welt exportiert, KI in Musikproduktion, Stimme und Übersetzung einsetzt." },
+      { name:"Nationalversammlung", status:"planned", note:"Wie eine Demokratie ihr KI-Recht tatsächlich schreibt — eine Sitzung mit Mitarbeitenden der Gesetzgebung, kein Foto auf der Freitreppe." },
+      { name:"Denksport und die Grenzen maschinellen Urteilens", status:"planned", note:"Go, Schach, Xiangqi und E-Sport waren bei den Asienspielen 2023 in Hangzhou Medaillendisziplinen — gegen Maschinen anzutreten gehört längst zum internationalen Sport. Eine Sitzung über Go, menschliche Intuition und das, was eine Maschine nicht sieht, in der Stadt, in der AlphaGo gespielt hat." },
+      { name:"Universitäre KI-Forschungslabore", status:"planned", note:"Arbeitssitzungen mit Promovierenden in Seoul und Daejeon." },
+      { name:"Tag der KI-Start-ups und Venture-Studios", status:"planned", note:"Gespräche mit Gründerinnen und Gründern sowie Bürobesuche in Seoul." },
+      { name:"Wochenende für Kultur und Reisen", status:"planned", note:"Ein Wochenende außerhalb der Hauptstadtregion." },
+      { name:"Wohncampus in Yangpyeong, Gyeonggi", status:"talks", note:"Öffentlicher Bildungscampus mit Unterkunft, Kapazität rund 570 Personen. Buchung noch zu bestätigen." }
+    ]
+  },
+
+  spon:{
+    kicker:"Für Förderer", title:"Fördern Sie einen Teil, keine Kopfzahl",
+    lede:"Jeder Förderer trägt einen anderen Teil dieses Programms — in der Währung, die ihm am leichtesten fällt. Die einen geben Flugplätze. Die anderen öffnen ein Werk. Wieder andere stellen Rechenleistung bereit. Das alles zählt.",
+    th1:"Was gefördert wird", th2:"Typischer Förderer", th3:"Form",
+    rows:[
+      ["Flüge","Fluggesellschaften, CSR großer Unternehmen","Plätze oder Geld"],
+      ["Unterkunft und Verpflegung","Provinzregierungen, börsennotierte Unternehmen","Geld oder Räumlichkeiten"],
+      ["Werksbesuche","Das gastgebende Unternehmen selbst","Zugang, kein Geld"],
+      ["Rechenleistung und KI-Werkzeuge","KI-Unternehmen","Guthaben und Sitzungen mit Ingenieurinnen und Ingenieuren"],
+      ["Namensstipendien","Unternehmen, private Spender","Geld"],
+      ["Länderprogramm","Öffentliche Stellen","Geld oder Sachleistung"]
+    ],
+    c1t:"Warum Unternehmen das fördern",
+    c1b:"Zweihundert ausgewählte Studierende der KI und Informatik aus aller Welt verbringen vier Wochen in Ihrer Branche und stellen Arbeiten vor, die Sie beurteilen können. Der Demo-Tag ist ein Recruiting-Raum, kein Fototermin.",
+    c2t:"Was wir zurückmelden",
+    c2b:"Bewerber- und Auswahlzahlen, Werdegang der Teilnehmenden, Projektergebnisse und die daraus entstandenen Einstellungen — nach jedem Jahrgang zusammengestellt. Wir zeigen Ihnen lieber eine Zahl als ein Testimonial.",
+    budT:"Die Zahl, ohne Umschweife:",
+    budB:"Für den ersten Jahrgang mit 200 Personen sind rund 2,17 Milliarden Won veranschlagt — insgesamt etwa 1,57 Millionen US-Dollar, rund 7.900 US-Dollar je Teilnehmerin oder Teilnehmer. Darin enthalten sind Flüge, vier Wochen Unterkunft und Verpflegung, Transport, Versicherung und Programm sowie das Personal und die Betriebskosten, die nötig sind, um das Ganze tatsächlich durchzuführen. Wir veröffentlichen die Zahl, weil ein Förderer sie ohnehin ausrechnet. Der Haushalt Posten für Posten und der Finanzierungsplan liegen der Förderunterlage bei. Alle Zahlen sind vorläufig, bis Angebote bestätigt sind.",
+    btn:"Förderunterlage anfordern"
+  },
+
+  forum:{
+    kicker:"Der größere Rahmen", title:"Die Hälfte von etwas Jährlichem",
+    p1:"AI Summer Korea ist der Studierendenteil des 999 Seoul Forum — eines jährlichen Treffens, das jeweils am 9. September in Seoul stattfinden soll, ausgehend von dem Gedanken, dass Korea ein eigenes ständiges internationales Forum ausrichten sollte, statt Delegationen zu den Foren anderer zu schicken.",
+    p2:"Beide sind so angelegt, dass sie einander tragen. Was die Teams im Sommer erarbeiten, wird in das Septemberforum getragen und denen vorgelegt, die daraus etwas machen können. Wer das eine fördert, fördert das andere.",
+    b1t:"Sommer · vier Wochen", b1b:"Zweihundert Studierende aus aller Welt mitten in Koreas KI- und Halbleiterindustrie, die in gemischten Teams mit koreanischen und asiatischen Gleichaltrigen etwas bauen.",
+    b2t:"9. September · jährlich", b2b:"Das Forum selbst. Die Sommerprojekte werden vorgestellt, und die stärksten Arbeiten des Jahrgangs treffen auf die, die fördern und einstellen.",
+    noteT:"Stand:",
+    noteB:"Das Forum ist in Vorbereitung und hat noch keine erste Ausgabe abgehalten. Wir beschreiben es hier als Vorhaben, weil es derzeit genau das ist."
+  },
+
+  about:{
+    kicker:"Wer dahintersteht", title:"Über den Veranstalter",
+    p1:"AI Summer Korea wird von der International Brain Sports Association veranstaltet, einer koreanischen gemeinnützigen Körperschaft, die im März 2022 von der Stadt Seoul zugelassen wurde (Genehmigung Nr. 2022-53), nach Artikel 32 des Zivilgesetzbuchs und der Verordnung des Ministeriums für Kultur, Sport und Tourismus über gemeinnützige Körperschaften. Sie richtet eigene Wettbewerbe in Schach, Janggi, Speedcube und Screengolf aus und führt ein Spielerregister. Die Vereinigung verantwortet den Veranstaltungsort, die Besuche und alles, was in Korea vor Ort geschieht.",
+    p2:"Unser Partner in den Vereinigten Staaten ist Undenominated Church of Christianity, die kalifornische gemeinnützige Körperschaft, die Plato School betreibt und am 1. September 2023 in San Francisco gegründet wurde. Sie übernimmt die Gewinnung von Teilnehmenden in den USA und die Beziehungen zu amerikanischen Hochschulen. Die Gewinnung außerhalb der USA wird von Seoul aus gesteuert. Dass eine religiöse Körperschaft eine Schule betreibt, ist die älteste Form im Bildungswesen — Georgetown, Notre Dame und Boston College in den Vereinigten Staaten, Yonsei und Ewha in Korea sind alle so entstanden. Das Programm selbst ist weltlich.",
+    advT:"Beirat:",
+    advB:"Im Aufbau. Mitglieder werden hier aufgeführt, sobald sie zugesagt haben. Wir nennen keinen Namen, bevor die betreffende Person der Nennung zugestimmt hat."
+  },
+
     "nav": {
       "brand": "AI Summer Korea",
       "program": "Programm",
