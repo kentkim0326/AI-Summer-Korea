@@ -161,15 +161,15 @@ en:{
 
   about:{
     kicker:"Who runs this", title:"About the organizer",
-    p1:"Korea AI Summer is a program of Plato School SF Foundation, a non-profit foundation established in San Francisco, California in 2023, with an office in Seoul. Its work is in international education between the United States and Asia.",
-    p2:"In Korea the program is run with the International Brain Sports Association, an incorporated association under Korean law. The two-country structure is deliberate: it is what lets the program raise support on both sides — tax-deductible in the United States, and eligible for Korean public programs that require a domestic legal entity.",
+    p1:"Korea AI Summer is organised by the International Brain Sports Association, an incorporated association under Korean law, which runs the programme in Korea and is responsible for the venue, the site visits and everything that happens on the ground.",
+    p2:"Our partner in the United States is Undenominated Church of Christianity, the California non-profit corporation that operates Plato School, incorporated in San Francisco on 1 September 2023. It handles the American side: recruitment across the fifty states and relationships with U.S. universities. It is a religious non-profit, and we would rather you read that here than find it later.",
     advT:"Advisory board:",
     advB:"Being formed. Members will be listed here once they have confirmed. We do not list names before they have agreed to appear."
   },
 
   foot:{
     brand:"Korea AI Summer",
-    legal:"A program of Plato School SF Foundation, a non-profit foundation established in San Francisco, CA (2023). Seoul office · Republic of Korea.",
+    legal:"Organised by the International Brain Sports Association (Republic of Korea). U.S. partner: Undenominated Church of Christianity, operator of Plato School, a California non-profit corporation incorporated 1 September 2023.",
     note:"First cohort: summer 2027. Program details, dates, and partners are provisional until confirmed and will be updated on this page.",
     updated:"Last updated"
   }
@@ -318,15 +318,15 @@ ko:{
 
   about:{
     kicker:"주최", title:"주최 기관 소개",
-    p1:"코리아 AI 서머는 2023년 미국 캘리포니아주 샌프란시스코에 설립된 비영리 재단 Plato School SF Foundation 의 프로그램이며, 서울에 사무소를 두고 있습니다. 재단은 미국과 아시아를 잇는 국제 교육을 해 왔습니다.",
-    p2:"한국에서는 사단법인 국제브레인스포츠협회와 함께 운영합니다. 두 나라 법인 구조는 의도한 것입니다 — 미국에서는 세금 공제가 되는 기부를 받고, 한국에서는 국내 법인 자격을 요구하는 공공 사업에 지원할 수 있게 하는 구조입니다.",
+    p1:"코리아 AI 서머는 사단법인 국제브레인스포츠협회가 주최합니다. 협회가 국내 운영을 맡아 장소와 현장 방문, 한국에서 벌어지는 모든 일을 책임집니다.",
+    p2:"미국 측 협력기관은 Plato School 을 운영하는 캘리포니아주 비영리법인 Undenominated Church of Christianity 입니다. 2023년 9월 1일 샌프란시스코에 설립되었고, 미국 50개 주 모집과 미국 대학과의 관계를 맡습니다. 종교 비영리법인이며, 나중에 알게 되시는 것보다 여기서 읽으시는 편이 낫다고 보아 밝혀 둡니다.",
     advT:"자문위원:",
     advB:"구성 중입니다. 확정되는 대로 이 자리에 표기합니다. 본인의 동의를 받기 전에는 성함을 올리지 않습니다."
   },
 
   foot:{
     brand:"코리아 AI 서머",
-    legal:"2023년 미국 캘리포니아주 샌프란시스코에 설립된 비영리 재단 Plato School SF Foundation 의 프로그램입니다. 서울 사무소 · 대한민국.",
+    legal:"주최 사단법인 국제브레인스포츠협회 (대한민국). 미국 협력기관 Undenominated Church of Christianity — Plato School 운영, 2023년 9월 1일 캘리포니아주 설립 비영리법인.",
     note:"1기는 2027년 여름입니다. 프로그램 세부 내용·날짜·파트너는 확정 전까지 잠정이며 이 페이지에서 갱신됩니다.",
     updated:"마지막 갱신"
   }
