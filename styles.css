@@ -167,6 +167,23 @@ a{color:inherit}
 .stats dt{margin:0 0 6px;font-family:var(--mono);font-size:11px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3)}
 .stats dd{margin:0;font-family:var(--mono);font-size:clamp(1.45rem,3vw,1.85rem);font-weight:500;letter-spacing:-.01em;font-variant-numeric:tabular-nums}
 
+/* ── 전면 이미지 밴드 ────────────────────────────── */
+.band-img{
+  position:relative;overflow:hidden;
+  height:clamp(170px,24vw,300px);
+  background:var(--bg-alt);
+  border-block:1px solid var(--line);
+}
+.band-img picture,.band-img img{display:block;width:100%;height:100%}
+.band-img img{object-fit:cover;object-position:var(--band-pos,center)}
+/* 위아래 가장자리를 어둡게 깔아 페이지와 이어붙인다. */
+.band-img::after{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(to bottom,
+    rgba(11,14,19,.72) 0%,rgba(11,14,19,.16) 34%,
+    rgba(11,14,19,.16) 62%,rgba(11,14,19,.78) 100%);
+}
+
 /* ── bands ───────────────────────────────────────── */
 .band{padding:88px 0;border-block-end:1px solid var(--line)}
 .band.alt{background:var(--bg-alt)}
