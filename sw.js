@@ -16,7 +16,7 @@
  */
 "use strict";
 
-const VERSION = "ask-v1";
+const VERSION = "ask-v2";
 const CACHE = VERSION;
 
 /* Same-origin only. Google Fonts is cross-origin and handles its own caching. */

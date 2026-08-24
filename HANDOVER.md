@@ -34,6 +34,8 @@ app.js                  언어 전환, 리스트 렌더, 히어로 영상, 서�
 build-static.js         i18n.js → index.html 의 목록 마크업 동기화.
 sw.js                   서비스워커 (오프라인 캐시).
 manifest.webmanifest    PWA 매니페스트.
+robots.txt              크롤러 허용 + 사이트맵 위치.
+sitemap.xml             단일 URL. 언어는 같은 주소에서 전환되므로 URL 이 하나뿐이다.
 apps-script/Code.gs     접수 폼 응답을 구글 시트에 쌓는 스크립트 (배포는 수동).
 assets/                 로고, 파비콘, 히어로 영상·포스터, 섹션 밴드 이미지.
 ```
@@ -150,7 +152,7 @@ Canva 원본 `DAHTL5QRZjY` (1페이지가 로고, 2페이지는 빈 페이지).
 | `wordmark-light.png` / `wordmark-dark.png` | `ask` 만, 태그라인 없음 |
 | `favicon-32/180/192/512.png` | 앰버 타일 + 먹색 `ask` |
 | `icon-maskable-512.png` | 안드로이드 마스커블(안전영역 확보) |
-| `logo-og.png` | 1200×630 링크 미리보기 카드 |
+| `logo-og.jpg` | 1200×630 링크 미리보기 카드. 사진+헤드라인+로고. JPEG 82KB — PNG 로 만들면 865KB 라 스크레이퍼가 버거워한다. `make-og` 로직은 스크래치에 있으니 바꾸려면 다시 만들어야 한다 |
 
 > ⚠️ **이름이 어긋나 있습니다.** 로고 태그라인은 **AI SUMMER IN KOREA** 인데
 > 사이트 이름은 **AI Summer Korea** 입니다. 둘 중 하나로 통일해야 합니다.
