@@ -2,21 +2,26 @@
    One dark surface, one accent. Logical properties throughout so RTL works. */
 
 :root{
-  --bg:#0a0c10;
-  --bg-alt:#0f131a;
-  --surface:#151a23;
-  --surface-2:#1c2330;
-  --line:#252d3b;
-  --ink:#eef2f8;
-  --ink-2:#a8b3c4;
-  --ink-3:#6f7c90;
-  --accent:#4d7cff;
-  --accent-2:#7aa2ff;
-  --warn:#ffb648;
-  --ok:#37d39b;
+  /* Silicon dark ground with a blue bias, lit by cleanroom amber — the yellow
+     safelight every fab bay runs under, because photoresist is blue-sensitive.
+     Committed single-theme: the page paints its own ground in every token. */
+  --bg:#0b0e13;
+  --bg-alt:#10151d;
+  --surface:#141a23;
+  --surface-2:#1b222d;
+  --line:#232b37;
+  --ink:#e8ecf3;
+  --ink-2:#96a2b4;
+  --ink-3:#68748a;
+  --accent:#f2a93b;
+  --accent-soft:rgba(242,169,59,.13);
+  --accent-ink:#2a1c05;
+  --ok:#52c79a;
+  --ok-soft:rgba(82,199,154,.14);
   --max:1120px;
   --radius:14px;
-  --font:"Inter","Pretendard",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue","Apple SD Gothic Neo","Noto Sans KR",sans-serif;
+  --font:"IBM Plex Sans","IBM Plex Sans KR",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Apple SD Gothic Neo","Noto Sans KR",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
 }
 
 *,*::before,*::after{box-sizing:border-box}
@@ -43,8 +48,8 @@ a{color:inherit}
 .brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:700;letter-spacing:-.01em}
 .brand-mark{
   display:grid;place-items:center;width:34px;height:34px;flex:0 0 34px;
-  border-radius:9px;background:linear-gradient(135deg,var(--accent),#2f5ad0);
-  font-size:12px;font-weight:800;letter-spacing:.02em;color:#fff;
+  border-radius:9px;background:linear-gradient(135deg,var(--accent),#c47a12);
+  font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:.02em;color:var(--accent-ink);
 }
 .brand-name{font-size:15px}
 .nav-links{display:flex;gap:22px;margin-inline-start:auto;font-size:14px}
@@ -57,33 +62,34 @@ a{color:inherit}
   padding:5px 9px;border-radius:7px;cursor:pointer;transition:.15s;
 }
 .lang button:hover{color:var(--ink);border-color:var(--ink-3)}
-.lang button[aria-current="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
+.lang button[aria-current="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
 
 /* ── hero ────────────────────────────────────────── */
 .hero{
   position:relative;padding:96px 24px 88px;
   background:
-    radial-gradient(900px 500px at 78% -8%,rgba(77,124,255,.20),transparent 62%),
-    radial-gradient(700px 420px at 6% 8%,rgba(55,211,155,.09),transparent 60%),
+    radial-gradient(760px 520px at 80% 6%,rgba(242,169,59,.13),transparent 66%),
+    radial-gradient(680px 420px at 4% 10%,rgba(82,199,154,.05),transparent 62%),
     var(--bg);
   border-block-end:1px solid var(--line);
   overflow:hidden;
 }
 .hero::after{
-  content:"";position:absolute;inset:0;pointer-events:none;opacity:.5;
+  content:"";position:absolute;inset:0;pointer-events:none;opacity:.75;
   background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);
-  background-size:64px 64px;
-  mask-image:radial-gradient(700px 380px at 72% 12%,#000,transparent 72%);
-  -webkit-mask-image:radial-gradient(700px 380px at 72% 12%,#000,transparent 72%);
+  background-size:42px 42px;
+  /* circular clip over a rectangular die grid: a wafer die map */
+  mask-image:radial-gradient(circle 300px at 80% 42%,#000 0 78%,transparent 82%);
+  -webkit-mask-image:radial-gradient(circle 300px at 80% 42%,#000 0 78%,transparent 82%);
 }
 .hero-inner{position:relative;z-index:1;max-width:var(--max);margin-inline:auto}
 .eyebrow{
-  margin:0 0 18px;font-size:12px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;
-  color:var(--accent-2);
+  margin:0 0 18px;font-family:var(--mono);font-size:12px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--accent);
 }
 .hero h1{
-  margin:0 0 22px;max-width:17ch;
-  font-size:clamp(2.1rem,5.6vw,3.9rem);line-height:1.08;letter-spacing:-.03em;font-weight:800;
+  margin:0 0 22px;max-width:17ch;text-wrap:balance;
+  font-size:clamp(2.1rem,5.6vw,3.9rem);line-height:1.08;letter-spacing:-.03em;font-weight:700;
 }
 .lede{margin:0 0 32px;max-width:62ch;font-size:clamp(1rem,1.9vw,1.16rem);color:var(--ink-2)}
 .fineprint{margin:20px 0 0;font-size:13px;color:var(--ink-3);max-width:64ch}
@@ -95,8 +101,8 @@ a{color:inherit}
   border:1px solid transparent;transition:.16s;
 }
 .btn-lg{padding:15px 30px;font-size:16px}
-.btn-primary{background:var(--accent);color:#fff}
-.btn-primary:hover{background:var(--accent-2);transform:translateY(-1px)}
+.btn-primary{background:var(--accent);color:var(--accent-ink);font-weight:600}
+.btn-primary:hover{background:#ffbe57;transform:translateY(-1px)}
 .btn-ghost{border-color:var(--line);color:var(--ink);background:var(--surface)}
 .btn-ghost:hover{border-color:var(--ink-3);background:var(--surface-2)}
 
@@ -106,16 +112,16 @@ a{color:inherit}
   background:var(--line);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;
 }
 .stats>div{background:var(--bg-alt);padding:18px 20px}
-.stats dt{margin:0 0 6px;font-size:11px;font-weight:650;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}
-.stats dd{margin:0;font-size:clamp(1.5rem,3vw,1.95rem);font-weight:800;letter-spacing:-.02em}
+.stats dt{margin:0 0 6px;font-family:var(--mono);font-size:11px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3)}
+.stats dd{margin:0;font-family:var(--mono);font-size:clamp(1.45rem,3vw,1.85rem);font-weight:500;letter-spacing:-.01em;font-variant-numeric:tabular-nums}
 
 /* ── bands ───────────────────────────────────────── */
 .band{padding:88px 0;border-block-end:1px solid var(--line)}
 .band.alt{background:var(--bg-alt)}
 .kicker{
-  margin:0 0 12px;font-size:12px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:var(--accent-2);
+  margin:0 0 12px;font-family:var(--mono);font-size:12px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);
 }
-.band h2{margin:0 0 18px;font-size:clamp(1.6rem,3.6vw,2.5rem);line-height:1.15;letter-spacing:-.025em;font-weight:800;max-width:22ch}
+.band h2{margin:0 0 18px;font-size:clamp(1.6rem,3.6vw,2.5rem);line-height:1.15;letter-spacing:-.018em;font-weight:700;max-width:22ch;text-wrap:balance}
 .section-lede{margin:0 0 40px;max-width:66ch;color:var(--ink-2);font-size:1.03rem}
 .prose{max-width:68ch;margin-block-end:40px}
 .prose p{margin:0 0 16px;color:var(--ink-2)}
@@ -129,9 +135,6 @@ a{color:inherit}
   padding:26px 24px;
 }
 .card.accent{background:linear-gradient(160deg,var(--surface-2),var(--surface))}
-.card-num{
-  display:block;margin-block-end:14px;font-size:12px;font-weight:800;letter-spacing:.12em;color:var(--accent);
-}
 .card h3{margin:0 0 10px;font-size:1.08rem;font-weight:700;letter-spacing:-.01em}
 .card p{margin:0;color:var(--ink-2);font-size:.95rem}
 
@@ -144,8 +147,9 @@ a{color:inherit}
 }
 .week-tag{
   display:inline-block;margin-block-end:10px;padding:3px 10px;border-radius:20px;
-  background:rgba(77,124,255,.14);color:var(--accent-2);
-  font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;
+  font-family:var(--mono);
+  background:rgba(77,124,255,.14);color:var(--accent);
+  font-size:11px;font-weight:500;letter-spacing:.06em;text-transform:uppercase;
 }
 .weeks h3{margin:0 0 8px;font-size:1.18rem;font-weight:700;letter-spacing:-.01em}
 .weeks p{margin:0;color:var(--ink-2);font-size:.97rem}
@@ -157,7 +161,7 @@ a{color:inherit}
   border-radius:10px;padding:18px 22px;margin-block:8px 0;font-size:.94rem;color:var(--ink-2);
 }
 .note strong{color:var(--ink);font-weight:700}
-.note.warn{border-inline-start-color:var(--warn)}
+.note.warn{border-inline-start-color:var(--accent)}
 
 /* ── status list ─────────────────────────────────── */
 .statuslist{list-style:none;margin:0 0 20px;padding:0;display:grid;gap:10px}
@@ -168,11 +172,11 @@ a{color:inherit}
 .statuslist .sl-name{font-weight:650;flex:1 1 240px}
 .statuslist .sl-note{color:var(--ink-3);font-size:.88rem;flex:1 1 100%}
 .pill{
-  flex:0 0 auto;padding:4px 12px;border-radius:20px;
-  font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;white-space:nowrap;
+  flex:0 0 auto;padding:4px 12px;border-radius:20px;font-family:var(--mono);
+  font-size:11px;font-weight:500;letter-spacing:.04em;text-transform:uppercase;white-space:nowrap;
 }
-.pill.confirmed{background:rgba(55,211,155,.14);color:var(--ok)}
-.pill.talks{background:rgba(255,182,72,.14);color:var(--warn)}
+.pill.confirmed{background:var(--ok-soft);color:var(--ok)}
+.pill.talks{background:var(--accent-soft);color:var(--accent)}
 .pill.planned{background:rgba(111,124,144,.16);color:var(--ink-3)}
 
 /* ── split + ticks ───────────────────────────────── */
@@ -183,7 +187,7 @@ a{color:inherit}
 .ticks li::before{
   content:"";position:absolute;inset-inline-start:0;inset-block-start:.5em;
   width:14px;height:14px;border-radius:50%;
-  background:rgba(77,124,255,.16);
+  background:var(--accent-soft);
   box-shadow:inset 0 0 0 1.5px var(--accent);
 }
 
@@ -192,8 +196,8 @@ a{color:inherit}
 .spon-table{width:100%;border-collapse:collapse;min-width:560px;font-size:.94rem}
 .spon-table th,.spon-table td{padding:14px 18px;text-align:start;border-block-end:1px solid var(--line)}
 .spon-table thead th{
-  background:var(--surface-2);font-size:11px;font-weight:700;letter-spacing:.09em;
-  text-transform:uppercase;color:var(--ink-3);
+  background:var(--surface-2);font-family:var(--mono);font-size:11px;font-weight:500;
+  letter-spacing:.07em;text-transform:uppercase;color:var(--ink-3);
 }
 .spon-table tbody tr:last-child td{border-block-end:0}
 .spon-table tbody td:first-child{font-weight:650;color:var(--ink)}
@@ -215,11 +219,15 @@ a{color:inherit}
 
 /* ── footer ──────────────────────────────────────── */
 .foot{padding:52px 0 64px;background:var(--bg)}
-.foot-brand{margin:0 0 12px;font-weight:800;letter-spacing:-.01em}
+.foot-brand{margin:0 0 12px;font-weight:700;letter-spacing:-.01em}
 .foot-legal,.foot-note{margin:0 0 10px;color:var(--ink-3);font-size:.88rem;max-width:70ch}
-.foot-updated{margin:18px 0 0;color:var(--ink-3);font-size:.82rem}
+.foot-updated{margin:18px 0 0;color:var(--ink-3);font-size:.8rem;font-family:var(--mono)}
 
 /* ── responsive ──────────────────────────────────── */
+:where(a,button,summary,details):focus-visible{
+  outline:2px solid var(--accent);outline-offset:3px;border-radius:6px;
+}
+
 @media (max-width:860px){
   .nav-links{display:none}
   .hero{padding:64px 24px 60px}
