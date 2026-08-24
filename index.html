@@ -8,6 +8,16 @@
 <meta property="og:title" content="AI Summer Korea">
 <meta property="og:description" content="Fully sponsored. Four weeks in Korea. For undergraduates worldwide building the next decade of AI.">
 <meta property="og:type" content="website">
+<meta property="og:image" content="https://korea-ai-summer.vercel.app/assets/logo-og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="512x512" href="assets/favicon-512.png">
+<link rel="apple-touch-icon" href="assets/favicon-180.png">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#0b0e13">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="ASK">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap">
@@ -16,7 +26,7 @@
 <body>
 
 <header class="nav">
-  <a class="brand" href="#top"><span class="brand-mark">ASK</span><span class="brand-name" data-i18n="nav.brand">AI Summer Korea</span></a>
+  <a class="brand" href="#top"><img class="brand-mark" src="assets/favicon-180.png" alt="" width="34" height="34" decoding="async"><span class="brand-name" data-i18n="nav.brand">AI Summer Korea</span></a>
   <nav class="nav-links">
     <a href="#program" data-i18n="nav.program">Program</a>
     <a href="#visits" data-i18n="nav.visits">Where You Go</a>
@@ -32,6 +42,9 @@
 
 <!-- ── HERO ─────────────────────────────────────────── -->
 <section class="hero">
+  <video class="hero-video" id="heroVideo" poster="assets/hero-poster.jpg"
+         muted loop playsinline preload="none" tabindex="-1" aria-hidden="true"></video>
+  <div class="hero-scrim" aria-hidden="true"></div>
   <div class="hero-inner">
     <p class="eyebrow" data-i18n="hero.eyebrow">First cohort · Summer 2027 · 200 seats</p>
     <h1 data-i18n="hero.title">Four weeks in Korea, where the chips that train AI are made.</h1>
@@ -302,7 +315,8 @@
 
 <footer class="foot">
   <div class="wrap">
-    <p class="foot-brand" data-i18n="foot.brand">AI Summer Korea</p>
+    <img class="foot-logo" src="assets/logo-light.png" alt="AI Summer Korea" width="200" height="146" decoding="async" loading="lazy">
+    <p class="foot-brand sr-only" data-i18n="foot.brand">AI Summer Korea</p>
     <p class="foot-legal" data-i18n="foot.legal">Organised by the International Brain Sports Association (Republic of Korea). U.S. partner: Undenominated Church of Christianity, operator of Plato School, a California non-profit corporation incorporated 1 September 2023.</p>
     <p class="foot-note" data-i18n="foot.note">First cohort: summer 2027. Program details, dates, and partners are provisional until confirmed and will be updated on this page.</p>
     <p class="foot-updated"><span data-i18n="foot.updated">Last updated</span>: <span id="updated">2026-08-24</span></p>

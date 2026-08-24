@@ -268,8 +268,46 @@
     if (n && !n.textContent.trim()) n.textContent = "2026-08-24";
   }
 
+  /* ── hero video ──────────────────────────────────
+
+     preload="none" plus a poster means the page is complete before a single
+     byte of video is fetched. We only then decide whether to fetch it at all:
+     not on a metered or slow connection, not when the reader has asked for
+     reduced motion, and the small encode on small screens. */
+  function heroVideo() {
+    var v = document.getElementById("heroVideo");
+    if (!v) return;
+
+    try {
+      if (window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    } catch (e) { /* older browsers: carry on */ }
+
+    var c = navigator.connection || navigator.mozConnection || navigator.webkitConnection || {};
+    if (c.saveData) return;
+    if (typeof c.effectiveType === "string" && /(^|-)(slow-)?2g$/.test(c.effectiveType)) return;
+
+    v.src = window.innerWidth < 768 ? "assets/hero-480.mp4" : "assets/hero-720.mp4";
+    v.load();
+    var play = v.play();
+    /* Autoplay can still be refused (low power mode). The poster stays,
+       which is a perfectly good hero — so swallow it rather than logging. */
+    if (play && play.catch) play.catch(function () {});
+  }
+
+  function registerSW() {
+    if (!("serviceWorker" in navigator)) return;
+    if (location.protocol !== "https:" && location.hostname !== "localhost") return;
+    window.addEventListener("load", function () {
+      navigator.serviceWorker.register("sw.js").catch(function () {
+        /* Registration failing costs the reader nothing — the site is static. */
+      });
+    });
+  }
+
   document.addEventListener("DOMContentLoaded", function () {
     buildPicker();
+    heroVideo();
+    registerSW();
     wirePlaceholders();
     stamp();
     render(detect());
