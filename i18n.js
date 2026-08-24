@@ -162,7 +162,7 @@ en:{
   about:{
     kicker:"Who runs this", title:"About the organizer",
     p1:"Korea AI Summer is organised by the International Brain Sports Association, an incorporated association under Korean law, which runs the programme in Korea and is responsible for the venue, the site visits and everything that happens on the ground.",
-    p2:"Our partner in the United States is Undenominated Church of Christianity, the California non-profit corporation that operates Plato School, incorporated in San Francisco on 1 September 2023. It handles the American side: recruitment across the fifty states and relationships with U.S. universities. It is a religious non-profit, and we would rather you read that here than find it later.",
+    p2:"Our partner in the United States is Undenominated Church of Christianity, the California non-profit corporation that operates Plato School, incorporated in San Francisco on 1 September 2023. It handles the American side: recruitment across the fifty states and relationships with U.S. universities. A religious non-profit running a school is the oldest arrangement in education — Georgetown, Notre Dame and Boston College in the United States, Yonsei and Ewha in Korea, all founded on the same basis. The programme itself is secular.",
     advT:"Advisory board:",
     advB:"Being formed. Members will be listed here once they have confirmed. We do not list names before they have agreed to appear."
   },
@@ -319,7 +319,7 @@ ko:{
   about:{
     kicker:"주최", title:"주최 기관 소개",
     p1:"코리아 AI 서머는 사단법인 국제브레인스포츠협회가 주최합니다. 협회가 국내 운영을 맡아 장소와 현장 방문, 한국에서 벌어지는 모든 일을 책임집니다.",
-    p2:"미국 측 협력기관은 Plato School 을 운영하는 캘리포니아주 비영리법인 Undenominated Church of Christianity 입니다. 2023년 9월 1일 샌프란시스코에 설립되었고, 미국 50개 주 모집과 미국 대학과의 관계를 맡습니다. 종교 비영리법인이며, 나중에 알게 되시는 것보다 여기서 읽으시는 편이 낫다고 보아 밝혀 둡니다.",
+    p2:"미국 측 협력기관은 Plato School 을 운영하는 캘리포니아주 비영리법인 Undenominated Church of Christianity 입니다. 2023년 9월 1일 샌프란시스코에 설립되었고, 미국 50개 주 모집과 미국 대학과의 관계를 맡습니다. 종교법인이 학교를 운영하는 것은 교육에서 가장 오래된 형태입니다 — 연세대와 이화여대는 선교사가 세웠고, 미국의 조지타운·노트르담·보스턴칼리지도 같은 뿌리입니다. 프로그램 내용 자체는 종교와 무관합니다.",
     advT:"자문위원:",
     advB:"구성 중입니다. 확정되는 대로 이 자리에 표기합니다. 본인의 동의를 받기 전에는 성함을 올리지 않습니다."
   },
