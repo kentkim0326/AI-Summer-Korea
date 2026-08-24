@@ -333,6 +333,72 @@
 
 </main>
 
+<!-- ── CONTACT FORM ─────────────────────────────────── -->
+<dialog class="fdlg" id="formDialog" aria-labelledby="formTitle">
+  <form class="fform" id="contactForm" novalidate>
+    <button type="button" class="fclose" id="formClose" aria-label="Close">&#215;</button>
+    <h2 id="formTitle" data-i18n="form.title">Get in touch</h2>
+    <p class="fintro" data-i18n="form.intro"></p>
+
+    <div class="frow">
+      <label for="f-type" data-i18n="form.typeLabel">I am writing as</label>
+      <select id="f-type" name="type" required></select>
+    </div>
+
+    <div class="frow">
+      <label for="f-name" data-i18n="form.name">Name</label>
+      <input id="f-name" name="name" type="text" autocomplete="name" required maxlength="120">
+      <span class="ferr" data-for="f-name"></span>
+    </div>
+
+    <div class="frow">
+      <label for="f-email" data-i18n="form.email">Email</label>
+      <input id="f-email" name="email" type="email" autocomplete="email" required maxlength="200" inputmode="email">
+      <span class="ferr" data-for="f-email"></span>
+    </div>
+
+    <div class="fgrid">
+      <div class="frow">
+        <label for="f-country" data-i18n="form.country">Country</label>
+        <input id="f-country" name="country" type="text" autocomplete="country-name" required maxlength="80">
+        <span class="ferr" data-for="f-country"></span>
+      </div>
+      <div class="frow">
+        <label for="f-affiliation" data-i18n="form.affiliation">University or organisation</label>
+        <input id="f-affiliation" name="affiliation" type="text" autocomplete="organization" required maxlength="200">
+        <span class="ferr" data-for="f-affiliation"></span>
+      </div>
+    </div>
+
+    <div class="frow">
+      <label for="f-message">
+        <span data-i18n="form.message">Anything you want us to know</span>
+        <span class="fopt" data-i18n="form.optional">optional</span>
+      </label>
+      <textarea id="f-message" name="message" rows="3" maxlength="4000"></textarea>
+    </div>
+
+    <!-- 봇 잡이. 사람에게는 보이지 않고 스크린리더도 건너뛴다. -->
+    <div class="fhp" aria-hidden="true">
+      <label for="f-website">Leave this field empty</label>
+      <input id="f-website" name="website" type="text" tabindex="-1" autocomplete="off">
+    </div>
+
+    <p class="fprivacy" data-i18n="form.privacy"></p>
+    <p class="fnotice" id="formNotice" hidden></p>
+
+    <div class="factions">
+      <button type="submit" class="btn btn-primary" id="formSubmit" data-i18n="form.submit">Send</button>
+    </div>
+  </form>
+
+  <div class="fdone" id="formDone" hidden>
+    <h2 id="formDoneTitle"></h2>
+    <p id="formDoneBody"></p>
+    <button type="button" class="btn btn-ghost" id="formDoneClose" data-i18n="form.close">Close</button>
+  </div>
+</dialog>
+
 <footer class="foot">
   <div class="wrap">
     <img class="foot-logo" src="assets/logo-light.png" alt="AI Summer Korea" width="200" height="146" decoding="async" loading="lazy">

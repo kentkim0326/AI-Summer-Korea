@@ -188,6 +188,34 @@ en:{
     note:"First cohort: summer 2027. Program details, dates, and partners are provisional until confirmed and will be updated on this page.",
     updated:"Last updated"
   }
+,
+
+  form: {
+      "title": "Get in touch",
+      "intro": "Tell us who you are and we will write when it matters — when applications open, or with the sponsor brief.",
+      "typeLabel": "I am writing as",
+      "typeStudent": "A student who wants to take part",
+      "typeVolunteer": "A volunteer teammate in Korea or Asia",
+      "typeSponsor": "A company, foundation or government body",
+      "typeOther": "Something else",
+      "name": "Name",
+      "email": "Email",
+      "country": "Country",
+      "affiliation": "University or organisation",
+      "message": "Anything you want us to know",
+      "optional": "optional",
+      "submit": "Send",
+      "sending": "Sending…",
+      "close": "Close",
+      "okTitle": "Thank you — that reached us.",
+      "okBody": "We will write to the address you gave. We do not send anything else.",
+      "errTitle": "That did not go through.",
+      "errBody": "Something on our side failed. Please try again in a moment.",
+      "required": "Required",
+      "badEmail": "Check this email address",
+      "privacy": "We collect your name, email, country and affiliation to write to you about this programme, and to report anonymised totals to sponsors — how many people applied, from how many countries. Nothing is sold or passed on. We keep it until the 2027 cohort ends, and delete it sooner if you ask.",
+      "notYet": "The list is not open yet. It opens with applications in autumn 2026."
+    }
 },
 
 /* ───────────────────────── 한국어 ───────────────────────── */
@@ -345,6 +373,34 @@ ko:{
     note:"1기는 2027년 여름입니다. 프로그램 세부 내용·날짜·파트너는 확정 전까지 잠정이며 이 페이지에서 갱신됩니다.",
     updated:"마지막 갱신"
   }
+,
+
+  form: {
+      "title": "연락하기",
+      "intro": "누구신지 알려주시면 필요한 때에 연락드립니다 — 지원 접수가 열릴 때, 또는 후원 브리프와 함께.",
+      "typeLabel": "어떤 자격으로 쓰시나요",
+      "typeStudent": "참가를 원하는 학생",
+      "typeVolunteer": "한국·아시아의 자원봉사 팀원",
+      "typeSponsor": "기업·재단·공공기관",
+      "typeOther": "그 외",
+      "name": "이름",
+      "email": "이메일",
+      "country": "국가",
+      "affiliation": "대학 또는 소속 기관",
+      "message": "하고 싶은 말",
+      "optional": "선택",
+      "submit": "보내기",
+      "sending": "보내는 중…",
+      "close": "닫기",
+      "okTitle": "감사합니다 — 잘 도착했습니다.",
+      "okBody": "적어주신 주소로 연락드립니다. 그 외의 메일은 보내지 않습니다.",
+      "errTitle": "전송되지 않았습니다.",
+      "errBody": "저희 쪽 문제입니다. 잠시 후 다시 시도해 주세요.",
+      "required": "필수",
+      "badEmail": "이메일 주소를 확인해 주세요",
+      "privacy": "이름·이메일·국가·소속을 수집합니다. 이 프로그램에 관한 연락과, 후원사에 보고할 익명 집계(지원자 수, 국가 수)에만 씁니다. 판매하거나 제3자에게 넘기지 않습니다. 2027년 1기 종료 시까지 보관하며, 요청하시면 그전에 삭제합니다.",
+      "notYet": "접수는 아직 열려 있지 않습니다. 2026년 가을 지원 접수와 함께 열립니다."
+    }
 },
 
 /* ─────────────────── CHINESE (SIMPLIFIED) ─────────────────── */
@@ -542,7 +598,35 @@ ko:{
       "note": "首期：2027年夏季。项目细节、日期与合作方在正式确认前均为暂定，并将在本页更新。",
       "updated": "最后更新"
     }
-  },
+  ,
+
+  form: {
+      "title": "与我们联系",
+      "intro": "留下你的身份，我们会在需要时与你联系——申请开放时，或随赞助简报一同发送。",
+      "typeLabel": "我的身份是",
+      "typeStudent": "希望参加的学生",
+      "typeVolunteer": "在韩国或亚洲的志愿队友",
+      "typeSponsor": "企业、基金会或政府机构",
+      "typeOther": "其他",
+      "name": "姓名",
+      "email": "电子邮箱",
+      "country": "国家或地区",
+      "affiliation": "大学或所属机构",
+      "message": "想让我们知道的事",
+      "optional": "选填",
+      "submit": "发送",
+      "sending": "发送中…",
+      "close": "关闭",
+      "okTitle": "谢谢——我们已收到。",
+      "okBody": "我们会写信到你留下的邮箱。除此之外不会发送任何邮件。",
+      "errTitle": "没有发送成功。",
+      "errBody": "是我们这边出了问题。请稍后再试。",
+      "required": "必填",
+      "badEmail": "请检查邮箱地址",
+      "privacy": "我们收集你的姓名、邮箱、国家或地区和所属机构，仅用于就本项目与你联系，以及向赞助方报告匿名统计（多少人申请、来自多少个国家或地区）。不会出售或转交他人。资料保存至2027年首期结束，你也可以随时要求提前删除。",
+      "notYet": "名单尚未开放。将于2026年秋季随申请一同开放。"
+    }
+},
 
 /* ─────────────────── CHINESE (TRADITIONAL) ─────────────────── */
 "zh-Hant": {
@@ -739,7 +823,35 @@ ko:{
       "note": "首屆：2027年夏季。計畫細節、日期與合作夥伴在正式確認前均為暫定，並將在本頁更新。",
       "updated": "最後更新"
     }
-  },
+  ,
+
+  form: {
+      "title": "與我們聯絡",
+      "intro": "留下你的身分，我們會在需要時與你聯絡——申請開放時，或隨贊助簡報一併寄出。",
+      "typeLabel": "我的身分是",
+      "typeStudent": "希望參加的學生",
+      "typeVolunteer": "在韓國或亞洲的志工隊友",
+      "typeSponsor": "企業、基金會或政府機構",
+      "typeOther": "其他",
+      "name": "姓名",
+      "email": "電子郵件",
+      "country": "國家或地區",
+      "affiliation": "大學或所屬機構",
+      "message": "想讓我們知道的事",
+      "optional": "選填",
+      "submit": "送出",
+      "sending": "傳送中…",
+      "close": "關閉",
+      "okTitle": "謝謝——我們已收到。",
+      "okBody": "我們會寄信到你留下的信箱。除此之外不會寄送任何郵件。",
+      "errTitle": "沒有送出成功。",
+      "errBody": "是我們這邊出了問題。請稍後再試。",
+      "required": "必填",
+      "badEmail": "請檢查電子郵件地址",
+      "privacy": "我們收集你的姓名、電子郵件、國家或地區與所屬機構，僅用於就本計畫與你聯絡，以及向贊助方報告匿名統計（多少人申請、來自多少國家或地區）。不會出售或轉交他人。資料保存至2027年首屆結束，你也可以隨時要求提前刪除。",
+      "notYet": "名單尚未開放。將於2026年秋季隨申請一併開放。"
+    }
+},
 
 /* ─────────────────── JAPANESE ─────────────────── */
 "ja": {
@@ -936,7 +1048,35 @@ ko:{
       "note": "第1期：2027年夏。プログラムの詳細・日程・パートナーは確定するまで暫定であり、このページで更新します。",
       "updated": "最終更新"
     }
-  },
+  ,
+
+  form: {
+      "title": "お問い合わせ",
+      "intro": "どなたかをお知らせいただければ、必要なときにご連絡します — 応募開始のとき、または協賛ブリーフとともに。",
+      "typeLabel": "どの立場からのご連絡ですか",
+      "typeStudent": "参加を希望する学生",
+      "typeVolunteer": "韓国・アジアのボランティアチームメイト",
+      "typeSponsor": "企業・財団・公的機関",
+      "typeOther": "その他",
+      "name": "お名前",
+      "email": "メールアドレス",
+      "country": "国",
+      "affiliation": "大学または所属機関",
+      "message": "お伝えになりたいこと",
+      "optional": "任意",
+      "submit": "送信",
+      "sending": "送信中…",
+      "close": "閉じる",
+      "okTitle": "ありがとうございます — 届きました。",
+      "okBody": "いただいたアドレスにご連絡します。それ以外のメールはお送りしません。",
+      "errTitle": "送信できませんでした。",
+      "errBody": "こちら側の問題です。しばらくしてからもう一度お試しください。",
+      "required": "必須",
+      "badEmail": "メールアドレスをご確認ください",
+      "privacy": "お名前・メールアドレス・国・所属を取得します。本プログラムに関するご連絡と、協賛企業へ報告する匿名の集計（応募者数、国の数）にのみ使用します。販売や第三者への提供は行いません。2027年第1期の終了まで保管し、ご希望があればそれより前に削除します。",
+      "notYet": "受付はまだ開いていません。2026年秋、応募開始と同時に開きます。"
+    }
+},
 
 /* ─────────────────── SPANISH ─────────────────── */
 "es": {
@@ -1133,7 +1273,35 @@ ko:{
       "note": "Primera edición: verano de 2027. Los detalles del programa, las fechas y los socios son provisionales hasta su confirmación y se actualizarán en esta página.",
       "updated": "Última actualización"
     }
-  },
+  ,
+
+  form: {
+      "title": "Ponte en contacto",
+      "intro": "Dinos quién eres y te escribiremos cuando importe: cuando se abran las solicitudes, o con el dosier para patrocinadores.",
+      "typeLabel": "Escribo como",
+      "typeStudent": "Estudiante que quiere participar",
+      "typeVolunteer": "Voluntario en Corea o Asia",
+      "typeSponsor": "Empresa, fundación u organismo público",
+      "typeOther": "Otra cosa",
+      "name": "Nombre",
+      "email": "Correo electrónico",
+      "country": "País",
+      "affiliation": "Universidad u organización",
+      "message": "Lo que quieras contarnos",
+      "optional": "opcional",
+      "submit": "Enviar",
+      "sending": "Enviando…",
+      "close": "Cerrar",
+      "okTitle": "Gracias, nos ha llegado.",
+      "okBody": "Te escribiremos a la dirección que nos has dado. No enviamos nada más.",
+      "errTitle": "No se ha enviado.",
+      "errBody": "Ha fallado algo por nuestra parte. Inténtalo de nuevo en un momento.",
+      "required": "Obligatorio",
+      "badEmail": "Revisa esta dirección de correo",
+      "privacy": "Recogemos tu nombre, correo, país y organización para escribirte sobre este programa y para informar a los patrocinadores de totales anónimos: cuántas personas han solicitado y desde cuántos países. No vendemos ni cedemos nada. Lo conservamos hasta que termine la edición de 2027, y lo borramos antes si nos lo pides.",
+      "notYet": "La lista aún no está abierta. Se abre con las solicitudes en otoño de 2026."
+    }
+},
 
 /* ─────────────────── FRENCH ─────────────────── */
 "fr": {
@@ -1330,7 +1498,35 @@ ko:{
       "note": "Première promotion : été 2027. Les détails du programme, les dates et les partenaires sont provisoires jusqu'à confirmation et seront mis à jour sur cette page.",
       "updated": "Dernière mise à jour"
     }
-  },
+  ,
+
+  form: {
+      "title": "Nous contacter",
+      "intro": "Dites-nous qui vous êtes et nous vous écrirons au bon moment : à l'ouverture des candidatures, ou avec le dossier de mécénat.",
+      "typeLabel": "J'écris en tant que",
+      "typeStudent": "Étudiant qui souhaite participer",
+      "typeVolunteer": "Bénévole en Corée ou en Asie",
+      "typeSponsor": "Entreprise, fondation ou organisme public",
+      "typeOther": "Autre",
+      "name": "Nom",
+      "email": "Adresse e-mail",
+      "country": "Pays",
+      "affiliation": "Université ou organisation",
+      "message": "Ce que vous souhaitez nous dire",
+      "optional": "facultatif",
+      "submit": "Envoyer",
+      "sending": "Envoi…",
+      "close": "Fermer",
+      "okTitle": "Merci, votre message nous est bien parvenu.",
+      "okBody": "Nous écrirons à l'adresse que vous avez indiquée. Nous n'envoyons rien d'autre.",
+      "errTitle": "L'envoi a échoué.",
+      "errBody": "Le problème vient de chez nous. Réessayez dans un instant.",
+      "required": "Obligatoire",
+      "badEmail": "Vérifiez cette adresse e-mail",
+      "privacy": "Nous recueillons vos nom, adresse e-mail, pays et organisation pour vous écrire au sujet du programme et pour communiquer aux mécènes des totaux anonymes : combien de candidatures, depuis combien de pays. Rien n'est vendu ni transmis. Nous les conservons jusqu'à la fin de la promotion 2027, et les supprimons plus tôt si vous le demandez.",
+      "notYet": "La liste n'est pas encore ouverte. Elle ouvrira avec les candidatures à l'automne 2026."
+    }
+},
 
 /* ─────────────────── GERMAN ─────────────────── */
 "de": {
@@ -1527,6 +1723,34 @@ ko:{
       "note": "Erster Jahrgang: Sommer 2027. Programmdetails, Termine und Partner sind bis zur Bestätigung vorläufig und werden auf dieser Seite aktualisiert.",
       "updated": "Zuletzt aktualisiert"
     }
-  }
+  ,
+
+  form: {
+      "title": "Kontakt aufnehmen",
+      "intro": "Sagen Sie uns, wer Sie sind, und wir melden uns, wenn es darauf ankommt — zur Öffnung der Bewerbung oder mit den Förderunterlagen.",
+      "typeLabel": "Ich schreibe als",
+      "typeStudent": "Studierende oder Studierender mit Teilnahmewunsch",
+      "typeVolunteer": "Freiwillige oder Freiwilliger in Korea oder Asien",
+      "typeSponsor": "Unternehmen, Stiftung oder Behörde",
+      "typeOther": "Etwas anderes",
+      "name": "Name",
+      "email": "E-Mail",
+      "country": "Land",
+      "affiliation": "Hochschule oder Organisation",
+      "message": "Was wir wissen sollten",
+      "optional": "optional",
+      "submit": "Senden",
+      "sending": "Wird gesendet…",
+      "close": "Schließen",
+      "okTitle": "Danke — das ist bei uns angekommen.",
+      "okBody": "Wir schreiben an die angegebene Adresse. Sonst senden wir nichts.",
+      "errTitle": "Das ist nicht durchgegangen.",
+      "errBody": "Auf unserer Seite ist etwas fehlgeschlagen. Bitte versuchen Sie es gleich noch einmal.",
+      "required": "Pflichtfeld",
+      "badEmail": "Bitte diese E-Mail-Adresse prüfen",
+      "privacy": "Wir erheben Name, E-Mail, Land und Organisation, um Ihnen zu diesem Programm zu schreiben und um Förderern anonymisierte Summen zu berichten — wie viele Bewerbungen aus wie vielen Ländern. Nichts wird verkauft oder weitergegeben. Wir speichern die Angaben bis zum Ende des Jahrgangs 2027 und löschen sie früher, wenn Sie es verlangen.",
+      "notYet": "Die Liste ist noch nicht geöffnet. Sie öffnet mit den Bewerbungen im Herbst 2026."
+    }
+}
 
 };

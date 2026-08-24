@@ -137,6 +137,8 @@
     renderSponsors(t);
     renderFaq(t);
 
+    if (document.getElementById("f-type")) fillTypes();
+
     var opts = document.querySelectorAll("#langMenu [data-lang]");
     for (var i = 0; i < opts.length; i++) {
       opts[i].setAttribute("aria-selected", opts[i].dataset.lang === code ? "true" : "false");
@@ -247,20 +249,186 @@
     return DEFAULT;
   }
 
-  /* ── forms not wired yet ─────────────────────────── */
+  /* ── contact form ────────────────────────────────
 
-  function wirePlaceholders() {
-    ["applyBtn", "volBtn", "sponBtn"].forEach(function (id) {
+     Set FORM_ENDPOINT to the Google Apps Script web app URL (see
+     apps-script/Code.gs for how to deploy it). While it is empty the
+     dialog still opens and shows the fields, but submitting is disabled
+     and says why — better than a button that silently does nothing. */
+  var FORM_ENDPOINT = "";
+
+  var TYPES = [
+    { value: "student",   key: "form.typeStudent" },
+    { value: "volunteer", key: "form.typeVolunteer" },
+    { value: "sponsor",   key: "form.typeSponsor" },
+    { value: "other",     key: "form.typeOther" }
+  ];
+
+  var dlg, form, lastFocus;
+
+  function t(path) {
+    var v = pick(I18N[current] || {}, path);
+    return typeof v === "string" ? v : "";
+  }
+
+  function fillTypes(selected) {
+    var sel = document.getElementById("f-type");
+    if (!sel) return;
+    var keep = selected || sel.value;
+    sel.textContent = "";
+    TYPES.forEach(function (o) {
+      var opt = document.createElement("option");
+      opt.value = o.value;
+      opt.textContent = t(o.key);
+      sel.appendChild(opt);
+    });
+    if (keep) sel.value = keep;
+  }
+
+  function clearErrors() {
+    var spans = form.querySelectorAll(".ferr");
+    for (var i = 0; i < spans.length; i++) spans[i].textContent = "";
+    var fields = form.querySelectorAll("[aria-invalid]");
+    for (var j = 0; j < fields.length; j++) fields[j].removeAttribute("aria-invalid");
+  }
+
+  function setError(id, msg) {
+    var field = document.getElementById(id);
+    var span = form.querySelector('.ferr[data-for="' + id + '"]');
+    if (field) field.setAttribute("aria-invalid", "true");
+    if (span) span.textContent = msg;
+    return field;
+  }
+
+  function validate() {
+    clearErrors();
+    var first = null;
+    ["f-name", "f-email", "f-country", "f-affiliation"].forEach(function (id) {
+      var el = document.getElementById(id);
+      if (el && !el.value.trim()) {
+        var f = setError(id, t("form.required"));
+        if (!first) first = f;
+      }
+    });
+    var email = document.getElementById("f-email");
+    if (email && email.value.trim() && !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email.value.trim())) {
+      var f2 = setError("f-email", t("form.badEmail"));
+      if (!first) first = f2;
+    }
+    if (first) first.focus();
+    return !first;
+  }
+
+  function openForm(type) {
+    if (!dlg) return;
+    lastFocus = document.activeElement;
+    fillTypes(type);
+    document.getElementById("formDone").hidden = true;
+    form.hidden = false;
+
+    var notice = document.getElementById("formNotice");
+    var submit = document.getElementById("formSubmit");
+    if (!FORM_ENDPOINT) {
+      notice.textContent = t("form.notYet");
+      notice.hidden = false;
+      submit.disabled = true;
+    } else {
+      notice.hidden = true;
+      submit.disabled = false;
+    }
+
+    if (typeof dlg.showModal === "function") dlg.showModal();
+    else dlg.setAttribute("open", "");
+    var firstField = document.getElementById("f-name");
+    if (firstField) firstField.focus();
+  }
+
+  function closeForm() {
+    if (!dlg) return;
+    if (typeof dlg.close === "function") dlg.close();
+    else dlg.removeAttribute("open");
+    if (lastFocus && lastFocus.focus) lastFocus.focus();
+  }
+
+  function submitForm(e) {
+    e.preventDefault();
+    if (!FORM_ENDPOINT || !validate()) return;
+
+    var submit = document.getElementById("formSubmit");
+    submit.disabled = true;
+    submit.textContent = t("form.sending");
+
+    var payload = {
+      type: document.getElementById("f-type").value,
+      name: document.getElementById("f-name").value.trim(),
+      email: document.getElementById("f-email").value.trim(),
+      country: document.getElementById("f-country").value.trim(),
+      affiliation: document.getElementById("f-affiliation").value.trim(),
+      message: document.getElementById("f-message").value.trim(),
+      website: document.getElementById("f-website").value,
+      lang: current,
+      origin: location.origin
+    };
+
+    /* text/plain avoids the CORS preflight that Apps Script cannot answer. */
+    fetch(FORM_ENDPOINT, {
+      method: "POST",
+      headers: { "Content-Type": "text/plain;charset=utf-8" },
+      body: JSON.stringify(payload)
+    })
+      .then(function (r) { return r.json(); })
+      .then(function (res) { finish(res && res.ok); })
+      .catch(function () { finish(false); });
+  }
+
+  function finish(ok) {
+    var submit = document.getElementById("formSubmit");
+    submit.disabled = false;
+    submit.textContent = t("form.submit");
+
+    if (!ok) {
+      var notice = document.getElementById("formNotice");
+      notice.textContent = t("form.errTitle") + " " + t("form.errBody");
+      notice.hidden = false;
+      return;
+    }
+    form.reset();
+    form.hidden = true;
+    document.getElementById("formDoneTitle").textContent = t("form.okTitle");
+    document.getElementById("formDoneBody").textContent = t("form.okBody");
+    document.getElementById("formDone").hidden = false;
+  }
+
+  function wireForm() {
+    dlg = document.getElementById("formDialog");
+    form = document.getElementById("contactForm");
+    if (!dlg || !form) return;
+
+    var map = { applyBtn: "student", volBtn: "volunteer", sponBtn: "sponsor" };
+    Object.keys(map).forEach(function (id) {
       var b = document.getElementById(id);
       if (!b) return;
       b.addEventListener("click", function (e) {
-        /* No form endpoint yet. Say so rather than silently doing nothing. */
-        if (b.getAttribute("href") === "#") {
-          e.preventDefault();
-          alert("Form coming soon / 접수 양식 준비 중입니다.");
-        }
+        e.preventDefault();
+        openForm(map[id]);
       });
     });
+
+    document.getElementById("formClose").addEventListener("click", closeForm);
+    document.getElementById("formDoneClose").addEventListener("click", closeForm);
+    form.addEventListener("submit", submitForm);
+
+    /* Clicking the backdrop closes it. The dialog element reports clicks on
+       its own padding box, so compare against the content rectangle. */
+    dlg.addEventListener("click", function (e) {
+      if (e.target !== dlg) return;
+      var r = dlg.getBoundingClientRect();
+      var inside = e.clientX >= r.left && e.clientX <= r.right &&
+                   e.clientY >= r.top && e.clientY <= r.bottom;
+      if (!inside) closeForm();
+    });
+
+    fillTypes();
   }
 
   function stamp() {
@@ -308,7 +476,7 @@
     buildPicker();
     heroVideo();
     registerSW();
-    wirePlaceholders();
+    wireForm();
     stamp();
     render(detect());
   });

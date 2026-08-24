@@ -286,6 +286,72 @@ a{color:inherit}
 .faq details[open] summary::after{content:"\2212"}
 .faq .faq-body{padding:0 22px 19px;color:var(--ink-2);font-size:.95rem;margin:0}
 
+/* ── 접수 폼 대화상자 ────────────────────────────── */
+.fdlg{
+  width:min(560px,calc(100vw - 32px));max-height:calc(100dvh - 48px);
+  padding:0;border:1px solid var(--line);border-radius:var(--radius);
+  background:var(--surface);color:var(--ink);overflow:auto;
+}
+.fdlg::backdrop{background:rgba(4,6,9,.72);backdrop-filter:blur(3px)}
+.fform,.fdone{padding:26px 26px 24px;position:relative}
+.fdlg h2{margin:0 0 10px;font-size:1.3rem;font-weight:700;letter-spacing:-.015em;max-width:22ch}
+.fintro{margin:0 0 22px;color:var(--ink-2);font-size:.94rem;max-width:52ch}
+
+.fclose{
+  position:absolute;inset-block-start:14px;inset-inline-end:14px;
+  width:34px;height:34px;display:grid;place-items:center;
+  border:1px solid var(--line);border-radius:8px;background:transparent;
+  color:var(--ink-3);font-size:20px;line-height:1;cursor:pointer;transition:.15s;
+}
+.fclose:hover{color:var(--ink);border-color:var(--ink-3)}
+
+.frow{display:flex;flex-direction:column;gap:6px;margin-block-end:15px}
+.frow label{font-size:.85rem;font-weight:600;color:var(--ink-2);display:flex;gap:8px;align-items:baseline}
+.fopt{font-family:var(--mono);font-size:10px;letter-spacing:.05em;text-transform:uppercase;color:var(--ink-3)}
+.fgrid{display:grid;grid-template-columns:1fr 1fr;gap:0 14px}
+
+.fform input,.fform select,.fform textarea{
+  width:100%;font:inherit;font-size:.95rem;color:var(--ink);
+  background:var(--bg-alt);border:1px solid var(--line);border-radius:9px;
+  padding:11px 13px;transition:border-color .15s;
+}
+.fform textarea{resize:vertical;min-height:76px}
+.fform input:focus,.fform select:focus,.fform textarea:focus{
+  outline:none;border-color:var(--accent);
+}
+.fform input[aria-invalid="true"],.fform select[aria-invalid="true"]{border-color:var(--crit,#e8695f)}
+.ferr{font-size:.8rem;color:#e8695f;min-height:0}
+.ferr:empty{display:none}
+
+.fprivacy{
+  margin:18px 0 0;padding-block-start:16px;border-block-start:1px solid var(--line);
+  font-size:.8rem;line-height:1.6;color:var(--ink-3);
+}
+.fnotice{
+  margin:14px 0 0;padding:12px 14px;border-radius:9px;
+  background:var(--accent-soft);border:1px solid rgba(242,169,59,.3);
+  color:var(--ink-2);font-size:.86rem;
+}
+.factions{display:flex;gap:10px;margin-block-start:18px}
+.factions .btn{width:100%;text-align:center}
+.factions .btn[disabled]{opacity:.5;cursor:not-allowed;transform:none}
+
+.fdone{text-align:center;padding-block:44px}
+.fdone h2{margin-inline:auto;max-width:24ch}
+.fdone p{margin:0 auto 22px;max-width:44ch;color:var(--ink-2);font-size:.95rem}
+
+/* 봇 잡이는 화면 밖으로. display:none 은 일부 봇이 알아채므로 쓰지 않는다. */
+.fhp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+
+@media (max-width:560px){
+  .fgrid{grid-template-columns:1fr}
+  .fform,.fdone{padding:22px 18px 20px}
+}
+@media (prefers-reduced-motion:no-preference){
+  .fdlg[open]{animation:fdlgIn .18s ease-out}
+  @keyframes fdlgIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+}
+
 /* ── footer ──────────────────────────────────────── */
 .foot{padding:52px 0 64px;background:var(--bg)}
 .foot-logo{width:min(200px,52vw);height:auto;margin-block-end:18px;opacity:.9}
