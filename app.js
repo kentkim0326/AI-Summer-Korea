@@ -261,6 +261,7 @@
     { value: "student",   key: "form.typeStudent" },
     { value: "volunteer", key: "form.typeVolunteer" },
     { value: "sponsor",   key: "form.typeSponsor" },
+    { value: "founding",  key: "form.typeFounding" },
     { value: "other",     key: "form.typeOther" }
   ];
 
@@ -404,7 +405,10 @@
     form = document.getElementById("contactForm");
     if (!dlg || !form) return;
 
-    var map = { applyBtn: "student", volBtn: "volunteer", sponBtn: "sponsor" };
+    var map = {
+      applyBtn: "student", volBtn: "volunteer",
+      sponBtn: "sponsor", sponFoundingBtn: "founding"
+    };
     Object.keys(map).forEach(function (id) {
       var b = document.getElementById(id);
       if (!b) return;

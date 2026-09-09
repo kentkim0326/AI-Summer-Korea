@@ -232,6 +232,32 @@ a{color:inherit}
 .note strong{color:var(--ink);font-weight:700}
 .note.warn{border-inline-start-color:var(--accent)}
 
+/* ── founding sponsors ───────────────────────────── */
+.founding{
+  margin-block:34px 0;padding:32px 30px;
+  background:linear-gradient(160deg,var(--surface-2),var(--surface));
+  border:1px solid var(--line);border-inline-start:3px solid var(--accent);
+  border-radius:var(--radius);max-width:70ch;
+}
+.founding-title{
+  margin:0 0 14px;font-size:1.3rem;font-weight:700;letter-spacing:-.012em;color:var(--ink);
+}
+.founding-lede{
+  margin:0 0 20px;padding-inline-start:16px;border-inline-start:2px solid var(--accent);
+  font-size:1.1rem;line-height:1.5;font-weight:600;color:var(--ink);text-wrap:balance;
+}
+.founding p{margin:0 0 15px;color:var(--ink-2);font-size:.96rem}
+.founding-count{margin-block:24px 4px!important}
+.founding-count strong{
+  font-family:var(--mono);font-size:1rem;font-weight:600;color:var(--accent);letter-spacing:-.01em;
+}
+.founding-count-note{font-size:.87rem!important;color:var(--ink-3)!important}
+.founding .cta-row{margin-block-start:22px}
+@media (max-width:560px){
+  .founding{padding:24px 20px}
+  .founding-lede{font-size:1.02rem}
+}
+
 /* ── status list ─────────────────────────────────── */
 .statuslist{list-style:none;margin:0 0 20px;padding:0;display:grid;gap:10px}
 .statuslist li{

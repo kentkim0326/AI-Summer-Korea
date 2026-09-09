@@ -147,7 +147,17 @@ en:{
     c2b:"Applicant and selection numbers, participant outcomes, project results, and follow-on recruiting activity — delivered after each cohort. We would rather show you a number than a testimonial.",
     budT:"The number, plainly:",
     budB:"The first cohort of 200 is budgeted at approximately KRW 2.17 billion — around USD 1.57 million all-in, or roughly USD 7,900 per participant. That covers airfare, four weeks of housing and meals, transport, insurance and programming, plus the staff and operating costs of actually running it. We publish the figure because a sponsor is going to work it out anyway. The line-by-line budget and the funding plan come with the sponsor brief. Figures are provisional until quotations are confirmed.",
-    btn:"Request the sponsor brief"
+    btn:"Request the sponsor brief",
+
+    foundingTitle:"Founding Sponsors",
+    foundingLede:"One seat is ten thousand dollars. It brings four students to Korea.",
+    foundingBody1:"Most of what this programme needs is not money. Sites open their doors, a province lends a campus, a company sends two engineers for an afternoon. Those things are negotiated rather than bought, and they are the harder half of the work.",
+    foundingBody2:"But four students flying in from four countries \u2014 housed, fed and insured for the length of the programme \u2014 costs about ten thousand dollars. That is a figure one person can decide on alone, in an afternoon, without a budget committee. So we are asking fifty people to each cover four students.",
+    foundingBody3:"A founding sponsor's ten thousand dollars goes to students and to nothing else: travel, housing, meals, insurance. Not to salaries, not to office rent, not to the cost of raising the money itself. Those are met on a separate line \u2014 from provincial and national programmes and from corporate partners \u2014 because that is the line those bodies exist to fund, and because a person giving their own money deserves a clean answer about where it goes.",
+    foundingBody4:"If you would like to, you will meet the four students your seat brought, and at the end of the four weeks you will see what they built. We think that is a more honest thing to offer than a logo on a banner.",
+    foundingCounter:"Founding sponsors secured: 0 of 50.",
+    foundingCounterNote:"This number changes when an agreement is signed, and not before.",
+    foundingCta:"Become a founding sponsor"
   },
 
   faq:{
@@ -197,6 +207,7 @@ en:{
       "typeStudent": "A student who wants to take part",
       "typeVolunteer": "A volunteer teammate in Korea or Asia",
       "typeSponsor": "A company, foundation or government body",
+      "typeFounding": "A founding sponsor, giving as an individual",
       "typeOther": "Something else",
       "name": "Name",
       "email": "Email",
@@ -332,7 +343,17 @@ ko:{
     c2b:"지원자 수와 선발 경쟁률, 참가자 성과, 프로젝트 결과, 이후 채용 연계 실적을 기수마다 정리해 드립니다. 소감문보다 숫자를 보여드리는 편을 택합니다.",
     budT:"숫자를 그대로 밝히면:",
     budB:"1기 200명 예산은 약 21억 7천만 원 — 전액 포함 약 157만 달러, 1인당 약 7,900달러입니다. 항공, 4주 숙박·식사, 이동, 보험, 프로그램 운영에 더해 이를 실제로 운영하는 인력과 운영비까지 포함한 금액입니다. 후원사는 어차피 계산해 보므로 먼저 밝힙니다. 항목별 세부 예산과 자금 조달 계획은 후원 브리프로 제공합니다. 견적 확정 전까지는 잠정치입니다.",
-    btn:"후원 제안서 요청"
+    btn:"후원 제안서 요청",
+
+    foundingTitle:"파운딩 스폰서",
+    foundingLede:"한 구좌는 1만 달러입니다. 학생 네 명이 한국에 옵니다.",
+    foundingBody1:"이 프로그램에 필요한 것의 대부분은 돈이 아닙니다. 현장이 문을 열어주고, 지자체가 캠퍼스를 빌려주고, 기업이 엔지니어 두 명을 반나절 보내주는 일 \u2014 이런 것은 사는 것이 아니라 협의하는 것이고, 사실 이쪽이 더 어려운 절반입니다.",
+    foundingBody2:"하지만 네 나라에서 온 학생 네 명이 프로그램 기간 내내 머물고 먹고 보험에 드는 데는 약 1만 달러가 듭니다. 이것은 한 사람이 오후 한나절에, 예산 심의 없이 혼자 결정할 수 있는 금액입니다. 그래서 쉰 명에게 각각 네 명씩을 부탁드립니다.",
+    foundingBody3:"파운딩 스폰서의 1만 달러는 학생에게만 갑니다 \u2014 항공, 숙박, 식사, 보험. 인건비에 쓰지 않고, 사무실 임차료에 쓰지 않고, 이 돈을 모으는 비용에도 쓰지 않습니다. 그런 비용은 별도의 재원으로 충당합니다. 지자체와 정부 사업, 그리고 기업 후원입니다. 그것이 그 기관들이 원래 지원하는 항목이기 때문이고, 자기 돈을 내는 사람은 그 돈이 어디로 가는지에 대해 깨끗한 답을 들을 자격이 있기 때문입니다.",
+    foundingBody4:"원하신다면 그 구좌로 온 네 명을 직접 만나실 수 있고, 4주가 끝나면 그들이 무엇을 만들었는지 보시게 됩니다. 저희는 이것이 배너에 로고를 거는 것보다 정직한 제안이라고 생각합니다.",
+    foundingCounter:"확보된 파운딩 스폰서: 50구좌 중 0구좌.",
+    foundingCounterNote:"이 숫자는 약정이 체결될 때 바뀝니다. 그 전에는 바뀌지 않습니다.",
+    foundingCta:"파운딩 스폰서 참여하기"
   },
 
   faq:{
@@ -382,6 +403,7 @@ ko:{
       "typeStudent": "참가를 원하는 학생",
       "typeVolunteer": "한국·아시아의 자원봉사 팀원",
       "typeSponsor": "기업·재단·공공기관",
+      "typeFounding": "개인 자격의 파운딩 스폰서",
       "typeOther": "그 외",
       "name": "이름",
       "email": "이메일",
